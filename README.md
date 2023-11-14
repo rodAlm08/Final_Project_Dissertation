@@ -1,5 +1,3 @@
-# Final Year Project Dissertation
-***
 # Biometric Data Analysis in Digital Game Scenario
 
 ## Table of Contents
@@ -11,12 +9,21 @@
    - [Angular Architecture](#angular-architecture)
    - [Advantages of using Angular](#advantages-of-using-angular)
 4. [System Design](#system-design)
-   - [Working with Images](#working-with-images)
+   - [to be finished](#working-with-images)
 5. [System Evaluation](#system-evaluation)
-   - [Working with Tables](#working-with-tables)
+   - [to be finished](#working-with-tables)
+6. [Project Proposal](#project-proposal)
+7. [Research Ethics Approval Application Form](#research-ethics-approval-application-form)
 
 ## Introduction
-This repository contains the code and documentation for the project "Biometric Data Analysis in Digital Game Scenario." The project aims to [provide a clear context for the project and set out its objectives](#chapter-1). References include works by Claude Shannon and John Von Neumann et al.
+This repository contains the code and documentation for the project "Biometric Data Analysis in Digital Game Scenario." It also holds all commits along the project, including the porject proposal submitted at early stages and the form submitted to the Ethics approval board seeking approval for recruitment of volunteers for our project.
+
+### Important Sections:
+
+- **Project Proposal:** Curious about our initial plans and objectives? The [Project Proposal](#project-proposal) section has you covered.
+
+- **Ethics Approval:** For a deeper understanding of the ethical considerations and approvals sought for our project, check out the [Research Ethics Approval Application Form](#research-ethics-approval-application-form) section.
+
 
 ## Methodology
 The project's [methodology](#chapter-2) involves a combination of software development and research methodologies. Angular, with its [component-based architecture](#advantages-of-using-angular), plays a crucial role in improving maintainability and re-usability.
@@ -48,7 +55,11 @@ The overall system architecture is explained in detail, including UML diagrams, 
 ## System Evaluation
 The project is evaluated against the objectives set in the introduction, presenting results and discussing strengths and weaknesses ([source](#system-evaluation)).
 
+## Project Proposal
+The project proposal, available in the file [proposal.tex](proposal.tex), outlines the initial plan, objectives, and scope of the Biometric Data Analysis in Digital Game Scenario project.
 
+## Research Ethics Approval Application Form
+The Research Ethics Approval Application form, available in the file [Research Ethics Approval Application Form.docx](Research%20Ethics%20Approval%20Application%20Form.docx), provides details regarding the ethical considerations and approval sought for the research project.
 
 ---
 *This project is developed by Rodrigo Almeida as part of the academic work at Atlantic Technological University (ATU), Galway.*
