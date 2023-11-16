@@ -20,45 +20,46 @@ Database file #1: references.bib
 Warning--I didn't find a database entry for "shannon1948mathematical"
 Warning--I didn't find a database entry for "von2007theory"
 Warning--I didn't find a database entry for "lin1991divergence"
-You've used 3 entries,
+Warning--empty author in bigdata
+You've used 5 entries,
             1791 wiz_defined-function locations,
-            463 strings with 4064 characters,
-and the built_in function-call counts, 278 in all, are:
-= -- 12
-> -- 3
+            478 strings with 4300 characters,
+and the built_in function-call counts, 660 in all, are:
+= -- 44
+> -- 18
 < -- 0
-+ -- 3
-- -- 0
-* -- 2
-:= -- 24
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 0
++ -- 9
+- -- 4
+* -- 36
+:= -- 82
+add.period$ -- 8
+call.type$ -- 5
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 15
-empty$ -- 55
-format.name$ -- 0
-if$ -- 70
+cite$ -- 6
+duplicate$ -- 33
+empty$ -- 95
+format.name$ -- 4
+if$ -- 156
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 0
-newline$ -- 12
-num.names$ -- 0
-pop$ -- 27
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 21
+num.names$ -- 1
+pop$ -- 30
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 18
+skip$ -- 25
 stack$ -- 0
-substring$ -- 0
-swap$ -- 3
+substring$ -- 21
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 4
-write$ -- 17
-(There were 3 warnings)
+warning$ -- 1
+while$ -- 3
+width$ -- 6
+write$ -- 37
+(There were 4 warnings)

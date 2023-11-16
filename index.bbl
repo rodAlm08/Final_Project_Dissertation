@@ -9,4 +9,14 @@ Angular Modules, https://angular.io/guide/architecture-modules.
 \bibitem{angular-services}
 Angular Services, https://angular.io/guide/architecture-services.
 
+\bibitem{bigdata}
+{News}.
+\newblock {\em Significance}, 9(4):2--3, 08 2012.
+
+\bibitem{hadoop}
+Ivanilton Polato, Reginaldo Ré, Alfredo Goldman, and Fabio Kon.
+\newblock A comprehensive view of hadoop research—a systematic literature
+  review.
+\newblock {\em Journal of Network and Computer Applications}, 46:1--25, 2014.
+
 \end{thebibliography}
