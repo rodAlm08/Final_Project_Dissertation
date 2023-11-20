@@ -21,8 +21,10 @@
 \contentsline {subsubsection}{Angular CLI}{7}{section*.16}%
 \contentsline {section}{\numberline {3.2}AI module - Data analysis}{7}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Hadoop}{7}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {4}System Design}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Working with Images}{9}{section.4.1}%
-\contentsline {chapter}{\numberline {5}System Evaluation}{10}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Working with Tables}{10}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{12}{chapter.6}%
+\contentsline {subsection}{\numberline {3.2.2}Apache Spark}{8}{subsection.3.2.2}%
+\contentsline {subsubsection}{Main components and Features}{8}{section*.17}%
+\contentsline {chapter}{\numberline {4}System Design}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Working with Images}{11}{section.4.1}%
+\contentsline {chapter}{\numberline {5}System Evaluation}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Working with Tables}{12}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{14}{chapter.6}%

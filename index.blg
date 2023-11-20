@@ -21,45 +21,45 @@ Warning--I didn't find a database entry for "shannon1948mathematical"
 Warning--I didn't find a database entry for "von2007theory"
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 5 entries,
+You've used 7 entries,
             1791 wiz_defined-function locations,
-            478 strings with 4300 characters,
-and the built_in function-call counts, 660 in all, are:
-= -- 44
-> -- 18
-< -- 0
-+ -- 9
-- -- 4
-* -- 36
-:= -- 82
-add.period$ -- 8
-call.type$ -- 5
-change.case$ -- 2
+            491 strings with 4593 characters,
+and the built_in function-call counts, 1232 in all, are:
+= -- 91
+> -- 49
+< -- 1
++ -- 20
+- -- 13
+* -- 76
+:= -- 170
+add.period$ -- 14
+call.type$ -- 7
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 33
-empty$ -- 95
-format.name$ -- 4
-if$ -- 156
+cite$ -- 8
+duplicate$ -- 59
+empty$ -- 150
+format.name$ -- 13
+if$ -- 287
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 2
-newline$ -- 21
-num.names$ -- 1
-pop$ -- 30
+int.to.str$ -- 7
+missing$ -- 4
+newline$ -- 31
+num.names$ -- 3
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 25
+skip$ -- 38
 stack$ -- 0
-substring$ -- 21
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 58
+swap$ -- 13
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 3
-width$ -- 6
-write$ -- 37
+while$ -- 9
+width$ -- 8
+write$ -- 59
 (There were 4 warnings)

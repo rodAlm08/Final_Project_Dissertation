@@ -1,13 +1,13 @@
 \begin{thebibliography}{1}
 
 \bibitem{angular-components}
-Angular Components, https://angular.io/api/core/Component.
+Angular Components.
 
 \bibitem{angular-modules}
-Angular Modules, https://angular.io/guide/architecture-modules.
+Angular Modules.
 
 \bibitem{angular-services}
-Angular Services, https://angular.io/guide/architecture-services.
+Angular Services.
 
 \bibitem{bigdata}
 {News}.
@@ -18,5 +18,18 @@ Ivanilton Polato, Reginaldo Ré, Alfredo Goldman, and Fabio Kon.
 \newblock A comprehensive view of hadoop research—a systematic literature
   review.
 \newblock {\em Journal of Network and Computer Applications}, 46:1--25, 2014.
+
+\bibitem{apache-spark}
+Salman Salloum, Ruslan Dautov, Xiaojun Chen, Patrick~Xiaogang Peng, and
+  Joshua~Zhexue Huang.
+\newblock Big data analytics on apache spark.
+\newblock {\em International Journal of Data Science and Analytics},
+  1:145--164, 2016.
+
+\bibitem{8988541}
+Eman Shaikh, Iman Mohiuddin, Yasmeen Alufaisan, and Irum Nahvi.
+\newblock Apache spark: A big data processing engine.
+\newblock In {\em 2019 2nd IEEE Middle East and North Africa COMMunications
+  Conference (MENACOMM)}, pages 1--6, 2019.
 
 \end{thebibliography}

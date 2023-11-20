@@ -63,3 +63,40 @@ As the volume of data grew rapidly across the globe, organizations needed a way 
 Hadoop has mainly two main components: HDFS (Hadoop Distributed File System) and MapReduce. HDFS stores the into multiple computers, and MapReduce is responsible for processing the data in parallel allowing the organizations to store and process large amounts of data.
 Hadoop was a great advance in big data processing, however, it had a few limitations. One of the biggest problems was that it relied on storing data on disk. This slowed down data processing because every time a job ran it had to save its data to disk, read it back, process it, and save it back to disk Another problem is that Hadoop processes data only in batches. This means a new job couldn't be submitted before the other job ended.
 With Hadoop, storing and processing large amounts of data became possible, even with some limitations it was an important step in big data processing.\cite{hadoop}
+
+
+\subsection{Apache Spark}
+As described Hadoop has a few limitations, there was a need to process all this data faster and in real-time. And here is where Apache Spark comes into action. In 2009, researchers at the University of California developed Apache Spark as a research project. At this point, RDD (Resilient Distributed Dataset) was introduced and deemed to be a very powerful concept.\cite{apache-spark}
+RDD is the backbone of Apache Spark, storing the data in memory for faster access and processing. It will not read and write the data from the disk, instead, Spark processes the entire data just in memory. The meaning of memory here is the RAM (Random Access Memory) stored inside the computer. This in-memory data processing of data makes Spark much faster than Hadoop. 
+Spark also gives the ability to write code in various programming languages such as JAVA, Scala, Python and R, along with an optimized engine that supports general execution graphs.
+
+\subsubsection{Main components and Features}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{images/Spark_Eco.png}
+    \caption{Apache Spark Ecosystem}
+    \label{fig:spark-eco}
+\end{figure}
+
+The Apache Spark ecosystem consists of the following main components\cite{8988541}:
+\begin{itemize}
+    \item Spark SQL: Formerly known as Shark.  Spark SQL is a distributed framework that works with structured and semi-structured data. It facilitates analytical and interactive applications for both streaming and historical data which can be accessed from various sources such as JSON, Parquet and Hive table.\cite{8988541}
+    \item Spark Streaming: Allows to process real-time data. Is a scalable fault-tolerant streaming processing system that supports both batch and streaming workloads. Spark streaming enhances the fast scheduling capability of Apache Spark by inserting data into mini-batches. An operation known as transformation is then applied to those mini-batches that can be easily obtained from live streams and data sources such as Twitter, Apache Kafka, IoT sensors, and Amazon Kinesis.\cite{8988541}
+    \item Spark Core: One of the most important parts of the Spark ecosystem is called Spark Core. It helps process data across multiple computers and ensures everything works efficiently and smoothly. Various functionalities of Apache Spark are built on top of the Spark core. It provides a vast range of APIs as well as applications for programming languages such as Scala, Java, and Python APIs to facilitate the ease of development. In-memory computation is implemented in Spark core in order to deliver speed and solve the issue of MapReduce.   
+    
+    \item MLlib: It delivers high-quality algorithms with high speed and makes machine learning easy to use and scale. Several machine learning algorithms such as regression, classification, clustering, and linear algebra are present. It also provides a library for lower-level machine learning primitives like the generic gradient descent optimization algorithm. It also provides other functions such as model evaluation and data import. It can be used in Java, Scala, and Python. \cite{8988541}
+\end{itemize}
+
+With all these components working together, Apache Spark became a powerful tool for processing and analysing Big Data. Spark manages and coordinates the execution of tasks on data across a cluster of computers. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{images/Spark_Arch.png} 
+    \caption{Apache Spark Architecture}
+    \label{fig:spark-arch}
+\end{figure}
+
+Figure~\ref{fig:spark-arch} shows the Spark Architecture. It consists of a master node which has a driver program that is responsible for calling the main program of an application, this driver could be the Spark shell or the application, written in Scala or Java, for example. It is basically the entry point and is responsible for creating Spark context, which behaves like a gateway to all of the functionalities of Apache Spark. It allows for communication and coordination with other nodes within the cluster, known as Slave nodes. Within the slave node, there are many numbers of executors which act as workers. Whenever a job is initiated, the driver process will make sure it goes through the Apache application properly. It analyzes the work that needs to be done, divides it into smaller tasks and assigns it to the executors. The driver process is the heart of the Apache Spark application and executors are the real workers, which execute the work assigned by the driver and report back the progress and results of the computation.\cite{8988541}
+
+Due to the powerful capabilities of distributed computing, large volumes of data can be processed quickly and efficiently. For all these reasons, it was deemed to be the perfect technology to be used in this project. As the project evolves and more data is gathered from our research volunteers, Spark's performance scales with the size of the data, processing with high speed.
