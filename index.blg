@@ -21,45 +21,45 @@ Warning--I didn't find a database entry for "shannon1948mathematical"
 Warning--I didn't find a database entry for "von2007theory"
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 7 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            491 strings with 4593 characters,
-and the built_in function-call counts, 1232 in all, are:
-= -- 91
-> -- 49
+            499 strings with 4776 characters,
+and the built_in function-call counts, 1524 in all, are:
+= -- 115
+> -- 57
 < -- 1
-+ -- 20
-- -- 13
-* -- 76
-:= -- 170
-add.period$ -- 14
-call.type$ -- 7
++ -- 24
+- -- 15
+* -- 82
+:= -- 216
+add.period$ -- 20
+call.type$ -- 9
 change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 59
-empty$ -- 150
-format.name$ -- 13
-if$ -- 287
+cite$ -- 10
+duplicate$ -- 79
+empty$ -- 188
+format.name$ -- 15
+if$ -- 357
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 4
-newline$ -- 31
-num.names$ -- 3
-pop$ -- 37
+int.to.str$ -- 9
+missing$ -- 8
+newline$ -- 41
+num.names$ -- 5
+pop$ -- 51
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 38
+skip$ -- 42
 stack$ -- 0
 substring$ -- 58
-swap$ -- 13
+swap$ -- 15
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 9
-width$ -- 8
-write$ -- 59
+while$ -- 11
+width$ -- 10
+write$ -- 79
 (There were 4 warnings)

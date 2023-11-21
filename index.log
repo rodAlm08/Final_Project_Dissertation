@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  20 NOV 2023 09:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  21 NOV 2023 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -783,9 +783,28 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip140
+) (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen298
+\lightrulewidth=\dimen299
+\cmidrulewidth=\dimen300
+\belowrulesep=\dimen301
+\belowbottomsep=\dimen302
+\aboverulesep=\dimen303
+\abovetopsep=\dimen304
+\cmidrulesep=\dimen305
+\cmidrulekern=\dimen306
+\defaultaddspace=\dimen307
+\@cmidla=\count362
+\@cmidlb=\count363
+\@aboverulesep=\dimen308
+\@belowrulesep=\dimen309
+\@thisruleclass=\count364
+\@lastruleclass=\count365
+\@thisrulewidth=\dimen310
 ) (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count362
+\c@float@type=\count366
 \float@exts=\toks46
 \float@box=\box121
 \@float@everytoks=\toks47
@@ -793,36 +812,36 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (index.aux (introduction.aux) (methodology.aux) (review.aux) (design.aux) (evaluation.aux) (conclusion.aux))
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
  (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen298
+\scratchcounter=\count367
+\scratchdimen=\dimen311
 \scratchbox=\box123
-\nofMPsegments=\count364
-\nofMParguments=\count365
+\nofMPsegments=\count368
+\nofMParguments=\count369
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen299
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen312
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
 \everyMPtoPDFconversion=\toks49
 ) (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -864,7 +883,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 72.
+Package hyperref Info: Link coloring OFF on input line 74.
 (index.out) (index.out)
 \@outlinefile=\write4
 \openout4 = `index.out'.
@@ -901,31 +920,31 @@ Package hyperref Info: Link coloring OFF on input line 72.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/leftbar.png, id=66, 388.45125pt x 1087.06125pt>
+<images/leftbar.png, id=78, 388.45125pt x 1087.06125pt>
 File: images/leftbar.png Graphic file (type png)
 <use images/leftbar.png>
-Package pdftex.def Info: images/leftbar.png  used on input line 77.
+Package pdftex.def Info: images/leftbar.png  used on input line 79.
 (pdftex.def)             Requested size: 388.45029pt x 1087.0586pt.
-LaTeX Font Info:    Trying to load font information for T1+fvs on input line 79.
+LaTeX Font Info:    Trying to load font information for T1+fvs on input line 81.
  (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
-<images/atu-logo-green.png, id=67, 1540.75626pt x 495.8525pt>
+<images/atu-logo-green.png, id=79, 1540.75626pt x 495.8525pt>
 File: images/atu-logo-green.png Graphic file (type png)
 <use images/atu-logo-green.png>
-Package pdftex.def Info: images/atu-logo-green.png  used on input line 88.
+Package pdftex.def Info: images/atu-logo-green.png  used on input line 90.
 (pdftex.def)             Requested size: 284.52756pt x 91.56482pt.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 95.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 97.
  (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <22> not available
-(Font)              size <20.74> substituted on input line 95.
+(Font)              size <20.74> substituted on input line 97.
 
 
 LaTeX Font Warning: Font shape `T1/fvs/m/sc' undefined
-(Font)              using `T1/fvs/m/n' instead on input line 103.
+(Font)              using `T1/fvs/m/n' instead on input line 105.
 
 [1
 
@@ -959,7 +978,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \include{introduction}
+l.123 \include{introduction}
                              [1
 
 ]
@@ -977,7 +996,7 @@ LaTeX Warning: Citation `von2007theory' on page 2 undefined on input line 3.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \include{introduction}
+l.123 \include{introduction}
                              [2
 
 
@@ -990,7 +1009,7 @@ Chapter 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \include{methodology}
+l.124 \include{methodology}
                             [3
 
 
@@ -1007,95 +1026,63 @@ Chapter 3.
 
 
 ]
-<images/angular-arch.png, id=140, 533.74406pt x 280.79906pt>
+<images/angular-arch.png, id=159, 533.74406pt x 280.79906pt>
 File: images/angular-arch.png Graphic file (type png)
 <use images/angular-arch.png>
-Package pdftex.def Info: images/angular-arch.png  used on input line 24.
+Package pdftex.def Info: images/angular-arch.png  used on input line 27.
 (pdftex.def)             Requested size: 355.51817pt x 187.04181pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5
+ [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.35 
-      <./images/angular-arch.png>]
+l.38 
+      <./images/angular-arch.png>] [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7]
-<images/Spark_Eco.png, id=170, 613.75568pt x 404.49626pt>
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.121 
+      ] [9
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.135 
+      ]
+<images/Spark_Eco.png, id=206, 613.75568pt x 404.49626pt>
 File: images/Spark_Eco.png Graphic file (type png)
 <use images/Spark_Eco.png>
-Package pdftex.def Info: images/Spark_Eco.png  used on input line 77.
+Package pdftex.def Info: images/Spark_Eco.png  used on input line 146.
 (pdftex.def)             Requested size: 418.25368pt x 275.64633pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8]
-<images/Spark_Arch.png, id=184, 561.44083pt x 215.73134pt>
-File: images/Spark_Arch.png Graphic file (type png)
-<use images/Spark_Arch.png>
-Package pdftex.def Info: images/Spark_Arch.png  used on input line 95.
-(pdftex.def)             Requested size: 418.25368pt x 160.71179pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9
+ [10] [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101 
-       <./images/Spark_Eco.png>])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10
+l.158 \end{itemize}
+                    <./images/Spark_Eco.png>]
+<images/Spark_Arch.png, id=226, 561.44083pt x 215.73134pt>
+File: images/Spark_Arch.png Graphic file (type png)
+<use images/Spark_Arch.png>
+Package pdftex.def Info: images/Spark_Arch.png  used on input line 164.
+(pdftex.def)             Requested size: 418.25368pt x 160.71179pt.
+) [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.123 \include{review}
-                       <./images/Spark_Arch.png>]
+l.125 \include{review}
+                       <./images/Spark_Arch.png>] [13]
 \openout2 = `design.aux'.
 
  (design.tex
 Chapter 4.
 
-LaTeX Warning: Citation `lin1991divergence' on page 11 undefined on input line 2.
+LaTeX Warning: Citation `lin1991divergence' on page 14 undefined on input line 2.
 
-) [11
+) [14
 
 
 
@@ -1110,35 +1097,27 @@ Overfull \hbox (35.91966pt too wide) in paragraph at lines 7--8
 \T1/cmr/m/n/12 Table []5.1[] can be ref-er-enced with the la-bel given to the ta-ble, i.e. \T1/cmr/bx/n/12 \ref{table:HexToBin}\T1/cmr/m/n/12 .
  []
 
-) [12
+) [15
 
 
 
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13
+] [16
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.125 \include{evaluation}
+l.127 \include{evaluation}
                           ]
 \openout2 = `conclusion.aux'.
 
  (conclusion.tex
 Chapter 6.
-) [14
+) [17
 
 
 
 
-] (index.bbl) [15
+] (index.bbl) [18
 
 
 
@@ -1159,20 +1138,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: DBA082EF323388193804F51216322093;2006.
+(rerunfilecheck)             Checksum: 2341712B259D29BC7182C5FF96F7E762;2343.
  ) 
 Here is how much of TeX's memory you used:
- 25211 strings out of 475248
- 465391 string characters out of 5757812
+ 25298 strings out of 475248
+ 466838 string characters out of 5757812
  1934785 words of memory out of 5000000
- 46138 multiletter control sequences out of 15000+600000
+ 46211 multiletter control sequences out of 15000+600000
  594620 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,1139b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,11n,107p,1139b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2074.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb>
-Output written on index.pdf (18 pages, 517342 bytes).
+Output written on index.pdf (21 pages, 533064 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
