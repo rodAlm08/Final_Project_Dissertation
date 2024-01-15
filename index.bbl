@@ -1,4 +1,13 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{PUBG}
+\url{https://en.wikipedia.org/wiki/PUBG:_Battlegrounds}.
+\newblock Wikipedia, “PlayerUnknown’s Battlegrounds.”, Accessed: 12
+  October 2023.
+
+\bibitem{PUBG_users}
+\url{https://activeplayer.io/pubg/}.
+\newblock Active Players, Accessed: 13 October 2023.
 
 \bibitem{angular-components}
 Angular Components.
@@ -42,5 +51,20 @@ Eman Shaikh, Iman Mohiuddin, Yasmeen Alufaisan, and Irum Nahvi.
 \newblock Apache spark: A big data processing engine.
 \newblock In {\em 2019 2nd IEEE Middle East and North Africa COMMunications
   Conference (MENACOMM)}, pages 1--6, 2019.
+
+\bibitem{apache_spark}
+\url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.
+\newblock Apache Spark, Accessed: 14 October 2023.
+
+\bibitem{tensor_flow}
+Jeff Heaton, Steven McElwee, James Fraley, and James Cannady.
+\newblock Early stabilizing feature importance for tensorflow deep neural
+  networks.
+\newblock In {\em 2017 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 4618--4624, 2017.
+
+\bibitem{open_source}
+\url{https://www.databricks.com/blog/2016/01/25/deep-learning-with-apache-spark-and-tensorflow.html}.
+\newblock Apache Spark, Accessed: 11 October 2023.
 
 \end{thebibliography}
