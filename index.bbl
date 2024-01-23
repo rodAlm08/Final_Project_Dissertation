@@ -70,11 +70,26 @@ Mike Cantelon, Marc Harter, TJ~Holowaychuk, and Nathan Rajlich.
 Inc.~(2021) npm.
 \newblock npm public registry, 2021.
 
+\bibitem{pm2}
+David Gonzalez.
+\newblock {\em Developing Microservices with node. js}.
+\newblock Packt Publishing Birmingham, UK, 2016.
+
+\bibitem{pm2LoadBalancing}
+Olivier Aumage, Gabriel Antoniu, Luc Boug{\'e}, Vincent Danjean, and Raymond
+  Namyst.
+\newblock Getting started with pm2.
+\newblock {\em LIP, ENS-Lyon}, 2001.
+
 \bibitem{merkel2014docker}
 Dirk Merkel et~al.
 \newblock Docker: lightweight linux containers for consistent development and
   deployment.
 \newblock {\em Linux j}, 239(2):2, 2014.
+
+\bibitem{dockerhub}
+Inc. Docker.
+\newblock Docker hub, 2021.
 
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.

@@ -17,48 +17,49 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "docker"
+Warning--entry type for "dockerhub" isn't style-file defined
+--line 220 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 19 entries,
+You've used 22 entries,
             1791 wiz_defined-function locations,
-            547 strings with 6250 characters,
-and the built_in function-call counts, 3125 in all, are:
-= -- 247
-> -- 110
+            559 strings with 6531 characters,
+and the built_in function-call counts, 3575 in all, are:
+= -- 279
+> -- 135
 < -- 2
-+ -- 47
-- -- 28
-* -- 143
-:= -- 422
-add.period$ -- 44
-call.type$ -- 19
-change.case$ -- 8
++ -- 57
+- -- 35
+* -- 159
+:= -- 498
+add.period$ -- 52
+call.type$ -- 22
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 160
-empty$ -- 396
-format.name$ -- 28
-if$ -- 753
+cite$ -- 23
+duplicate$ -- 183
+empty$ -- 447
+format.name$ -- 35
+if$ -- 854
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 13
-newline$ -- 85
-num.names$ -- 10
-pop$ -- 113
+int.to.str$ -- 22
+missing$ -- 16
+newline$ -- 99
+num.names$ -- 13
+pop$ -- 130
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 99
+skip$ -- 108
 stack$ -- 0
 substring$ -- 112
-swap$ -- 37
+swap$ -- 40
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 20
-width$ -- 21
-write$ -- 165
+while$ -- 23
+width$ -- 24
+write$ -- 193
 (There were 3 warnings)

@@ -27,14 +27,14 @@
 \contentsline {subsection}{\numberline {3.3.2}Apache Spark}{11}{subsection.3.3.2}%
 \contentsline {subsubsection}{Main components and Features}{11}{section*.19}%
 \contentsline {subsection}{\numberline {3.3.3}Node JS}{14}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Docker}{15}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}PM2}{15}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}NGINX}{15}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}MySQL}{15}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}Express JS}{15}{subsection.3.3.8}%
-\contentsline {subsection}{\numberline {3.3.9}TensorFlow}{15}{subsection.3.3.9}%
-\contentsline {subsection}{\numberline {3.3.10}AWS Services}{15}{subsection.3.3.10}%
-\contentsline {chapter}{\numberline {4}System Design}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}System Evaluation}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Working with Tables}{21}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{23}{chapter.6}%
+\contentsline {subsection}{\numberline {3.3.4}PM2}{15}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Docker}{15}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}NGINX}{17}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}MySQL}{17}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Express JS}{17}{subsection.3.3.8}%
+\contentsline {subsection}{\numberline {3.3.9}TensorFlow}{17}{subsection.3.3.9}%
+\contentsline {subsection}{\numberline {3.3.10}AWS Services}{17}{subsection.3.3.10}%
+\contentsline {chapter}{\numberline {4}System Design}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {5}System Evaluation}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Working with Tables}{22}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{24}{chapter.6}%

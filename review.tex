@@ -159,7 +159,7 @@ The Apache Spark ecosystem consists of the following main components\cite{898854
 
 With all these components working together, Apache Spark became a powerful tool for processing and analysing Big Data. Spark manages and coordinates the execution of tasks on data across a cluster of computers. 
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{images/Spark_Arch.png} 
     \caption{Apache Spark Architecture}
@@ -183,23 +183,39 @@ NodeJS also benefits from its single programming language across both the server
 Performance wise NodeJS is very fast, it is built on Chrome's V8 JavaScript engine, which is a high-performance JavaScript engine. It is also lightweight and efficient, making it a great choice for data-intensive real-time applications. \cite{tilkov}
 Considering these noumerous advantages, NodeJS was chosen as the technology for the project. It is lightweight and efficient, making it a great choice for data-intensive real-time applications. It also benefits from its vast ecosystem of open-source libraries, which greatly facilitates the development process, allowing us to focus on the creative aspects of the project, rather than reinventing the wheel. It is also fast and scalable, which is a great advantage.
 
+
+\subsection{PM2}
+PM2, or Process Manager 2, is a production process manager for NodeJS applications. It is a feature-rich tool that provides a wide range of features, including monitoring, load balancing, and error handling. It is designed to simplify the deployment and management of NodeJS applications in production environments and to keep applications alive forever, restart
+them without downtime and simplify common system administration tasks.
+The standout feature of PM2 is its ability to keep processes running in the background indefinitely. This is particular important for web applications that requires constant availability. PM2 automatically resurrects crashed applications, ensuring that system glitches do not result in prolonged downtime.\cite{pm2}
+This automatic restart capability is a safeguard against potentially costly application crashes that could otherwise lead to a poor user experience or even lost revenue. \cite{pm2}
+PM2 also provides a built-in load balancer that can distribute incoming requests across multiple instances of the application. This improves performance and scalability, allowing the application to handle more requests, evenly distributing traffic across the instances, which can be particularly beneficial when running on multi-core systems. \cite{pm2LoadBalancing}
+However, PM2 is not one-size-fits-all solution. It is designed for NodeJS applications, and is not suitable for applications written in other languages. It is also not suitable for applications that require a high degree of customization. \cite{pm2}
+Despite the considerations, PM2's benefits have outweighed its limitations, and it was chosen as the technology for the project. It is a feature-rich tool that provides a wide range of features, including monitoring, load balancing, and error handling. 
+It is designed to simplify the deployment and management of NodeJS applications in production environments and to keep applications alive forever, restart them without downtime and simplify common system administration tasks. 
+Its installation and setup process is straightforward, requiring minimal configuration. It is also lightweight and efficient, making it a great choice for this project. \cite{tilkov}
+
 \subsection{Docker}
+
 Docker has emerged as a revolutionary tool for software development. It is an open-source platform that allows developers to build, ship, and run applications in containers. It is a lightweight alternative to virtual machines, allowing for the isolation of applications and their dependencies into containers. Containers encapsulate the application's code, libraries, and dependencies in a single object, ensuring that the application runs reliably and consistently across different environments.
 Due to its simplicity and portability, Docker has become the de facto standard for containerization. It is supported by all major cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform. Its lightweight nature compared to traditional virtual machines makes it ideal for cloud computing. Containers share the machine's OS kernel, and do not require an OS per application, which greatly reduces the memory footprint and improves performance. \cite{merkel2014docker} 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=1\linewidth]{images/docker.png} 
+    \includegraphics[width=0.8\linewidth]{images/docker.png} 
     \caption{Development workflow with Docker}
     \label{fig:docker}
 \end{figure}
 
-However, Docker's container model is not without challenges. In the context of this project, the average size of a single Docker image exceedingMB presents a concern regarding bandwidth utilization. Continous build and deployment processes involving large container images can consume substantial network resources, leading to potential cost overruns. \cite{docker}
-Another challenge is the security of Docker containers. Docker containers share the same kernel, which means that a vulnerability in the kernel can affect all containers. \cite{docker}
+However, Docker's container model is not without challenges. In the context of this project, the average size of a single Docker image exceeding 400MB presents a concern regarding bandwidth utilization. Continous build and deployment processes involving large container images can consume substantial network resources, leading to potential cost overruns. \cite{merkel2014docker}
+Another challenge is the security of Docker containers. Docker containers share the same kernel, which means that a vulnerability in the kernel can affect all containers. \cite{dockerhub}
 While Docker's layering and image caching mechanisms can mitigate some of the network overhead, it is still a concern. 
 In conclusion, Docker is a powerful tool that offers numerous benefits for application deployment, from development to production. However, it is not without its challenges. The large size of Docker images can lead to bandwidth utilization issues, and the shared kernel model can lead to security concerns. Considering the scope of the project, time constraints and budget, Docker wasn't chosen as the technology for the project as the cost would be too high.   
 
-\subsection{PM2}
+
+
+
+
 
 \subsection{NGINX}
 
