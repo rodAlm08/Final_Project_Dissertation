@@ -172,8 +172,32 @@ Due to the powerful capabilities of distributed computing, large volumes of data
 
 
 \subsection{Node JS}
+NodeJS is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. It is built on Chrome's V8 JavaScript engine and is used to build fast and scalable network applications. It is event-driven and non-blocking, meaning that it is capable of handling concurrent operations without blocking the execution of other operations. This makes it ideal for data-intensive real-time applications that run across distributed devices.\cite{nodejs}
+It has solidified its position as a cornerstone of modern web development, with a large community of developers and a vast ecosystem of open-source libraries. 
+It is an asynchronous event-driven JavaScript runtime environment that is designed to build scalable network applications. It is lightweight and efficient, making it a great choice for data-intensive real-time applications.\cite{tilkov}
+One of the primary advantages of NodeJS is that it uses a single-threaded event loop, which allows it to handle concurrent operations without blocking the execution of other operations. 
+However, NodeJS is not without its criticisms. Critics often point out the callback hell, a situation where the code becomes unreadable due to the excessive use of callbacks. Although it has been largely mitigated by the introduction of Promisses and async/await syntax, it remanins a valid criticism. \cite{cantelon2014node}
+Another strength of NodeJS is its vast ecosystem of open-source libraries. The Node Package Manager (NPM) is the largest ecosystem of open-source libraries in the world, with over 1 million packages. \cite{npm} This
+wealthy of modules and libraries greatly facilitates the development process, allowing developers to focus on the creative aspects of the project, rather than reinventing the wheel.
+NodeJS also benefits from its single programming language across both the server and client sides. This allows for the sharing of code and data between the server and the client, which is a great advantage, reducing the learning curve associated with NodeJS development. \cite{tilkov}
+Performance wise NodeJS is very fast, it is built on Chrome's V8 JavaScript engine, which is a high-performance JavaScript engine. It is also lightweight and efficient, making it a great choice for data-intensive real-time applications. \cite{tilkov}
+Considering these noumerous advantages, NodeJS was chosen as the technology for the project. It is lightweight and efficient, making it a great choice for data-intensive real-time applications. It also benefits from its vast ecosystem of open-source libraries, which greatly facilitates the development process, allowing us to focus on the creative aspects of the project, rather than reinventing the wheel. It is also fast and scalable, which is a great advantage.
 
 \subsection{Docker}
+Docker has emerged as a revolutionary tool for software development. It is an open-source platform that allows developers to build, ship, and run applications in containers. It is a lightweight alternative to virtual machines, allowing for the isolation of applications and their dependencies into containers. Containers encapsulate the application's code, libraries, and dependencies in a single object, ensuring that the application runs reliably and consistently across different environments.
+Due to its simplicity and portability, Docker has become the de facto standard for containerization. It is supported by all major cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform. Its lightweight nature compared to traditional virtual machines makes it ideal for cloud computing. Containers share the machine's OS kernel, and do not require an OS per application, which greatly reduces the memory footprint and improves performance. \cite{merkel2014docker} 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{images/docker.png} 
+    \caption{Development workflow with Docker}
+    \label{fig:docker}
+\end{figure}
+
+However, Docker's container model is not without challenges. In the context of this project, the average size of a single Docker image exceedingMB presents a concern regarding bandwidth utilization. Continous build and deployment processes involving large container images can consume substantial network resources, leading to potential cost overruns. \cite{docker}
+Another challenge is the security of Docker containers. Docker containers share the same kernel, which means that a vulnerability in the kernel can affect all containers. \cite{docker}
+While Docker's layering and image caching mechanisms can mitigate some of the network overhead, it is still a concern. 
+In conclusion, Docker is a powerful tool that offers numerous benefits for application deployment, from development to production. However, it is not without its challenges. The large size of Docker images can lead to bandwidth utilization issues, and the shared kernel model can lead to security concerns. Considering the scope of the project, time constraints and budget, Docker wasn't chosen as the technology for the project as the cost would be too high.   
 
 \subsection{PM2}
 

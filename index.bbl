@@ -52,6 +52,30 @@ Eman Shaikh, Iman Mohiuddin, Yasmeen Alufaisan, and Irum Nahvi.
 \newblock In {\em 2019 2nd IEEE Middle East and North Africa COMMunications
   Conference (MENACOMM)}, pages 1--6, 2019.
 
+\bibitem{nodejs}
+\url{https://nodejs.org/en/}.
+\newblock Node.js, Accessed: 23 January 2024.
+
+\bibitem{tilkov}
+Stefan Tilkov and Steve Vinoski.
+\newblock Node.js: Using javascript to build high-performance network programs.
+\newblock {\em IEEE Internet Computing}, 14(6):80--83, 2010.
+
+\bibitem{cantelon2014node}
+Mike Cantelon, Marc Harter, TJ~Holowaychuk, and Nathan Rajlich.
+\newblock {\em Node. js in Action}.
+\newblock Manning Greenwich, 2014.
+
+\bibitem{npm}
+Inc.~(2021) npm.
+\newblock npm public registry, 2021.
+
+\bibitem{merkel2014docker}
+Dirk Merkel et~al.
+\newblock Docker: lightweight linux containers for consistent development and
+  deployment.
+\newblock {\em Linux j}, 239(2):2, 2014.
+
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.
 \newblock Apache Spark, Accessed: 14 October 2023.
