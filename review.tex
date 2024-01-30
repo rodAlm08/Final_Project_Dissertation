@@ -192,17 +192,17 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
     \centering
     \begin{tabularx}{\textwidth}{|X|X|}
         \hline
-        \textbf{Advantages of Node.js} & \textbf{Disadvantages of Node.js} \\
+        \textbf{Advantages of Node.js}                                                                                                               & \textbf{Disadvantages of Node.js}                                                                                                                              \\
         \hline
-        Non-blocking and event-driven: Allows for high concurrency and scalability, making it suitable for real-time applications. & Single-threaded: Node.js is single-threaded, which can lead to blocking if not handled correctly, impacting CPU-bound tasks. \\
+        Non-blocking and event-driven: Allows for high concurrency and scalability, making it suitable for real-time applications.                   & Single-threaded: Node.js is single-threaded, which can lead to blocking if not handled correctly, impacting CPU-bound tasks.                                   \\
         \hline
-        JavaScript as a single language: Developers can use JavaScript for both server-side and client-side development, reducing context switching. & Callback hell: Deeply nested callbacks can make the code hard to read and maintain (though Promises and async/await mitigate this issue). \\
+        JavaScript as a single language: Developers can use JavaScript for both server-side and client-side development, reducing context switching. & Callback hell: Deeply nested callbacks can make the code hard to read and maintain (though Promises and async/await mitigate this issue).                      \\
         \hline
-        Large and active community: A vast number of open-source libraries and modules available through npm (Node Package Manager). & Limited support for multi-core processors: Node.js does not fully utilize multi-core CPUs out of the box. \\
+        Large and active community: A vast number of open-source libraries and modules available through npm (Node Package Manager).                 & Limited support for multi-core processors: Node.js does not fully utilize multi-core CPUs out of the box.                                                      \\
         \hline
-        Speed: Node.js is built on the V8 JavaScript engine, known for its high-performance execution. & Less suitable for CPU-intensive tasks: Due to its event-driven, single-threaded nature, Node.js may not be the best choice for CPU-bound operations. \\
+        Speed: Node.js is built on the V8 JavaScript engine, known for its high-performance execution.                                               & Less suitable for CPU-intensive tasks: Due to its event-driven, single-threaded nature, Node.js may not be the best choice for CPU-bound operations.           \\
         \hline
-        Lightweight and fast startup: Node.js applications typically have lower memory consumption and quicker startup times. & Maturity and stability: Some developers argue that Node.js, compared to more established platforms, may have less maturity and stability in certain use cases. \\
+        Lightweight and fast startup: Node.js applications typically have lower memory consumption and quicker startup times.                        & Maturity and stability: Some developers argue that Node.js, compared to more established platforms, may have less maturity and stability in certain use cases. \\
         \hline
     \end{tabularx}
     \label{tab:node-js-advantages-disadvantages}
@@ -252,27 +252,27 @@ Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
     \centering
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-    \textbf{Aspect} & \textbf{Description} \\
-    \hline
-    Type & Web server software \\
-    \hline
-    Primary Use & Serving web content, load balancing, reverse proxy, and more \\
-    \hline
-    Performance & Highly efficient in handling high concurrency with low memory footprint \\
-    \hline
-    Architecture & Event-driven, asynchronous, and non-blocking which contributes to its ability to handle a large number of simultaneous connections easily \\
-    \hline
-    Scalability & Scalable to support growth in traffic and applications \\
-    \hline
-    Security Features & Offers robust security features including rate limiting, client request filtering, and SSL/TLS termination \\
-    \hline
-    Flexibility & Highly configurable for a wide range of web and mail server tasks \\
-    \hline
-    Open Source/Commercial & Available in both open-source and commercial versions (NGINX Plus) \\
-    \hline
-\end{tabularx}
-\label{tab:ngnix}
-\caption{NGINX Features}
+        \textbf{Aspect}        & \textbf{Description}                                                                                                                      \\
+        \hline
+        Type                   & Web server software                                                                                                                       \\
+        \hline
+        Primary Use            & Serving web content, load balancing, reverse proxy, and more                                                                              \\
+        \hline
+        Performance            & Highly efficient in handling high concurrency with low memory footprint                                                                   \\
+        \hline
+        Architecture           & Event-driven, asynchronous, and non-blocking which contributes to its ability to handle a large number of simultaneous connections easily \\
+        \hline
+        Scalability            & Scalable to support growth in traffic and applications                                                                                    \\
+        \hline
+        Security Features      & Offers robust security features including rate limiting, client request filtering, and SSL/TLS termination                                \\
+        \hline
+        Flexibility            & Highly configurable for a wide range of web and mail server tasks                                                                         \\
+        \hline
+        Open Source/Commercial & Available in both open-source and commercial versions (NGINX Plus)                                                                        \\
+        \hline
+    \end{tabularx}
+    \label{tab:ngnix}
+    \caption{NGINX Features}
 \end{table}
 
 Due to its vast capabilities NGNIX was chosen for our project as reverse proxy and load balancer. It is a lightweight and efficient solution that can handle high volumes of concurrent connections. It is also highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
@@ -284,29 +284,29 @@ Table \ref{tab:mysql} is showing some of the features of MySQL\cite{mysql}:
 
 \begin{table}[H]
     \centering
-    \begin{tabularx}{\textwidth}{|l|X|}    
+    \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \textbf{Aspect} & \textbf{Description} \\
+        \textbf{Aspect}          & \textbf{Description}                                                                                                   \\
         \hline
-        Data Handling & Efficiently manages large datasets, crucial for training machine learning models \\
+        Data Handling            & Efficiently manages large datasets, crucial for training machine learning models                                       \\
         \hline
-        Query Performance & Fast query execution, beneficial for data retrieval and preprocessing in machine learning workflows \\
+        Query Performance        & Fast query execution, beneficial for data retrieval and preprocessing in machine learning workflows                    \\
         \hline
-        Scalability & Easily scales with data volume and complexity, supporting the growing needs of machine learning applications \\
+        Scalability              & Easily scales with data volume and complexity, supporting the growing needs of machine learning applications           \\
         \hline
-        ACID Compliance & Ensures data integrity and consistency, vital for the accuracy of machine learning outputs \\
+        ACID Compliance          & Ensures data integrity and consistency, vital for the accuracy of machine learning outputs                             \\
         \hline
-        Advanced Analytics & Supports SQL extensions for advanced analytics, facilitating machine learning data processing tasks \\
+        Advanced Analytics       & Supports SQL extensions for advanced analytics, facilitating machine learning data processing tasks                    \\
         \hline
-        Data Storage Options & Offers various storage engines, allowing optimization based on the specific needs of machine learning models \\
+        Data Storage Options     & Offers various storage engines, allowing optimization based on the specific needs of machine learning models           \\
         \hline
-        Community and Support & Strong community and extensive documentation, aiding in troubleshooting and optimization for machine learning projects \\
+        Community and Support    & Strong community and extensive documentation, aiding in troubleshooting and optimization for machine learning projects \\
         \hline
-        Integration Capabilities & Easily integrates with popular machine learning frameworks and languages, streamlining the development process \\
+        Integration Capabilities & Easily integrates with popular machine learning frameworks and languages, streamlining the development process         \\
         \hline
-\end{tabularx}
-\label{tab:mysql}
-\caption{MySQL}
+    \end{tabularx}
+    \label{tab:mysql}
+    \caption{MySQL}
 \end{table}
 
 In the context of this project, the dataset was originally in a JSON format in FireStore which were found to be of a high complexity while performing compound querying. To facilitate querying and the high complexities involved in FireStore,
@@ -315,8 +315,35 @@ By regularizing the data in MySQL, a more standardized and organized dataset was
 
 
 \subsection{Express JS}
+Express.js, commonly referred as Express, is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is widely used for building server-side applications and APIs due to its simplicity, performance, and scalability. In this project, Express.js was chosen for several strategic reasons, which are outlined below.\cite{express}
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Feature}     & \textbf{Advantage for Our Project}                                                                                                                              \\
+        \hline
+        Minimalist Framework & Express.js provides essential web application features without dictating any specific architecture, allowing for flexibility and customization in our project.  \\
+        \hline
+        Middleware Support   & The use of middleware modules enables us to extend the functionality of our application easily and efficiently.                                                 \\
+        \hline
+        Routing System       & Its powerful routing system helps manage requests and responses effectively, a crucial aspect for our project's RESTful API design.                             \\
+        \hline
+        High Performance     & Known for its high performance, Express.js enhances the responsiveness and speed of our web application.                                                        \\
+        \hline
+        Community Support    & Being one of the most popular Node.js frameworks, it has strong community support, ensuring access to a wide range of resources and troubleshooting assistance. \\
+        \hline
+        Easy Integration     & Express.js seamlessly integrates with other technologies and databases, which is vital for the diverse tech stack of our project.                               \\
+        \hline
+        Simplicity           & Its simplicity and ease of use accelerate development and reduce the learning curve for new team members.                                                       \\
+        \hline
+    \end{tabularx}
+    \label{tab:expressJS}
+    \caption{Express.js Features}
+\end{table}
+
+It was chose as a back end web application for this project due to its simplicity, performance, and scalability. It is also widely used for building server-side applications and APIs, which is a great advantage. It also provides a robust set of features for web and mobile applications, which is a great advantage.
 
 \subsection{TensorFlow}
 
-\subsection{AWS Services}
 

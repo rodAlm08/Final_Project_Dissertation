@@ -31,9 +31,8 @@
 \contentsline {subsection}{\numberline {3.3.5}Docker}{16}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}NGINX}{17}{subsection.3.3.6}%
 \contentsline {subsection}{\numberline {3.3.7}MySQL}{18}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}Express JS}{20}{subsection.3.3.8}%
+\contentsline {subsection}{\numberline {3.3.8}Express JS}{19}{subsection.3.3.8}%
 \contentsline {subsection}{\numberline {3.3.9}TensorFlow}{20}{subsection.3.3.9}%
-\contentsline {subsection}{\numberline {3.3.10}AWS Services}{20}{subsection.3.3.10}%
 \contentsline {chapter}{\numberline {4}System Design}{21}{chapter.4}%
 \contentsline {chapter}{\numberline {5}System Evaluation}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Working with Tables}{25}{section.5.1}%
