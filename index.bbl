@@ -52,6 +52,17 @@ Eman Shaikh, Iman Mohiuddin, Yasmeen Alufaisan, and Irum Nahvi.
 \newblock In {\em 2019 2nd IEEE Middle East and North Africa COMMunications
   Conference (MENACOMM)}, pages 1--6, 2019.
 
+\bibitem{tensorflow}
+Bo~Pang, Erik Nijkamp, and Ying~Nian Wu.
+\newblock Deep learning with tensorflow: A review.
+\newblock {\em Journal of Educational and Behavioral Statistics},
+  45(2):227--248, 2020.
+
+\bibitem{tensorflow_arch}
+Ki-Hyun Jung.
+\newblock A study on machine learning for steganalysis.
+\newblock 05 2019.
+
 \bibitem{nodejs}
 \url{https://nodejs.org/en/}.
 \newblock Node.js, Accessed: 23 January 2024.

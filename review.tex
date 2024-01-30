@@ -170,6 +170,28 @@ Figure~\ref{fig:spark-arch} shows the Spark Architecture. It consists of a maste
 
 Due to the powerful capabilities of distributed computing, large volumes of data can be processed quickly and efficiently. For all these reasons, it was deemed to be the perfect technology to be used in this project. As the project evolves and more data is gathered from our research volunteers, Spark's performance scales with the size of the data, processing with high speed.
 
+\subsection{TensorFlow}
+TensorFlow was developed by Google Brain Team and is an open-source library for numerical computation and large-scale machine learning. It is a powerful tool for machine learning and deep learning, providing a wide range of functionalities for building and training machine learning models. It is also highly flexible, allowing for the creation of custom machine learning models. It is also highly scalable, allowing for the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units). \cite{tensorflow}
+
+\begin{itemize}
+    \item \textbf{Flexible Architecture}: TensorFlow allows developers to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API, making it suitable for a wide range of applications.
+    \item \textbf{Comprehensive Library}: It provides a comprehensive ecosystem of tools, libraries, and community resources that allows researchers to advance the state-of-the-art in ML, and developers to easily build and deploy ML powered applications.
+    \item \textbf{High-Level APIs}: TensorFlow includes high-level APIs like Keras, which make it very accessible for beginners by simplifying the process of building and training neural networks.
+    \item \textbf{Visualization with TensorBoard}: TensorBoard is a tool for providing the visualization and tooling needed for machine learning experimentation. It enables tracking metrics like loss and accuracy, visualizing the model graph, and much more.
+    \item \textbf{Scalability}: TensorFlow's ability to perform computations on a variety of different hardware platforms, and its capacity to scale from a single device to thousands of GPUs or TPUs, makes it fit for large-scale machine learning tasks.
+    \item \textbf{Large Community and Support}: Having a vast community, TensorFlow benefits from a plethora of tutorials, documentation, and active community support which aids in solving problems and improving the framework.
+\end{itemize}
+
+Figure~\ref{fig:tensorflow-architecture} \cite{tensorflow_arch} shows the TensorFlow Architecture. The architecture is designed to be flexible and scalable, allowing for computations on a variety of devices and the ability to handle large-scale machine learning projects.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{images/TensorFlow-architecture.png}
+    \caption{TensorFlow Architecture}
+    \label{fig:tensorflow-architecture}
+\end{figure}
+Given these powerful features and advantages, TensorFlow was chosen to be used in conjunction with Apache Spark, for this project to handle complex machine learning tasks, including but not limited to, neural network design and training. 
+As the dataset grows, TensorFlow's performance scales with the size of the data, processing with high speed.
 
 \subsection{Node JS}
 NodeJS is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. It is built on Chrome's V8 JavaScript engine and is used to build fast and scalable network applications. It is event-driven and non-blocking, meaning that it is capable of handling concurrent operations without blocking the execution of other operations. This makes it ideal for data-intensive real-time applications that run across distributed devices.\cite{nodejs}
@@ -344,6 +366,5 @@ Express.js, commonly referred as Express, is a minimal and flexible Node.js web 
 
 It was chose as a back end web application for this project due to its simplicity, performance, and scalability. It is also widely used for building server-side applications and APIs, which is a great advantage. It also provides a robust set of features for web and mobile applications, which is a great advantage.
 
-\subsection{TensorFlow}
 
 
