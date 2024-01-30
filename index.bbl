@@ -96,6 +96,11 @@ Will Reese.
 \newblock Nginx: the high-performance web server and reverse proxy.
 \newblock {\em Linux Journal}, 2008(173):2, 2008.
 
+\bibitem{mysql}
+Paul DuBois.
+\newblock {\em MySQL}.
+\newblock Addison-Wesley, 2013.
+
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.
 \newblock Apache Spark, Accessed: 14 October 2023.

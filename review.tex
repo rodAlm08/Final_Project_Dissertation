@@ -250,7 +250,7 @@ Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
 
 \begin{table}[H]
     \centering
-    \begin{tabularx}{\textwidth}{|X|X|}
+    \begin{tabularx}{\textwidth}{|l|X|}
         \hline
     \textbf{Aspect} & \textbf{Description} \\
     \hline
@@ -278,7 +278,40 @@ Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
 Due to its vast capabilities NGNIX was chosen for our project as reverse proxy and load balancer. It is a lightweight and efficient solution that can handle high volumes of concurrent connections. It is also highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
 
 \subsection{MySQL}
+MySQL is an open-source relational database management system (RDBMS) that is widely used in web applications. It uses structured query language (SQL) for database access and is known for its speed, reliability, and ease of use. MySQL is a popular choice for both small and large applications and is an essential component of the LAMP (Linux, Apache, MySQL, PHP/Perl/Python) software stack.
 
+Table \ref{tab:mysql} is showing some of the features of MySQL\cite{mysql}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}    
+        \hline
+        \textbf{Aspect} & \textbf{Description} \\
+        \hline
+        Data Handling & Efficiently manages large datasets, crucial for training machine learning models \\
+        \hline
+        Query Performance & Fast query execution, beneficial for data retrieval and preprocessing in machine learning workflows \\
+        \hline
+        Scalability & Easily scales with data volume and complexity, supporting the growing needs of machine learning applications \\
+        \hline
+        ACID Compliance & Ensures data integrity and consistency, vital for the accuracy of machine learning outputs \\
+        \hline
+        Advanced Analytics & Supports SQL extensions for advanced analytics, facilitating machine learning data processing tasks \\
+        \hline
+        Data Storage Options & Offers various storage engines, allowing optimization based on the specific needs of machine learning models \\
+        \hline
+        Community and Support & Strong community and extensive documentation, aiding in troubleshooting and optimization for machine learning projects \\
+        \hline
+        Integration Capabilities & Easily integrates with popular machine learning frameworks and languages, streamlining the development process \\
+        \hline
+\end{tabularx}
+\label{tab:mysql}
+\caption{MySQL}
+\end{table}
+
+In the context of this project, the dataset was originally in a JSON format in FireStore which were found to be of a high complexity while performing compound querying. To facilitate querying and the high complexities involved in FireStore,
+MySQL was chosen to be the database for the project, where all the data for analysis is sourced directly from it, which is a structured replica of the FireStore Database as obtained from the Legacy System.\\
+By regularizing the data in MySQL, a more standardized and organized dataset was achieved. This standardization significantly simplified the data preprocessing steps in the machine learning workflow.
 
 
 \subsection{Express JS}
