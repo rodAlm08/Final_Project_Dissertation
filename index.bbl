@@ -61,14 +61,14 @@ Stefan Tilkov and Steve Vinoski.
 \newblock Node.js: Using javascript to build high-performance network programs.
 \newblock {\em IEEE Internet Computing}, 14(6):80--83, 2010.
 
+\bibitem{npm}
+Inc.~(2021) npm.
+\newblock npm public registry, 2021.
+
 \bibitem{cantelon2014node}
 Mike Cantelon, Marc Harter, TJ~Holowaychuk, and Nathan Rajlich.
 \newblock {\em Node. js in Action}.
 \newblock Manning Greenwich, 2014.
-
-\bibitem{npm}
-Inc.~(2021) npm.
-\newblock npm public registry, 2021.
 
 \bibitem{pm2}
 David Gonzalez.
@@ -90,6 +90,11 @@ Dirk Merkel et~al.
 \bibitem{dockerhub}
 Inc. Docker.
 \newblock Docker hub, 2021.
+
+\bibitem{nginx}
+Will Reese.
+\newblock Nginx: the high-performance web server and reverse proxy.
+\newblock {\em Linux Journal}, 2008(173):2, 2008.
 
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.

@@ -21,45 +21,45 @@ Warning--entry type for "dockerhub" isn't style-file defined
 --line 220 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 22 entries,
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            559 strings with 6531 characters,
-and the built_in function-call counts, 3575 in all, are:
-= -- 279
-> -- 135
+            565 strings with 6623 characters,
+and the built_in function-call counts, 3730 in all, are:
+= -- 292
+> -- 139
 < -- 2
-+ -- 57
-- -- 35
-* -- 159
-:= -- 498
-add.period$ -- 52
-call.type$ -- 22
-change.case$ -- 10
++ -- 59
+- -- 36
+* -- 169
+:= -- 525
+add.period$ -- 55
+call.type$ -- 23
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 183
-empty$ -- 447
-format.name$ -- 35
-if$ -- 854
+cite$ -- 24
+duplicate$ -- 192
+empty$ -- 465
+format.name$ -- 36
+if$ -- 888
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 16
-newline$ -- 99
-num.names$ -- 13
-pop$ -- 130
+int.to.str$ -- 23
+missing$ -- 17
+newline$ -- 104
+num.names$ -- 14
+pop$ -- 131
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 108
+skip$ -- 111
 stack$ -- 0
-substring$ -- 112
-swap$ -- 40
+substring$ -- 115
+swap$ -- 41
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 23
-width$ -- 24
-write$ -- 193
+while$ -- 25
+width$ -- 25
+write$ -- 204
 (There were 3 warnings)
