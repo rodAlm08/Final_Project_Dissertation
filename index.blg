@@ -22,45 +22,45 @@ Warning--entry type for "dockerhub" isn't style-file defined
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
 Warning--empty booktitle in tensorflow_arch
-You've used 27 entries,
+You've used 29 entries,
             1791 wiz_defined-function locations,
-            585 strings with 7036 characters,
-and the built_in function-call counts, 4430 in all, are:
-= -- 350
-> -- 162
+            604 strings with 7581 characters,
+and the built_in function-call counts, 5245 in all, are:
+= -- 425
+> -- 213
 < -- 2
-+ -- 69
-- -- 42
-* -- 202
-:= -- 634
-add.period$ -- 67
-call.type$ -- 27
-change.case$ -- 13
++ -- 86
+- -- 57
+* -- 285
+:= -- 784
+add.period$ -- 75
+call.type$ -- 29
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 232
-empty$ -- 550
-format.name$ -- 42
-if$ -- 1048
+cite$ -- 31
+duplicate$ -- 258
+empty$ -- 606
+format.name$ -- 57
+if$ -- 1210
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 23
-newline$ -- 124
-num.names$ -- 18
-pop$ -- 154
+int.to.str$ -- 29
+missing$ -- 27
+newline$ -- 136
+num.names$ -- 22
+pop$ -- 142
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 121
+skip$ -- 125
 stack$ -- 0
-substring$ -- 140
-swap$ -- 45
+substring$ -- 230
+swap$ -- 47
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 31
-width$ -- 29
-write$ -- 244
+while$ -- 42
+width$ -- 31
+write$ -- 274
 (There were 4 warnings)

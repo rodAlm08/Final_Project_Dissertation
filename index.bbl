@@ -1,13 +1,29 @@
 \begin{thebibliography}{10}
 
-\bibitem{PUBG}
-\url{https://en.wikipedia.org/wiki/PUBG:_Battlegrounds}.
-\newblock Wikipedia, “PlayerUnknown’s Battlegrounds.”, Accessed: 12
-  October 2023.
+\bibitem{ortega2018pre}
+Emily Ortega and CJK Wang.
+\newblock Pre-performance physiological state: Heart rate variability as a
+  predictor of shooting performance.
+\newblock {\em Applied psychophysiology and biofeedback}, 43:75--85, 2018.
 
-\bibitem{PUBG_users}
-\url{https://activeplayer.io/pubg/}.
-\newblock Active Players, Accessed: 13 October 2023.
+\bibitem{malik1996heart}
+Marek Malik, J~Thomas Bigger, A~John Camm, Robert~E Kleiger, Alberto Malliani,
+  Arthur~J Moss, and Peter~J Schwartz.
+\newblock Heart rate variability: Standards of measurement, physiological
+  interpretation, and clinical use.
+\newblock {\em European heart journal}, 17(3):354--381, 1996.
+
+\bibitem{mcnames2006reliability}
+James McNames and Mateo Aboy.
+\newblock Reliability and accuracy of heart rate variability metrics versus ecg
+  segment duration.
+\newblock {\em Medical and Biological Engineering and Computing}, 44:747--756,
+  2006.
+
+\bibitem{BONNAR2019647}
+Daniel Bonnar, Benjamin Castine, Naomi Kakoschke, and Gemma Sharp.
+\newblock Sleep and performance in eathletes: for the win!
+\newblock {\em Sleep Health}, 5(6):647--650, 2019.
 
 \bibitem{angular-components}
 Angular Components.

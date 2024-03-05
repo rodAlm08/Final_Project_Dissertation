@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  30 JAN 2024 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  5 MAR 2024 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -986,18 +986,18 @@ l.123 \include{introduction}
 
  (introduction.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 10.
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 
-      [2
+l.20 T
+      he Heart Rate Variability measurements typically requires a chest stra... [2
 
 
-])
+]
+Underfull \vbox (badness 2205) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1009,13 +1009,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \include{introduction}
-                             [3]
+l.43 
+      [3])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4]
 \openout2 = `methodology.aux'.
 
  (methodology.tex
 Chapter 2.
-) [4
+) [5
 
 
 
@@ -1025,67 +1033,67 @@ Chapter 2.
 
  (review.tex
 Chapter 3.
-[5
+[6
 
 
 
 
 ]
-<images/angular-arch.png, id=216, 533.74406pt x 280.79906pt>
+<images/angular-arch.png, id=219, 533.74406pt x 280.79906pt>
 File: images/angular-arch.png Graphic file (type png)
 <use images/angular-arch.png>
 Package pdftex.def Info: images/angular-arch.png  used on input line 27.
 (pdftex.def)             Requested size: 355.51817pt x 187.04181pt.
- [6
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.38 
-      <./images/angular-arch.png>] [7]
+      <./images/angular-arch.png>] [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [10
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.121 
-      ] [10
+      ] [11
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.135 
       ]
-<images/Spark_Eco.png, id=264, 613.75568pt x 404.49626pt>
+<images/Spark_Eco.png, id=267, 613.75568pt x 404.49626pt>
 File: images/Spark_Eco.png Graphic file (type png)
 <use images/Spark_Eco.png>
 Package pdftex.def Info: images/Spark_Eco.png  used on input line 146.
 (pdftex.def)             Requested size: 418.25368pt x 275.64633pt.
- [11] [12
+ [12] [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.158 \end{itemize}
                     <./images/Spark_Eco.png>]
-<images/Spark_Arch.png, id=282, 561.44083pt x 215.73134pt>
+<images/Spark_Arch.png, id=286, 561.44083pt x 215.73134pt>
 File: images/Spark_Arch.png Graphic file (type png)
 <use images/Spark_Arch.png>
 Package pdftex.def Info: images/Spark_Arch.png  used on input line 164.
 (pdftex.def)             Requested size: 418.25368pt x 160.71179pt.
- [13
+ [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.172 
        <./images/Spark_Arch.png>]
-<images/TensorFlow-architecture.png, id=293, 340.27126pt x 303.1325pt>
+<images/TensorFlow-architecture.png, id=297, 340.27126pt x 303.1325pt>
 File: images/TensorFlow-architecture.png Graphic file (type png)
 <use images/TensorFlow-architecture.png>
 Package pdftex.def Info: images/TensorFlow-architecture.png  used on input line 189.
 (pdftex.def)             Requested size: 418.25368pt x 372.62411pt.
- [14] [15
+ [15] [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1118,18 +1126,18 @@ Underfull \hbox (badness 1983) in paragraph at lines 229--229
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16] [17
+ [17] [18
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.248 
       ]
-<images/docker.png, id=334, 349.48477pt x 292.8553pt>
+<images/docker.png, id=338, 349.48477pt x 292.8553pt>
 File: images/docker.png Graphic file (type png)
 <use images/docker.png>
 Package pdftex.def Info: images/docker.png  used on input line 256.
 (pdftex.def)             Requested size: 334.60422pt x 280.3961pt.
- [18] [19
+ [19] [20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1139,17 +1147,17 @@ Underfull \hbox (badness 3803) in paragraph at lines 295--295
 []|\T1/cmr/m/n/12 Event-driven, asyn-chronous, and non-blocking
  []
 
-[20
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.333 
-      ] [21
+      ] [22
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.366 
-      ]) [22
+      ]) [23
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1160,9 +1168,9 @@ l.125 \include{review}
  (design.tex
 Chapter 4.
 
-LaTeX Warning: Citation `lin1991divergence' on page 23 undefined on input line 2.
+LaTeX Warning: Citation `lin1991divergence' on page 24 undefined on input line 2.
 
-<images/architecture.png, id=373, 313.9228pt x 213.79875pt>
+<images/architecture.png, id=377, 313.9228pt x 213.79875pt>
 File: images/architecture.png Graphic file (type png)
 <use images/architecture.png>
 Package pdftex.def Info: images/architecture.png  used on input line 24.
@@ -1170,7 +1178,7 @@ Package pdftex.def Info: images/architecture.png  used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23
+[24
 
 
 
@@ -1180,18 +1188,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
-[24
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.45 
       <./images/architecture.png>]
-<images/new-arch.png, id=387, 366.61969pt x 359.84438pt>
+<images/new-arch.png, id=391, 366.61969pt x 359.84438pt>
 File: images/new-arch.png Graphic file (type png)
 <use images/new-arch.png>
 Package pdftex.def Info: images/new-arch.png  used on input line 49.
 (pdftex.def)             Requested size: 366.61879pt x 359.84349pt.
- [25
+ [26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1206,7 +1214,7 @@ Overfull \hbox (11.26758pt too wide) in paragraph at lines 65--66
 []\T1/cmr/m/n/12 Accessibility: Both tools are open-source and avail-able to the gen-eral public[[]]. 
  []
 
-) [26]
+) [27]
 \openout2 = `evaluation.aux'.
 
  (evaluation.tex
@@ -1216,12 +1224,12 @@ Overfull \hbox (35.91966pt too wide) in paragraph at lines 7--8
 \T1/cmr/m/n/12 Table []5.1[] can be ref-er-enced with the la-bel given to the ta-ble, i.e. \T1/cmr/bx/n/12 \ref{table:HexToBin}\T1/cmr/m/n/12 .
  []
 
-) [27
+) [28
 
 
 
 
-] [28
+] [29
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1231,36 +1239,35 @@ l.127 \include{evaluation}
 
  (conclusion.tex
 Chapter 6.
-) [29
+) [30
 
 
 
 
-] (index.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-[][]$\T1/cmtt/m/n/12 https : / / en . wikipedia . org / wiki / PUBG : _Battlegrounds$[]\T1/cmr/m/n/12 .  Wikipedia,
- []
-
-[30
+] (index.bbl [31
 
 
 
 ]
-Overfull \hbox (14.34505pt too wide) in paragraph at lines 122--124
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 83.
+ (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Overfull \hbox (14.34505pt too wide) in paragraph at lines 138--140
 [][]$\T1/cmtt/m/n/12 https : / / spark . apache . org / docs / latest / ml-[]classification-[]regression .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 [][]$\T1/cmtt/m/n/12 https : / / www . databricks . com / blog / 2016 / 01 / 25 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 \T1/cmtt/m/n/12 deep-[]learning-[]with-[]apache-[]spark-[]and-[]tensorflow . html$[]\T1/cmr/m/n/12 .  Apache
  []
 
-) [31] (index.aux (introduction.aux) (methodology.aux) (review.aux) (design.aux) (evaluation.aux) (conclusion.aux))
+) [33] (index.aux (introduction.aux) (methodology.aux) (review.aux) (design.aux) (evaluation.aux) (conclusion.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1280,17 +1287,17 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: 3AC42DDFFDC48E3766CA812EEE536275;2857.
  ) 
 Here is how much of TeX's memory you used:
- 25432 strings out of 475248
- 469447 string characters out of 5757812
+ 25436 strings out of 475248
+ 469549 string characters out of 5757812
  1934785 words of memory out of 5000000
- 46290 multiletter control sequences out of 15000+600000
+ 46292 multiletter control sequences out of 15000+600000
  594933 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,107p,1139b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2074.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb>
-Output written on index.pdf (34 pages, 846572 bytes).
+ <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2074.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsb8a.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvsr8a.pfb>
+Output written on index.pdf (36 pages, 845228 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
