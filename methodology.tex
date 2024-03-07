@@ -6,9 +6,30 @@ process. An activity monitoring device was distributed to the volunteers in the 
 prior to undertaking a test in the form of a First-Person Shooter Game. Results from the test, was than paired with their biometric data for further analysis.
 
 \section{Recruitment of Volunteers}
-??
+The process of recruiting the volunteers was carried out in a way that ensured they satisfied the conditions of the research. The volunteers were required to be students of the Atlantic 
+Technological University (ATU) Galway campus. The volunteers were also required to be over the age of 18 and have no known medical conditions that could affect their performance in the
+test. A microsoft form was created and distributed to the students of the university to register their interest in the research. A poster \ref{fig:recruitment-poster} was created
+wich contained information about the research and a QR code that linked to the microsoft form.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.95\linewidth]{images/poster.png}
+    \caption{Volunteers Recruitment Poster}
+    \label{fig:recruitment-poster}
+\end{figure}
 
 
+The form can be found in the appendix \ref{sec:form-recruitment}.
+For a volunteer to be considered, they were required to fill out the form and submit it. The form was designed to capture the following information from the volunteers:
+
+\begin{itemize}
+    \item How often the participant practices exercises.
+    \item The average duration of the exercises sessions.
+    \item If the participant owns a activity monitoring device, if so which brand (Polar, Garmin, Apple, Fitbit, or other).
+    \item If the participant plays video games, if so which platform (PC, Xbox, Playstation, or other).
+    \item Which game genre the participant enjoy the most. (First Person Shooter, Third Person Shooter, Soccer, Car Racing, or other).
+    \item Participant should also sign the form as a consent to participate in the research.
+\end{itemize}
 
 \section{Data Collection}
 
@@ -16,7 +37,7 @@ For the purpose of the research, different categories of data was collected from
 being collected, an application to the Ethicas Research and Ethics Committee was made to ensure that the data collection process was in compliance with the General Data Protection.
 
 \par 
-The Taught Programme Research Ethics Approval Application Form can be found on appendix \ref{appendix}. It was an extensive and iterative process with the Ethicas Research and Ethics 
+The Taught Programme Research Ethics Approval Application Form can be found on appendix \ref{sec:ethics-application}. It was an extensive and iterative process with the Ethicas Research and Ethics 
 office to ensure that the data collection process was in compliance with the General Data Protection Regulation (GDPR). Unfortunately, it took longer than expected to get the approval
 from the Ethicas Research and Ethics Committee, which lead to an unexpected delay in the data collection process. The data collection process was divided into two main categories:
 
@@ -29,7 +50,9 @@ because it has been widely used in both academic and industrial research project
 our research needs.
 
 \subsubsection*{Physical Information}
-The following physical information was collected from the volunteers, and stored with the manufacturer (Polar) which is GDPR compliant.:
+
+The following physical information was collected from the volunteers, and stored with the manufacturer (Polar) which is GDPR compliant. The data was then accessed through the Polar API.
+
 \begin{itemize}
     \item Sleep Data: According to the manufacturer's manual \cite{polarManual}, the watch is capable of recording the quality and quantity of sleep and also showing how long spent on each stage of sleep. 
     Light Sleep, Deep Sleep, and REM Sleep with the duration of each type of sleep. For the purpose of the research, an aggregated total of the various categories of sleep will be recorded and used.
@@ -43,33 +66,58 @@ The following physical information was collected from the volunteers, and stored
     \begin{itemize}
         \item Heart Rate Average (bpm)
         \item Heart Rate Maximum (bpm)
+        \item Heart Rate Variability (HRV)
     \end{itemize}
 \end{itemize}
 
+\subsubsection*{Test Data Collection}
+The test data is generated at the completion of the test session in the Unit Test Application. A test session consists of three categories of tests, which is undertaken sequentially in different stages. 
+For quality assurance, the test was performed in a controlled environment using the same hardware in similar conditions over the course of the trials. For the purpose of the trial, a special designated room
+has been reserved for the data collection effort. The following metrics for the different tests was then captured and subsequently used for the research effort.
 
-These data relate 
-to the volunteer’s physical information, sleep data, daily activities, and nightly recharge.
-For the Test Game, were instructed to play a total of three different categories of test to gauge their performance in these tests. The tests are Audio Test, Visual Test, and Fine Motor
-Test. The tests were designed to be played sequentially and typically take a total of 15 minutes to conclude.
+\begin{itemize}
+    \item Audio Test: designed to test users’ audio reflexes. 
+    \item Average Response Time: this is a measure of how quickly a user is able to react and identify the source of a sound with varying audibility (in decibels) in a 3-Dimensional space. 
+    \item Visual Test: designed to test users’ visual perception. At the end of this category of test, the following metrics were designed to measure users’ performance. 
+    \item Average Response Time: a measure of how quickly a user can identify and engage targets. 
+    \item Shot Accuracy: a measure of the percentage of successful shots to the number of targets spawned. 
+    \item Target Accuracy: a measure of the percentage of successful shots taken to a number of targets hit. 
+    \item Fine Motor Test: designed to test users’ perception of depth and eye to hand coordination. 
+    \item Average Tracking Time: measure of average time it took for a player to successfully track, engage, and eliminate a target.
+    \item Accuracy: measure of the percentage of shots fired to the number of targets hit. 
+\end{itemize}
 
 \subsection{Data Collection Procedure}
 
-The data collection process followed the below-listed steps to maximize throughput and minimize the average time spent processing each participant.
+The data collection process followed the below-listed steps to maximize throughput and minimize the average time spent processing each participant. The whole precdure can be found in the appendix \ref{appendix}.
+\par
+For this study, participants were required to wear the Polar watch which is referred sometimes to “Activity Monitoring Device” in this text, a day prior to undertaking a gagming test. 
 
-\textbf{Location:}
+\subsubsection*{Location:}
 
 The data collection effort was carried out at the Gym on the Atlantic Technological University (ATU) Galway campus.
 
-\textbf{Time:}
+\subsubsection*{Time:}
 
 The following weekly schedule was available for the volunteers at various times that best suit their personal schedules.
+\begin{itemize}
+    \item Tuesdays: 12:00 - 13:00, 15:00 - 16:00
+    \item Wednesdays: 12:00 - 13:00, 15:00 - 16:00
+    \item Thursdays: 12:00 - 13:00, 15:00 - 16:00
+    \item Fridays: 13:00 - 15:00
+\end{itemize}
 
-· Tuesdays: 12:00 - 13:00, 15:00 - 16:00
-· Wednesdays: 12:00 - 13:00, 15:00 - 16:00
-· Thursdays: 12:00 - 13:00, 15:00 - 16:00
-· Fridays: 13:00 - 15:00
+Results of the test were then paired with their biometric data for further analysis.
 
-\textbf{Biometric Data Procedure:}
+\section{Data Analysis}
 
+\section{Software Development}
 
-Test Game
+\section{Meetings}
+\subsection{Supervisor Meetings}
+
+\subsection{Client Meetings}
+
+\section{Development Tools}
+
+\section{Version Control}
