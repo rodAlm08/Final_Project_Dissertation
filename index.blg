@@ -23,48 +23,50 @@ Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: references.bib
 Warning--entry type for "dockerhub" isn't style-file defined
 --line 220 of file references.bib
+Warning--entry type for "polarManual" isn't style-file defined
+--line 352 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
 Warning--empty booktitle in tensorflow_arch
-You've used 29 entries,
+You've used 30 entries,
             1791 wiz_defined-function locations,
-            606 strings with 7605 characters,
-and the built_in function-call counts, 5245 in all, are:
-= -- 425
-> -- 213
+            611 strings with 7663 characters,
+and the built_in function-call counts, 5363 in all, are:
+= -- 433
+> -- 217
 < -- 2
-+ -- 86
-- -- 57
-* -- 285
-:= -- 784
-add.period$ -- 75
-call.type$ -- 29
-change.case$ -- 17
++ -- 88
+- -- 58
+* -- 286
+:= -- 801
+add.period$ -- 77
+call.type$ -- 30
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 258
-empty$ -- 606
-format.name$ -- 57
-if$ -- 1210
+cite$ -- 32
+duplicate$ -- 263
+empty$ -- 624
+format.name$ -- 58
+if$ -- 1238
 int.to.chr$ -- 0
-int.to.str$ -- 29
+int.to.str$ -- 30
 missing$ -- 27
-newline$ -- 136
-num.names$ -- 22
-pop$ -- 142
+newline$ -- 140
+num.names$ -- 23
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 125
+skip$ -- 129
 stack$ -- 0
 substring$ -- 230
-swap$ -- 47
+swap$ -- 48
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 42
-width$ -- 31
-write$ -- 274
-(There were 4 warnings)
+while$ -- 43
+width$ -- 32
+write$ -- 282
+(There were 5 warnings)
