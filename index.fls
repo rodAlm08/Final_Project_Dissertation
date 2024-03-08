@@ -455,6 +455,13 @@ INPUT .\images\poster.png
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT .\images\xp.png
+INPUT .\images\xp.png
+INPUT .\images\xp.png
+INPUT .\images\xp.png
+INPUT .\images\xp.png
+INPUT .\images\xp.png
+INPUT .\images\xp.png
 INPUT .\review.tex
 INPUT .\review.tex
 OUTPUT review.aux
