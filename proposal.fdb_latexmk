@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber proposal"] 1699969939 "proposal.bcf" "proposal.bbl" "proposal" 1699970134 0
+["biber proposal"] 1699969939 "proposal.bcf" "proposal.bbl" "proposal" 1710513754 0
   "./proposalReferences.bib" 1699969915 1401 9bb7ee84717fb8ff36acc366428ec960 ""
-  "proposal.bcf" 1699970134 108091 631a9f5cdf48a74f714ba0346a497f13 "pdflatex"
+  "proposal.bcf" 1710513754 108091 631a9f5cdf48a74f714ba0346a497f13 "pdflatex"
   (generated)
   "proposal.bbl"
   "proposal.blg"
   (rewritten before read)
-["pdflatex"] 1699970130 "c:/Users/rodri/repos/dissertation/proposal.tex" "proposal.pdf" "proposal" 1699970134 0
-  "C:/Users/rodri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699969639 82086 d39174039a28874863b75aeb72ca2af2 ""
+["pdflatex"] 1710513752 "c:/Users/rodri/repos/dissertation/proposal.tex" "proposal.pdf" "proposal" 1710513754 0
+  "C:/Users/rodri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1709768371 83684 3b84680198267a4e8dad11f341ea2340 ""
   "C:/Users/rodri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1699969643 11548 c697cb05577d4412c472fccda94e6d1b ""
   "C:/Users/rodri/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1699897515 24141909 791afb999a7d7fed43d91ddbedc6c6ff ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
@@ -101,7 +101,7 @@
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "c:/Users/rodri/repos/dissertation/proposal.tex" 1699970130 13022 340155954a566869e85f5441ae22b5d2 ""
+  "c:/Users/rodri/repos/dissertation/proposal.tex" 1710513749 12990 62991085eb7a39efb6787a5cf2c95884 ""
   "images/architecture.png" 1699969735 39110 2350cdcb1574f935aa15e0b0e9dc369b ""
   "images/gantt.png" 1699969740 349225 6e608125b80e1ec0ceb32c9aaaa6b53d ""
   "images/gantt/ai_deploy.png" 1699969714 18335 bd233ccde494d4b9242517ba484403fd ""
@@ -110,12 +110,12 @@
   "images/gantt/final.png" 1699969725 39433 f4fe6687a7f19c39daa53f49a5da5716 ""
   "images/gantt/project_init.png" 1699969729 29020 61449d319cdbb9135d09164692676222 ""
   "images/gantt/review_deploy.png" 1699969732 29204 5a6564cc007dba3cd6e30fb6af69c518 ""
-  "images/new-arch.png" 1699969745 117719 35d9440901e8ae16aef55c479fbdf451 ""
-  "proposal.aux" 1699970134 3831 1c87d3fa911dc587ce7a87e2fe55dc16 "pdflatex"
+  "images/new-arch.png" 1705313708 90601 95c33ca9443fcf4ac2def15ea261b92d ""
+  "proposal.aux" 1710513754 3831 a579b05d34392bda1a8969f987ba2cd3 "pdflatex"
   "proposal.bbl" 1699969941 3529 99b63ba2df179e9ee4ddfcd1b468a2b1 "biber proposal"
-  "proposal.out" 1699970134 126 08559b3484833d4042b7079c229339b0 "pdflatex"
-  "proposal.run.xml" 1699970134 2341 55b3ea45f8fa854f8f18c9decbfca807 "pdflatex"
-  "proposal.tex" 1699970130 13022 340155954a566869e85f5441ae22b5d2 ""
+  "proposal.out" 1710513754 126 08559b3484833d4042b7079c229339b0 "pdflatex"
+  "proposal.run.xml" 1710513754 2341 55b3ea45f8fa854f8f18c9decbfca807 "pdflatex"
+  "proposal.tex" 1710513749 12990 62991085eb7a39efb6787a5cf2c95884 ""
   (generated)
   "proposal.aux"
   "proposal.bcf"

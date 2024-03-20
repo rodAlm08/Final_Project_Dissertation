@@ -7,7 +7,8 @@
 When it came to developing the Executive Dashboard for data analysis it was crucial to select the tools that could transform data into easily comprehensible information. After conducting research and exploring alternatives Angular and Chart.js were chosen for specific reasons.
 
 \subsection{Angular}
-Angular is based on TypeScript and is an open-source framework, and it's a great tool for building client-side web applications. It can be used for single-page applications (SPAs) or for enterprise-level solutions.
+Angular is based on TypeScript and often used for building single-page applications (SPAs) or enterprise-level solutions. It is a powerful tool for building
+client-side web applications and is known for its component-based architecture. 
 
 \subsubsection{Main Concepts: Components, Modules and Services}
 Angular is composed of three foundational blocks: Components, Modules and services.
@@ -16,11 +17,11 @@ Angular is composed of three foundational blocks: Components, Modules and servic
 
 \subsubsection{Modules} In Angular modules serve as containers that group related components, directives, and services together that can be combined with other modules. It plays an important role in improving maintainability and re-usability, key concepts of Angular development.\cite{angular-modules}
 
-\subsubsection{Services} Angular services use typescript classes with injectable decorators. The decorator tells angular that the class is a service and can be injected into other components that need that service.\cite{angular-services}
-
-
+\subsubsection{Services} Angular services use typescript classes with injectable decorators. THe decorator informs Angular that the class function as a service
+and can be injected into other components that need that service.\cite{angular-services}
 \subsection{Angular architecture}
-Angular uses the Model-View-Controller (MVC) pattern, with a variation known as Model-View-ViewModel (MVVM). The controller is responsible for the interaction between the model and the view.
+Model-view-controller is a pattern that separates the application into three main components: the model, the view, and the controller. 
+The controller is responsible for the interaction between the model and the view.
 
 \begin{figure}[ht]
     \centering
@@ -54,17 +55,26 @@ With dependency injection in place, Angular allows for the creation of objects t
 \subsubsection{Angular Material}
 Angular's documentation offers a range of built user interface components and modules that adhere to Google's Material Design principles. This greatly facilitates the developer's work, simplifying the design process and enabling application development.
 
-\subsubsection{Angular CLI} Angular command line interface gives the developer the ability to generate Angular projects, modules, services, and components with a single command, this not only saves time but also reduces configuration errors, it gives the developer the freedom to dive into creative aspects of the project, focusing on innovation and functionality rather than getting bogged down by initial setup complexities.
+\subsubsection{Angular CLI} Angular command line interface gives the developer the ability to generate Angular projects, modules, services, and components with a single command, 
 
-Angular command line interface gives the developer the ability to generate Angular projects, modules, services, and components with a single command, this not only saves time but also reduces configuration errors, it gives the developer the freedom to dive into creative aspects of the project, focusing on innovation and functionality rather than getting bogged down by initial setup complexities.
+which helps reducing configuration errors, and gives the developer the freedom to dive into creative aspects of the project, focusing on innovation and functionality rather than getting bogged down by initial setup complexities.
+
 
 \section{Data Visualization}
 
-Data visualization is the process of translating large volumes of data into visual representations. It is a powerful tool that allows for the identification of patterns and trends that would otherwise be difficult to identify. It is a key component of data analysis and is used to communicate information clearly and efficiently.
+Data visualization involves the creation of visual representations of data to communicate information clearly and efficiently. This technique is used to
+identify patterns, trends, and correlations that would be difficult to identify in raw data. It an important step in the data analysis process and 
+could be used to communicate information clearly and efficiently.
 
 \subsection{Chart.js}
-Chart.js is robust, lightweight and open source javascript library that provides features for creating visually appealing charts and graphs that can be embedded into a web page. It is a great tool for data visualization and is easy to use. It is based on HTML5 canvas and is responsive, meaning that the charts will adapt to the size of the container element. It is also compatible with all modern browsers and is supported by a large community of developers. \cite{da2019learn}
-It can be compared like a the artist's toolkit for developers, providing a flexible API to create a variety of chart types, such as line charts, radar charts, pie charts and many more. It also provides a range of customization options, allowing developers to create unique and visually appealing charts. \cite{da2019learn}
+
+
+Chart.js is a powerful, efficient, and open-source JavaScript library that offers capabilities for generating attractive charts and graphs, which can be 
+easily integrated into web pages. It stands out for its user-friendly nature, making it an excellent choice for data visualization tasks. Utilizing HTML5 
+canvas technology, it ensures that charts are responsive and adjust seamlessly to the container's dimensions. Additionally, it boasts compatibility across 
+all contemporary web browsers and enjoys support from an extensive developer community. Chart.js acts as an artist's palette for developers, equipped with 
+a versatile API that supports an array of chart types, including line, radar, and pie charts, among others. Moreover, it provides extensive customization 
+possibilities, enabling the creation of distinct and eye-catching charts.\cite{da2019learn}
 
 Table \ref{tab:chart-js-features} is showing some of the features of Chart.js\cite{da2019learn}:
 
@@ -77,25 +87,25 @@ Table \ref{tab:chart-js-features} is showing some of the features of Chart.js\ci
         \hline
         Easy to use                 & Aesthetically charts can be created without the need of extensive configuration. The library follows a declarative approach allowing the developer to define the data and settings of the chart in a single object. \\
         \hline
-        Responsive                  & Charts generated by Chart.js are responsive, adapting to different screen sizes and devices, ensuring that the visualization remains accessible and readable across various platforms.                              \\
+        Responsive                  & Charts generated by Chart.js are responsive, adapting to different devices, and makes sure that the visualization is readable across various platforms.                              \\
         \hline
-        Customization               & Chart.js provides a high degree of customization. Colors, fonts, and other visual elements can be customized to create unique and visually appealing charts.                                                        \\
+        Customization               & Chart.js provides a high degree of customization. Colors, fonts, and other visual elements can be changed creating unique charts.                                                      \\
         \hline
-        Interactivity               & Chart.js provides built-in support for tooltips and animation, allowing the user to explore data points, adding a layer of engagement to the project.                                                               \\
+        Interactivity               & Chart.js has great support tooltips and animation, enabling the user to explore the data points, adding a layer of engagement to the project.                                                               \\
         \hline
-        Cross-browser compatibility & Chart.js is compatible with all modern browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 11.                                                                                                 \\
+        Cross-browser compatibility & Chart.js is compatible with all most of the browsers.                                                                                                 \\
         \hline
     \end{tabularx}
     \label{tab:chart-js-features}
     \caption{Chart.js Features}
 \end{table}
 
-
-Chart.js is a reliable and effective tool for data visualization, it is also easy to use and provides a range of customization options. It is also supported by a large community of developers, which is a great advantage.
+Chart.js stands as a dependable and powerful solution for visualizing data, characterized by its simplicity and a wide array of customization features. Additionally, it benefits from the strong support of an extensive developer community, offering a significant advantage.
 
 \subsection{D3.js}
-D3.js or Data-Driven Documents is a JavaScript library for manipulating documents based on data. It has the ability ti bind data to the DOM (Document Obect Model) and creates interactive and dynamic visualization. It provides a lower level and more granular approach to data visualization, giving the developer more control over the visualization process.\cite{d3}
 
+D3.js or Data-Driven Documents has the ability to bind data to the DOM (Document Object Model) and creates interactive and dynamic visualization. It provides 
+a lower level and more granular approach to data visualization, giving the developer more control over the visualization process. 
 
 Table \ref{tab:d3-js-features} is showing some of the features of D3.js\cite{d3}:
 
@@ -120,24 +130,33 @@ Table \ref{tab:d3-js-features} is showing some of the features of D3.js\cite{d3}
 \end{table}
 
 
-D3.js is a powerful tool for data visualization, it provides a high degree of customization and control over the visualization process. However, it is more complex and requires more time to learn and implement. It is also not supported by all browsers, which is a disadvantage.
+D3.js is a great tool for visualizing data. It provides a high degree of customization and control over the visualization process. However, it is more complex and requires more time to learn and implement. It is also not supported by all browsers, which is a disadvantage.
 
-In conclusion, while D3.js is a powerful tool for data visualization, it is more complex and requires more time to learn and implement. It is also not supported by all browsers, which is a disadvantage. Considering the scope of the project and the time constraints, Chart.js was chosen as the tool for data visualization. It is easy to use and provides a high degree of customization, allowing for the creation of unique and visually appealing charts. It is also supported by a large community of developers, which is a great advantage.
+In conclusion, while D3.js is a great tool for visualization of data, it is more complex and requires more time to learn and implement. It is also not 
+supported by all browsers, which is a disadvantage. Considering the scope of the project and the time constraints, Chart.js was chosen as the tool 
+to visualize data, as it is easy to use and provides a high degree of customization.
 
 \section{AI module - Data analysis}
-Ninety per cent of the world's data was generated in just the last two years. In the early 2000s, the amount of data being generated exploded exponentially with the use of the internet, social media, and various other technologies. Organizations found themselves facing a massive volume of data that was very hard to process. To address the challenge, the concept of Big data emerged. Big data refers to extremely large and complex data sets that are difficult to process using traditional methods. \cite{bigdata}
+An amazing fact is that ninety percent of the data generated in the world was generated in the last two years. In the early 2000s, the amount of data being
+generated exploded exponentially on the same rates as the internet and social media usage. Organizations found themselves facing a massive volume of data 
+that was very hard to process. Then the concept of Big data was created to describe this large volume of data. It refers to data that is so large and complex
+that traditional methods of data processing are not sufficient to process it. \cite{bigdata}
 
 \subsection{Hadoop}
 As the volume of data grew rapidly across the globe, organizations needed a way to manage it to gain valuable insights. That’s where Hadoop came in. In 2006, a team of engineers from Yahoo developed Hadoop inspired by Google’s MapReduce. Hadoop has introduced a new way of handling data called distributed processing. Now, to process all data it wouldn't use single machines anymore, instead, Hadoop uses multiple computers, allowing large amounts of data to be processed way faster than before.
-Hadoop has mainly two main components: HDFS (Hadoop Distributed File System) and MapReduce. HDFS stores the into multiple computers, and MapReduce is responsible for processing the data in parallel allowing the organizations to store and process large amounts of data.
+
+Hadoop primarily consists of two core elements: HDFS (Hadoop Distributed File System) and MapReduce. HDFS distributes the data across various computers, while MapReduce handles parallel data processing, enabling organizations to store and analyze vast volumes of data efficiently.
+
 Hadoop was a great advance in big data processing, however, it had a few limitations. One of the biggest problems was that it relied on storing data on disk. This slowed down data processing because every time a job ran it had to save its data to disk, read it back, process it, and save it back to disk Another problem is that Hadoop processes data only in batches. This means a new job couldn't be submitted before the other job ended.
 With Hadoop, storing and processing large amounts of data became possible, even with some limitations it was an important step in big data processing.\cite{hadoop}
 
 
 \subsection{Apache Spark}
 As described Hadoop has a few limitations, there was a need to process all this data faster and in real-time. And here is where Apache Spark comes into action. In 2009, researchers at the University of California developed Apache Spark as a research project. At this point, RDD (Resilient Distributed Dataset) was introduced and deemed to be a very powerful concept.\cite{apache-spark}
-RDD is the backbone of Apache Spark, storing the data in memory for faster access and processing. It will not read and write the data from the disk, instead, Spark processes the entire data just in memory. The meaning of memory here is the RAM (Random Access Memory) stored inside the computer. This in-memory data processing of data makes Spark much faster than Hadoop.
-Spark also gives the ability to write code in various programming languages such as JAVA, Scala, Python and R, along with an optimized engine that supports general execution graphs.
+RDD is the backbone of Apache Spark, storing the data in memory for faster access and processing. It will not read and write the data from the disk, instead, Spark processes the entire data just in memory. The meaning of memory here is the RAM (Random Access Memory) stored inside the computer. 
+What makes Spark so powerful is that it can process data in real-time, unlike Hadoop, which processes data only in batches.
+
+Spark also gives the ability to write code in various programming languages such as JAVA, Scala, Python and R.
 
 \subsubsection{Main components and Features}
 
@@ -148,16 +167,28 @@ Spark also gives the ability to write code in various programming languages such
     \label{fig:spark-eco}
 \end{figure}
 
-The Apache Spark ecosystem consists of the following main components\cite{8988541}:
-\begin{itemize}
-    \item Spark SQL: Formerly known as Shark.  Spark SQL is a distributed framework that works with structured and semi-structured data. It facilitates analytical and interactive applications for both streaming and historical data which can be accessed from various sources such as JSON, Parquet and Hive table.\cite{8988541}
-    \item Spark Streaming: Allows to process real-time data. Is a scalable fault-tolerant streaming processing system that supports both batch and streaming workloads. Spark streaming enhances the fast scheduling capability of Apache Spark by inserting data into mini-batches. An operation known as transformation is then applied to those mini-batches that can be easily obtained from live streams and data sources such as Twitter, Apache Kafka, IoT sensors, and Amazon Kinesis.\cite{8988541}
-    \item Spark Core: One of the most important parts of the Spark ecosystem is called Spark Core. It helps process data across multiple computers and ensures everything works efficiently and smoothly. Various functionalities of Apache Spark are built on top of the Spark core. It provides a vast range of APIs as well as applications for programming languages such as Scala, Java, and Python APIs to facilitate the ease of development. In-memory computation is implemented in Spark core in order to deliver speed and solve the issue of MapReduce.
 
-    \item MLlib: It delivers high-quality algorithms with high speed and makes machine learning easy to use and scale. Several machine learning algorithms such as regression, classification, clustering, and linear algebra are present. It also provides a library for lower-level machine learning primitives like the generic gradient descent optimization algorithm. It also provides other functions such as model evaluation and data import. It can be used in Java, Scala, and Python. \cite{8988541}
+The Apache Spark ecosystem includes the below components\cite{8988541}:
+
+\begin{itemize}
+    \item Spark SQL: Previously referred to as Shark, Spark SQL operates as a distributed framework designed to handle both structured and semi-structured 
+    data. It supports analytical and interactive applications for streaming as well as historical data, offering compatibility with various data sources 
+    including JSON, Parquet, and Hive tables.cite{8988541}
+
+    \item Spark Streaming: This component enables the processing of live data streams. As a scalable and fault-tolerant system, Spark Streaming accommodates both batch 
+    and streaming data workloads. It leverages Apache Spark's rapid scheduling capabilities by organizing incoming data into small batches for processing, which are then 
+    transformed and can be sourced from live feeds or data sources like Twitter, Apache Kafka, IoT sensors, and Amazon Kinesis.\cite{8988541}
+
+    \item Spark Core: Serving as the foundational layer of the Spark ecosystem, Spark Core is crucial for distributing data processing across multiple nodes, ensuring both efficiency and reliability. The core functionalities of Apache Spark, including a comprehensive API set and programming support for Scala, Java, and Python, are built atop this layer. Spark Core employs in-memory computing techniques to enhance performance and address the limitations associated with the MapReduce model.cite{8988541}
+
+    \item MLlib: This library is focused on making machine learning scalable and accessible. It encompasses a wide range of machine learning algorithms, including those for regression, classification, clustering, and linear algebra. MLlib not only offers advanced algorithms but also foundational machine learning primitives like the generic gradient descent optimization algorithm, alongside utilities for model evaluation and data handling. It supports development in Java, Scala, and Python. \cite{8988541}
+    
 \end{itemize}
 
-With all these components working together, Apache Spark became a powerful tool for processing and analysing Big Data. Spark manages and coordinates the execution of tasks on data across a cluster of computers.
+With all these components working together, Apache Spark became a powerful tool for processing and analysing Big Data. The coordination managed by Spark across the cluster of computers 
+is what makes it so powerful. 
+
+Spark manages and coordinates the execution of tasks on data across a cluster of computers.
 
 \begin{figure}[H]
     \centering
@@ -166,19 +197,27 @@ With all these components working together, Apache Spark became a powerful tool 
     \label{fig:spark-arch}
 \end{figure}
 
-Figure~\ref{fig:spark-arch} shows the Spark Architecture. It consists of a master node which has a driver program that is responsible for calling the main program of an application, this driver could be the Spark shell or the application, written in Scala or Java, for example. It is basically the entry point and is responsible for creating Spark context, which behaves like a gateway to all of the functionalities of Apache Spark. It allows for communication and coordination with other nodes within the cluster, known as Slave nodes. Within the slave node, there are many numbers of executors which act as workers. Whenever a job is initiated, the driver process will make sure it goes through the Apache application properly. It analyzes the work that needs to be done, divides it into smaller tasks and assigns it to the executors. The driver process is the heart of the Apache Spark application and executors are the real workers, which execute the work assigned by the driver and report back the progress and results of the computation.\cite{8988541}
+Figure~\ref{fig:spark-arch} shows the Spark Architecture. The master node is responsible for managing the cluster and distributing the work across the worker nodes. It is the entry point
+for the cluster and is responsible for allocating resources to the applications, allowing for communication and coordination with other nodes within the cluster, known as Slave nodes. 
+Within the slave node, there are many numbers of executors which act as workers. Whenever a job is initiated, the driver process will make sure it goes through the Apache application properly. 
+It analyzes the work that needs to be done, divides it into smaller tasks and assigns it to the executors. The driver process is the heart of the Apache Spark application and executors are the 
+real workers, which execute the work assigned by the driver and report back the progress and results of the computation.\cite{8988541}
 
-Due to the powerful capabilities of distributed computing, large volumes of data can be processed quickly and efficiently. For all these reasons, it was deemed to be the perfect technology to be used in this project. As the project evolves and more data is gathered from our research volunteers, Spark's performance scales with the size of the data, processing with high speed.
 
 \subsection{TensorFlow}
-TensorFlow was developed by Google Brain Team and is an open-source library for numerical computation and large-scale machine learning. It is a powerful tool for machine learning and deep learning, providing a wide range of functionalities for building and training machine learning models. It is also highly flexible, allowing for the creation of custom machine learning models. It is also highly scalable, allowing for the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units). \cite{tensorflow}
+Google brain team developed TensorFlow, which is an open-source library for numerical computation and large-scale machine learning.  It is not only powerful but also flexible, allowing for 
+the creation of custom machine learning models. It is also highly scalable, allowing for the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units).\cite{tensorflow}
 
 \begin{itemize}
-    \item \textbf{Flexible Architecture}: TensorFlow allows developers to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API, making it suitable for a wide range of applications.
-    \item \textbf{Comprehensive Library}: It provides a comprehensive ecosystem of tools, libraries, and community resources that allows researchers to advance the state-of-the-art in ML, and developers to easily build and deploy ML powered applications.
-    \item \textbf{High-Level APIs}: TensorFlow includes high-level APIs like Keras, which make it very accessible for beginners by simplifying the process of building and training neural networks.
-    \item \textbf{Visualization with TensorBoard}: TensorBoard is a tool for providing the visualization and tooling needed for machine learning experimentation. It enables tracking metrics like loss and accuracy, visualizing the model graph, and much more.
-    \item \textbf{Scalability}: TensorFlow's ability to perform computations on a variety of different hardware platforms, and its capacity to scale from a single device to thousands of GPUs or TPUs, makes it fit for large-scale machine learning tasks.
+    \item \textbf{Flexible Architecture}: 
+    \item 
+    TensorFlow provides developers with the capability to execute computations across multiple CPUs or GPUs using a unified API, whether on desktops, servers, or mobile devices, thereby making it versatile for various applications.
+    \item \textbf{Comprehensive Library}: 
+    \item This platform offers an extensive array of tools, libraries, and community support, enabling researchers to push forward the cutting-edge in machine learning (ML), while also allowing developers to effortlessly create and implement applications powered by ML.
+    \item \textbf{High-Level APIs}: With high-level APIs like Keras, TensorFlow is very accessible for beginners by simplifying how to build and train models. It also provides a low-level API for more advanced users, allowing for greater flexibility and customization.
+    \item \textbf{Visualization with TensorBoard}: As part of TensorFlow, there is a tool called TensorBoard, which is a suite of visualization tools that makes it easier to understand, debug, 
+    and optimize complex neural networks. It simplify the process of understanding, debugging, and optimizing complex neural networks.
+    \item \textbf{Scalability}: TensorFlow's ability to perform computations on multiple CPUs or GPUs, making it fit for large-scale machine learning tasks.
     \item \textbf{Large Community and Support}: Having a vast community, TensorFlow benefits from a plethora of tutorials, documentation, and active community support which aids in solving problems and improving the framework.
 \end{itemize}
 
@@ -190,20 +229,21 @@ Figure~\ref{fig:tensorflow-architecture} \cite{tensorflow_arch} shows the Tensor
     \caption{TensorFlow Architecture}
     \label{fig:tensorflow-architecture}
 \end{figure}
+
 Given these powerful features and advantages, TensorFlow was chosen to be used in conjunction with Apache Spark, for this project to handle complex machine learning tasks, including but not limited to, neural network design and training. 
 As the dataset grows, TensorFlow's performance scales with the size of the data, processing with high speed.
 
 \subsection{Node JS}
-NodeJS is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. It is built on Chrome's V8 JavaScript engine and is used to build fast and scalable network applications. It is event-driven and non-blocking, meaning that it is capable of handling concurrent operations without blocking the execution of other operations. This makes it ideal for data-intensive real-time applications that run across distributed devices.\cite{nodejs}
-It has solidified its position as a cornerstone of modern web development, with a large community of developers and a vast ecosystem of open-source libraries.
+NodeJS, a cross-platform, open-source JavaScript runtime, enables the execution of JavaScript code beyond the confines of a web browser. Constructed atop Chrome's V8 JavaScript engine, it facilitates the development of swift and scalable network applications. With its event-driven and non-blocking architecture, NodeJS efficiently manages multiple concurrent operations, preventing the halt of other processes. This characteristic renders it perfectly suited for real-time applications that are data-heavy and operate on a distributed network of devices.\cite{nodejs}
 
 \subsubsection*{Advantages of Node.js}
-It is an asynchronous event-driven JavaScript runtime environment that is designed to build scalable network applications. It is lightweight and efficient, making it a great choice for data-intensive real-time applications.\cite{tilkov}
-One of the primary advantages of NodeJS is that it uses a single-threaded event loop, which allows it to handle concurrent operations without blocking the execution of other operations.
-Another strength of NodeJS is its vast ecosystem of open-source libraries. The Node Package Manager (NPM) is the largest ecosystem of open-source libraries in the world, with over 1 million packages. \cite{npm} This
-wealthy of modules and libraries greatly facilitates the development process, allowing developers to focus on the creative aspects of the project, rather than reinventing the wheel.
+NodeJS is designed as an asynchronous, event-driven JavaScript runtime ideal for crafting scalable network applications. Its efficiency and lightweight nature make it an excellent option for data-heavy, real-time applications.\cite{tilkov}
+A significant benefit of NodeJS is its use of a single-threaded event loop, enabling it to manage multiple operations concurrently without hindering the execution of additional tasks.
+
+A key feature of NodeJS is its extensive library ecosystem. With the Node Package Manager (NPM), it boasts the world's largest collection of open-source libraries, hosting over a million packages.\cite{npm} This abundance of resources significantly streamlines the development process, allowing developers to leverage existing modules and focus on innovation.
+
 NodeJS also benefits from its single programming language across both the server and client sides. This allows for the sharing of code and data between the server and the client, which is a great advantage, reducing the learning curve associated with NodeJS development. \cite{tilkov}
-Performance wise NodeJS is very fast, it is built on Chrome's V8 JavaScript engine, which is a high-performance JavaScript engine. It is also lightweight and efficient, making it a great choice for data-intensive real-time applications. \cite{tilkov}
+Furthermore, NodeJS's uniform programming language for both server and client sides simplifies code and data sharing across them, offering a streamlined learning process for development. In terms of performance, NodeJS excels due to its foundation on Chrome's V8 JavaScript engine, a high-performance engine that ensures speed and efficiency, especially in scenarios requiring real-time data processing. \cite{tilkov}
 
 \subsubsection*{Disadvantages of Node.js}
 NodeJS is not without its criticisms. Critics often point out the callback hell, a situation where the code becomes unreadable due to the excessive use of callbacks. Although it has been largely mitigated by the introduction of Promisses and async/await syntax, it remanins a valid criticism. \cite{cantelon2014node}
@@ -216,13 +256,13 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
         \hline
         \textbf{Advantages of Node.js}                                                                                                               & \textbf{Disadvantages of Node.js}                                                                                                                              \\
         \hline
-        Non-blocking and event-driven: Allows for high concurrency and scalability, making it suitable for real-time applications.                   & Single-threaded: Node.js is single-threaded, which can lead to blocking if not handled correctly, impacting CPU-bound tasks.                                   \\
+        Non-blocking and event-driven: Allows for high concurrency and scalability, making it suitable for real-time applications.                   & Single-threaded: it is single-threaded, and can lead to blocking if not handled correctly, impacting CPU-bound tasks.                                   \\
         \hline
-        JavaScript as a single language: Developers can use JavaScript for both server-side and client-side development, reducing context switching. & Callback hell: Deeply nested callbacks can make the code hard to read and maintain (though Promises and async/await mitigate this issue).                      \\
+        JavaScript as a single language: Developers can use JavaScript for both server-side and client-side development, reducing context switching. & Callback hell: the code could be hard to read and maintain as there are nested callbacks (Promises and async/await can minimize this problem).                      \\
         \hline
-        Large and active community: A vast number of open-source libraries and modules available through npm (Node Package Manager).                 & Limited support for multi-core processors: Node.js does not fully utilize multi-core CPUs out of the box.                                                      \\
+        Large and active community: The Node Package Manager makes thousands of open-source libraries and modules available.                 & Limited support for multi-core processors: Node.js does not fully utilize multi-core CPUs out of the box.                                                      \\
         \hline
-        Speed: Node.js is built on the V8 JavaScript engine, known for its high-performance execution.                                               & Less suitable for CPU-intensive tasks: Due to its event-driven, single-threaded nature, Node.js may not be the best choice for CPU-bound operations.           \\
+        Speed: it is known by its high-performance Node.js is built on the V8 JavaScript engine.                                               & Less suitable for CPU-intensive tasks: The event-driven and single-threaded characteristics, it could not be the best option for CPU-bound operations.           \\
         \hline
         Lightweight and fast startup: Node.js applications typically have lower memory consumption and quicker startup times.                        & Maturity and stability: Some developers argue that Node.js, compared to more established platforms, may have less maturity and stability in certain use cases. \\
         \hline
@@ -232,23 +272,25 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
 \end{table}
 
 
-Considering these noumerous advantages, NodeJS was chosen as the technology for the project. It is lightweight and efficient, making it a great choice for data-intensive real-time applications. It also benefits from its vast ecosystem of open-source libraries, which greatly facilitates the development process, allowing us to focus on the creative aspects of the project, rather than reinventing the wheel. It is also fast and scalable, which is a great advantage.
-
 
 \subsection{PM2}
-PM2, or Process Manager 2, is a production process manager for NodeJS applications. It is a feature-rich tool that provides a wide range of features, including monitoring, load balancing, and error handling. It is designed to simplify the deployment and management of NodeJS applications in production environments and to keep applications alive forever, restart
-them without downtime and simplify common system administration tasks.
+PM2, or Process Manager 2, is a production process manager for NodeJS applications. With a rich feature set, including monitoring, load balancing, and error handling. It is designed to simplify the deployment and management of NodeJS applications in production environments with the ability to have 
+the application running forever, restarting it with no downtime.
 The standout feature of PM2 is its ability to keep processes running in the background indefinitely. This is particular important for web applications that requires constant availability. PM2 automatically resurrects crashed applications, ensuring that system glitches do not result in prolonged downtime.\cite{pm2}
 This automatic restart capability is a safeguard against potentially costly application crashes that could otherwise lead to a poor user experience or even lost revenue. \cite{pm2}
 PM2 also provides a built-in load balancer that can distribute incoming requests across multiple instances of the application. This improves performance and scalability, allowing the application to handle more requests, evenly distributing traffic across the instances, which can be particularly beneficial when running on multi-core systems. \cite{pm2LoadBalancing}
 However, PM2 is not one-size-fits-all solution. It is designed for NodeJS applications, and is not suitable for applications written in other languages. It is also not suitable for applications that require a high degree of customization. \cite{pm2}
-Despite the considerations, PM2's benefits have outweighed its limitations, and it was chosen as the technology for the project. It is a feature-rich tool that provides a wide range of features, including monitoring, load balancing, and error handling.
+Despite the considerations, PM2's benefits have outweighed its limitations, and it was chosen as the technology for the project. It provides many features, including monitoring, load balancing, and error handling.
 It is designed to simplify the deployment and management of NodeJS applications in production environments and to keep applications alive forever, restart them without downtime and simplify common system administration tasks.
-Its installation and setup process is straightforward, requiring minimal configuration. It is also lightweight and efficient, making it a great choice for this project. \cite{tilkov}
+Its installation and setup process is straightforward, requiring minimal configuration. 
+All these features make PM2 an ideal choice for the project, as it provides the necessary tools to manage and monitor the NodeJS application in a production environment.\cite{tilkov}
 
 \subsection{Docker}
 
-Docker has emerged as a revolutionary tool for software development. It is an open-source platform that allows developers to build, ship, and run applications in containers. It is a lightweight alternative to virtual machines, allowing for the isolation of applications and their dependencies into containers. Containers encapsulate the application's code, libraries, and dependencies in a single object, ensuring that the application runs reliably and consistently across different environments.
+Docker has emerged as a revolutionary tool for software development. It provides a platform for developers to build, ship, and run applications in containers. 
+Comparing with virtual machines (VMs), containers are lightweight, portable, and efficient, making them an ideal solution for deploying applications across different environments, allowing 
+for the isolation of applications and their dependencies into containers. 
+With the aim to encapsulate the application's code, libraries, and dependencies in a single object, Docker ensures that the application runs reliably and consistently across different environments.
 Due to its simplicity and portability, Docker has become the de facto standard for containerization. It is supported by all major cloud providers, including Amazon Web Services, Microsoft Azure, and Google Cloud Platform. Its lightweight nature compared to traditional virtual machines makes it ideal for cloud computing. Containers share the machine's OS kernel, and do not require an OS per application, which greatly reduces the memory footprint and improves performance. \cite{merkel2014docker}
 
 \begin{figure}[ht]
@@ -265,8 +307,11 @@ In conclusion, Docker is a powerful tool that offers numerous benefits for appli
 
 
 \subsection{NGINX}
-NGINX is a high-performance web server that can also be used as a reverse proxy, load balancer, mail proxy, and HTTP cache. It is a lightweight and efficient solution that can handle high volumes of concurrent connections. It is also highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
-It was originally created by Igor Sysoev in 2004, with the goal of solving the C10K problem, which refers to the challenge of handling 10,000 concurrent connections. \cite{nginx} It has since become one of the most widely used web servers in the world, often used as load balancer and as reverse proxy in addition to its role as a web server.
+NGINX works as a reverse proxy server, load balancer, and HTTP cache. It is a high-performance web server that can handle high volumes of concurrent connections. 
+
+It is a lightweight and efficient solution that can handle high volumes of concurrent connections. It is also highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
+It was originally created by Igor Sysoev in 2004, with the goal of solving the C10K problem, which refers to the challenge of handling 10,000 concurrent connections. \cite{nginx} 
+Due to its vast capabilities, it has become one of the most widely used web servers in the world, often used as a load balancer and as a reverse proxy in addition to its role as a web server.
 
 Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
 
@@ -300,7 +345,8 @@ Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
 Due to its vast capabilities NGNIX was chosen for our project as reverse proxy and load balancer. It is a lightweight and efficient solution that can handle high volumes of concurrent connections. It is also highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
 
 \subsection{MySQL}
-MySQL is an open-source relational database management system (RDBMS) that is widely used in web applications. It uses structured query language (SQL) for database access and is known for its speed, reliability, and ease of use. MySQL is a popular choice for both small and large applications and is an essential component of the LAMP (Linux, Apache, MySQL, PHP/Perl/Python) software stack.
+MySQL uses structured query language (SQL) for database access, providing high performance and reliability. It uses structured query language for database interaction.
+
 
 Table \ref{tab:mysql} is showing some of the features of MySQL\cite{mysql}:
 
@@ -331,13 +377,15 @@ Table \ref{tab:mysql} is showing some of the features of MySQL\cite{mysql}:
     \caption{MySQL}
 \end{table}
 
-In the context of this project, the dataset was originally in a JSON format in FireStore which were found to be of a high complexity while performing compound querying. To facilitate querying and the high complexities involved in FireStore,
-MySQL was chosen to be the database for the project, where all the data for analysis is sourced directly from it, which is a structured replica of the FireStore Database as obtained from the Legacy System.\\
+In the context of this project, the dataset was originally in a JSON format in FireStore which were found to be of a high complexity while performing compound querying. To facilitate querying and the 
+difficulties of FireStore, MySQL was chosen to be the database for the project, where all the data for analysis is sourced directly from it, having a structured replica of the FireStore Database
+obtained from the Legacy System.\\
 By regularizing the data in MySQL, a more standardized and organized dataset was achieved. This standardization significantly simplified the data preprocessing steps in the machine learning workflow.
 
 
 \subsection{Express JS}
-Express.js, commonly referred as Express, is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is widely used for building server-side applications and APIs due to its simplicity, performance, and scalability. In this project, Express.js was chosen for several strategic reasons, which are outlined below.\cite{express}
+Express.js, often simply called Express, is a streamlined and adaptable framework for Node.js designed to enhance web and mobile application development. It comes equipped with a comprehensive suite of tools and features that cater to the needs of developers in creating sophisticated web and mobile applications.
+It is commonly used for building server-side applications and APIs due to its simplicity, performance, and scalability. In this project, Express.js was chosen for several strategic reasons, which are outlined below.\cite{express}
 
 \begin{table}[H]
     \centering
@@ -364,7 +412,6 @@ Express.js, commonly referred as Express, is a minimal and flexible Node.js web 
     \caption{Express.js Features}
 \end{table}
 
-It was chose as a back end web application for this project due to its simplicity, performance, and scalability. It is also widely used for building server-side applications and APIs, which is a great advantage. It also provides a robust set of features for web and mobile applications, which is a great advantage.
-
-
+It was chosen as a back end web application for this project due to its simplicity, performance, and scalability. Being widely used for building APIs and server-side applications, it offers a great
+advantage.
 

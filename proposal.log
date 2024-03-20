@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  14 NOV 2023 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.11.13)  15 MAR 2024 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -528,20 +528,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<images/new-arch.png, id=48, 506.6428pt x 453.94594pt>
+<images/new-arch.png, id=48, 366.61969pt x 359.84438pt>
 File: images/new-arch.png Graphic file (type png)
 <use images/new-arch.png>
 Package pdftex.def Info: images/new-arch.png  used on input line 103.
-(pdftex.def)             Requested size: 344.51254pt x 308.67915pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5
+(pdftex.def)             Requested size: 249.29808pt x 244.69093pt.
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.123     \item{
-                Chart API}: <./images/new-arch.png>]
+l.113 \item{
+            Executive Dashboard}: This module provides a Graphical User Inte... <./images/new-arch.png>] [5]
 Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
@@ -556,8 +553,10 @@ Overfull \hbox (7.63803pt too wide) in paragraph at lines 154--155
 [][]
  []
 
-[6]
-<images/gantt/project_init.png, id=86, 715.68874pt x 193.07956pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/gantt/project_init.png, id=74, 715.68874pt x 193.07956pt>
 File: images/gantt/project_init.png Graphic file (type png)
 <use images/gantt/project_init.png>
 Package pdftex.def Info: images/gantt/project_init.png  used on input line 162.
@@ -567,7 +566,10 @@ Overfull \hbox (5.69055pt too wide) in paragraph at lines 162--163
 [][]
  []
 
-<images/gantt/env_setup.png, id=87, 716.22806pt x 166.11313pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/gantt/env_setup.png, id=75, 716.22806pt x 166.11313pt>
 File: images/gantt/env_setup.png Graphic file (type png)
 <use images/gantt/env_setup.png>
 Package pdftex.def Info: images/gantt/env_setup.png  used on input line 169.
@@ -580,7 +582,7 @@ Overfull \hbox (5.95482pt too wide) in paragraph at lines 169--170
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/gantt/dash_design.png, id=88, 623.46358pt x 134.29276pt>
+<images/gantt/dash_design.png, id=76, 623.46358pt x 134.29276pt>
 File: images/gantt/dash_design.png Graphic file (type png)
 <use images/gantt/dash_design.png>
 Package pdftex.def Info: images/gantt/dash_design.png  used on input line 177.
@@ -588,7 +590,7 @@ Package pdftex.def Info: images/gantt/dash_design.png  used on input line 177.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/gantt/ai_deploy.png, id=89, 691.95828pt x 147.23665pt>
+<images/gantt/ai_deploy.png, id=77, 691.95828pt x 147.23665pt>
 File: images/gantt/ai_deploy.png Graphic file (type png)
 <use images/gantt/ai_deploy.png>
 Package pdftex.def Info: images/gantt/ai_deploy.png  used on input line 185.
@@ -596,7 +598,7 @@ Package pdftex.def Info: images/gantt/ai_deploy.png  used on input line 185.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/gantt/review_deploy.png, id=90, 1067.33083pt x 227.59657pt>
+<images/gantt/review_deploy.png, id=78, 1067.33083pt x 227.59657pt>
 File: images/gantt/review_deploy.png Graphic file (type png)
 <use images/gantt/review_deploy.png>
 Package pdftex.def Info: images/gantt/review_deploy.png  used on input line 193.
@@ -604,7 +606,7 @@ Package pdftex.def Info: images/gantt/review_deploy.png  used on input line 193.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/gantt/final.png, id=91, 683.32903pt x 285.84402pt>
+<images/gantt/final.png, id=79, 683.32903pt x 285.84402pt>
 File: images/gantt/final.png Graphic file (type png)
 <use images/gantt/final.png>
 Package pdftex.def Info: images/gantt/final.png  used on input line 200.
@@ -612,7 +614,7 @@ Package pdftex.def Info: images/gantt/final.png  used on input line 200.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7
+[6] [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -622,12 +624,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.208 
-       <./images/gantt.png> <./images/gantt/project_init.png>] [8
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.208 
-      
+       <./images/gantt.png> <./images/gantt/project_init.png> <./images/gantt/env_setup.png>] [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -642,17 +644,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.208 
-       <./images/gantt/env_setup.png> <./images/gantt/dash_design.png> <./images/gantt/ai_deploy.png> <./images/gantt/review_deploy.png>] [9
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.208 
-       <./images/gantt/final.png>]
+       <./images/gantt/dash_design.png> <./images/gantt/ai_deploy.png> <./images/gantt/review_deploy.png> <./images/gantt/final.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 207.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 207.
- [10
+ [9
 
 ] (proposal.aux)
  ***********
@@ -666,17 +668,17 @@ Package logreq Info: Writing requests to 'proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18059 strings out of 475248
- 318199 string characters out of 5757812
- 1927785 words of memory out of 5000000
+ 18058 strings out of 475248
+ 318192 string characters out of 5757812
+ 1928785 words of memory out of 5000000
  39379 multiletter control sequences out of 15000+600000
  564686 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,93p,761b,1324s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on proposal.pdf (11 pages, 517197 bytes).
+Output written on proposal.pdf (10 pages, 536651 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
