@@ -3,6 +3,9 @@
 
 \chapter{Technology Review}
 
+This section will provide an overview of the technologies used in the project. The technologies were chosen based on the project requirements. 
+The technologies used in the project are as follows:
+
 \section{Executive Dashboard}
 When it came to developing the Executive Dashboard for data analysis it was crucial to select the tools that could transform data into easily comprehensible information. After conducting research and exploring alternatives Angular and Chart.js were chosen for specific reasons.
 
@@ -414,4 +417,44 @@ It is commonly used for building server-side applications and APIs due to its si
 
 It was chosen as a back end web application for this project due to its simplicity, performance, and scalability. Being widely used for building APIs and server-side applications, it offers a great
 advantage.
+
+\section{Difficulties}
+
+The project faced a few challenges during the development process. The main one that affectted mostly the front end development was the deployment constraints on the virtual machine.
+The deployment phase was challenging due to the resource intensive of our initial technology stack with Angular, Chart.js, Express JS, and Node JS. The virtual machine was not able
+to handle the load of the application, which resulted in slow performance and frequent crashes. This led to the decision to switch to a more lightweight technology stack, 
+which included EJS, Espress, CORS and AXIOS. This change improved the performance of the application and resolved the deployment issues.
+
+\subsection{Embedded JavaScript (EJS)}
+
+EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. It a rendering solution that allows for the dynamic generation of HTML content. \cite{ejs}
+Its compatibility with Express.js makes it an ideal choice for rendering data from the server-side to the client-side. EJS supports the reuse of code snippets, increasing the efficiency of web application development. 
+It also allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions. EJS supports looping constructs, facilitating the iteration over data collections 
+and the generation of repetitive HTML elements. It provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process. EJS is highly extensible,
+allowing for the integration of additional features and functionalities to enhance the rendering process. \cite{ejs}
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Feature}     & \textbf{Description}                                                                                                                              \\
+        \hline
+        Simple Syntax       & EJS uses a simple syntax that allows for the embedding of JavaScript code within HTML markup.                                                      \\
+        \hline
+        Dynamic Content     & EJS enables the dynamic generation of HTML content, making it ideal for rendering data from the server-side to the client-side.                      \\
+        \hline
+        Code Reusability    & EJS supports the reuse of code snippets, enhancing the efficiency of web application development.                                                    \\
+        \hline
+        Conditional Logic   & EJS allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions.                      \\
+        \hline
+        Looping Constructs  & EJS supports looping constructs, facilitating the iteration over data collections and the generation of repetitive HTML elements.                      \\
+        \hline
+        Error Handling      & EJS provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process.                         \\
+        \hline
+        Extensibility       & EJS is highly extensible, allowing for the integration of additional features and functionalities to enhance the rendering process.                      \\
+        \hline
+    \end{tabularx}
+    \label{tab:ejs}
+    \caption{EJS Features}
+\end{table}
 

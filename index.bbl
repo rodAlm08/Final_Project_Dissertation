@@ -143,6 +143,10 @@ Evan Hahn.
   applications}.
 \newblock Simon and Schuster, 2016.
 
+\bibitem{ejs}
+EJS.
+\newblock Ejs, 2024.
+
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.
 \newblock Apache Spark, Accessed: 14 October 2023.
