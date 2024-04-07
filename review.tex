@@ -418,6 +418,51 @@ It is commonly used for building server-side applications and APIs due to its si
 It was chosen as a back end web application for this project due to its simplicity, performance, and scalability. Being widely used for building APIs and server-side applications, it offers a great
 advantage.
 
+
+\section{MochaJS}
+Mocha is javascript testing framework that runs in the browser and on Node.js. It executes in a sequential manner, allowing for flexible and accurate testing of code. It accurately 
+associates test results with the code that was tested, making it easier to identify and resolve issues. 
+This testing framework has numerous features, offering functionalities such as asynchronous test execution, test coverage reports, and the ability to run tests in parallel.
+Mocha is highly extensible, allowing for the integration of additional libraries and plugins to enhance the testing process. It supports a
+variety of assertion libraries, giving the developer the flexibility to use the one that best suits their needs. 
+
+Mocha is widely used in the industry and has a strong community of developers who contribute to its ongoing development and improvement. \cite{mocha}
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Feature}     & \textbf{Advantage for Our Project}                                                                                                                                  \\
+        \hline
+        Asynchronous Testing & Mocha's support for asynchronous testing was invaluable for testing our application's asynchronous operations, ensuring accurate and efficient tests.                   \\
+        \hline
+        Flexible Reporting   & Its variety of reporting options allowed us to choose the best format for our testing outcomes, enhancing readability and understanding of test results.               \\
+        \hline
+        Rich Assertion Library & Integration with various assertion libraries gave us the flexibility to write test cases in a style that best suited our project's needs.                          \\
+        \hline
+        Before/After Hooks  & Mocha's before and after hooks simplified the setup and teardown processes for our test suites, making our tests cleaner and more reliable.                           \\
+        \hline
+        Wide Adoption       & Mocha's popularity and wide adoption provided us with extensive resources for learning and troubleshooting, contributing to a smoother testing process.                 \\
+        \hline
+        Easy Integration    & Its seamless integration with other tools and libraries in our project's ecosystem allowed for a more streamlined development and testing workflow.                    \\
+        \hline
+        Customizable and Extensible & Mocha's customizable and extensible nature enabled us to tailor the testing framework to meet our project's specific requirements, enhancing test efficiency and effectiveness. \\
+        \hline
+    \end{tabularx}
+    \label{tab:mochaTesting}
+    \caption{Mocha Features and Advantages}
+\end{table}
+
+Mocha was selected for the testing of our project due to its flexibility, ease of use, and vast number of features suited for both synchronous and asynchronous tests. 
+
+Throughout the development cycle, Mocha facilitated a robust testing environment that improved code quality and reliability. By utilizing Mocha's features, we were able to 
+implement testing that covered a range of functions, allowing to identify and resolve issues early in the development process. 
+Also, the ability to use different assertion libraries enabled our team to write test cases in a style that best suited our project's needs.
+
+Mocha has proven to be an invaluable asset to our project, significantly enhancing our testing practices. Its adaptability, and vast documentation available online contributed 
+to a higher quality final product.
+
+
 \section{Difficulties}
 
 The project faced a few challenges during the development process. The main one that affectted mostly the front end development was the deployment constraints on the virtual machine.
@@ -457,4 +502,7 @@ allowing for the integration of additional features and functionalities to enhan
     \label{tab:ejs}
     \caption{EJS Features}
 \end{table}
+
+
+
 
