@@ -140,74 +140,33 @@ supported by all browsers, which is a disadvantage. Considering the scope of the
 to visualize data, as it is easy to use and provides a high degree of customization.
 
 \section{AI module - Data analysis}
+
 An amazing fact is that ninety percent of the data generated in the world was generated in the last two years. In the early 2000s, the amount of data being
 generated exploded exponentially on the same rates as the internet and social media usage. Organizations found themselves facing a massive volume of data 
 that was very hard to process. Then the concept of Big data was created to describe this large volume of data. It refers to data that is so large and complex
 that traditional methods of data processing are not sufficient to process it. \cite{bigdata}
 
-\subsection{Hadoop}
-As the volume of data grew rapidly across the globe, organizations needed a way to manage it to gain valuable insights. That’s where Hadoop came in. In 2006, a team of engineers from Yahoo developed Hadoop inspired by Google’s MapReduce. Hadoop has introduced a new way of handling data called distributed processing. Now, to process all data it wouldn't use single machines anymore, instead, Hadoop uses multiple computers, allowing large amounts of data to be processed way faster than before.
 
-Hadoop primarily consists of two core elements: HDFS (Hadoop Distributed File System) and MapReduce. HDFS distributes the data across various computers, while MapReduce handles parallel data processing, enabling organizations to store and analyze vast volumes of data efficiently.
+\subsection{Scikit-learn}
 
-Hadoop was a great advance in big data processing, however, it had a few limitations. One of the biggest problems was that it relied on storing data on disk. This slowed down data processing because every time a job ran it had to save its data to disk, read it back, process it, and save it back to disk Another problem is that Hadoop processes data only in batches. This means a new job couldn't be submitted before the other job ended.
-With Hadoop, storing and processing large amounts of data became possible, even with some limitations it was an important step in big data processing.\cite{hadoop}
+Scikit-learn, also know as sklearn, is a free machine learning library for Python. It features various classification, regression, and clustering algorithms, including support vector machines, 
+random forests, gradient boosting, k-means, and DBSCAN. It is designed to work with other Python libraries, such as NumPy and SciPy, to provide a comprehensive machine learning toolkit. \cite{scikit}
 
-
-\subsection{Apache Spark}
-As described Hadoop has a few limitations, there was a need to process all this data faster and in real-time. And here is where Apache Spark comes into action. In 2009, researchers at the University of California developed Apache Spark as a research project. At this point, RDD (Resilient Distributed Dataset) was introduced and deemed to be a very powerful concept.\cite{apache-spark}
-RDD is the backbone of Apache Spark, storing the data in memory for faster access and processing. It will not read and write the data from the disk, instead, Spark processes the entire data just in memory. The meaning of memory here is the RAM (Random Access Memory) stored inside the computer. 
-What makes Spark so powerful is that it can process data in real-time, unlike Hadoop, which processes data only in batches.
-
-Spark also gives the ability to write code in various programming languages such as JAVA, Scala, Python and R.
-
-\subsubsection{Main components and Features}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1\linewidth]{images/Spark_Eco.png}
-    \caption{Apache Spark Ecosystem}
-    \label{fig:spark-eco}
-\end{figure}
-
-
-The Apache Spark ecosystem includes the below components\cite{8988541}:
 
 \begin{itemize}
-    \item Spark SQL: Previously referred to as Shark, Spark SQL operates as a distributed framework designed to handle both structured and semi-structured 
-    data. It supports analytical and interactive applications for streaming as well as historical data, offering compatibility with various data sources 
-    including JSON, Parquet, and Hive tables.cite{8988541}
-
-    \item Spark Streaming: This component enables the processing of live data streams. As a scalable and fault-tolerant system, Spark Streaming accommodates both batch 
-    and streaming data workloads. It leverages Apache Spark's rapid scheduling capabilities by organizing incoming data into small batches for processing, which are then 
-    transformed and can be sourced from live feeds or data sources like Twitter, Apache Kafka, IoT sensors, and Amazon Kinesis.\cite{8988541}
-
-    \item Spark Core: Serving as the foundational layer of the Spark ecosystem, Spark Core is crucial for distributing data processing across multiple nodes, ensuring both efficiency and reliability. The core functionalities of Apache Spark, including a comprehensive API set and programming support for Scala, Java, and Python, are built atop this layer. Spark Core employs in-memory computing techniques to enhance performance and address the limitations associated with the MapReduce model.cite{8988541}
-
-    \item MLlib: This library is focused on making machine learning scalable and accessible. It encompasses a wide range of machine learning algorithms, including those for regression, classification, clustering, and linear algebra. MLlib not only offers advanced algorithms but also foundational machine learning primitives like the generic gradient descent optimization algorithm, alongside utilities for model evaluation and data handling. It supports development in Java, Scala, and Python. \cite{8988541}
-    
+    \item \textbf{Simple and Efficient Tools}: Scikit-learn offers simple and efficient tools for data mining and data analysis, making it an ideal choice for machine learning tasks.
+    \item \textbf{Consistent Interface}: The library provides a consistent interface for various machine learning algorithms, making it easy to switch between different models.
+    \item \textbf{Integration with Other Libraries}: Scikit-learn integrates seamlessly with other Python libraries, such as NumPy and SciPy, to provide a comprehensive machine learning toolkit.
+    \item \textbf{Extensive Documentation}: The library has extensive documentation and a large community of users, making it easy to find help and resources.
+    \item \textbf{Open Source}: Scikit-learn is an open-source library, allowing users to modify and customize the code to suit their needs.
 \end{itemize}
 
-With all these components working together, Apache Spark became a powerful tool for processing and analysing Big Data. The coordination managed by Spark across the cluster of computers 
-is what makes it so powerful. 
-
-Spark manages and coordinates the execution of tasks on data across a cluster of computers.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{images/Spark_Arch.png}
-    \caption{Apache Spark Architecture}
-    \label{fig:spark-arch}
-\end{figure}
-
-Figure~\ref{fig:spark-arch} shows the Spark Architecture. The master node is responsible for managing the cluster and distributing the work across the worker nodes. It is the entry point
-for the cluster and is responsible for allocating resources to the applications, allowing for communication and coordination with other nodes within the cluster, known as Slave nodes. 
-Within the slave node, there are many numbers of executors which act as workers. Whenever a job is initiated, the driver process will make sure it goes through the Apache application properly. 
-It analyzes the work that needs to be done, divides it into smaller tasks and assigns it to the executors. The driver process is the heart of the Apache Spark application and executors are the 
-real workers, which execute the work assigned by the driver and report back the progress and results of the computation.\cite{8988541}
-
+Scikit-learn was used on the our AI model to train and evaluate machine learning models. As our dataset was in a structured format, Scikit-learn was the ideal choice for the project, 
+providing a wide range of machine learning algorithms and tools to work with structured data. It was a regression problem, and for that, Linear Regression, Support Vector Machine,
+Random Forest, and K-Nearest Neighbors algorithm from this library were used to evaluate the best model for the dataset.
 
 \subsection{TensorFlow}
+
 Google brain team developed TensorFlow, which is an open-source library for numerical computation and large-scale machine learning.  It is not only powerful but also flexible, allowing for 
 the creation of custom machine learning models. It is also highly scalable, allowing for the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units).\cite{tensorflow}
 
@@ -226,15 +185,33 @@ the creation of custom machine learning models. It is also highly scalable, allo
 
 Figure~\ref{fig:tensorflow-architecture} \cite{tensorflow_arch} shows the TensorFlow Architecture. The architecture is designed to be flexible and scalable, allowing for computations on a variety of devices and the ability to handle large-scale machine learning projects.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{images/TensorFlow-architecture.png}
-    \caption{TensorFlow Architecture}
-    \label{fig:tensorflow-architecture}
-\end{figure}
+\subsubsection{Keras}
 
-Given these powerful features and advantages, TensorFlow was chosen to be used in conjunction with Apache Spark, for this project to handle complex machine learning tasks, including but not limited to, neural network design and training. 
-As the dataset grows, TensorFlow's performance scales with the size of the data, processing with high speed.
+Keras, integrated to TensorFlow, is a high-level neural networks API, written in Python, that allows for the rapid prototyping of deep learning models. 
+
+\begin{itemize}
+    \item \textbf{Modularity and Composability}: Keras models are assembled by connecting configurable building blocks together, with few restrictions. 
+    This modularity enables fast experimentation and research, allowing researchers and developers to build and test new ideas quickly.
+
+    \item \textbf{Pre-built Layers and Models}: Keras comes with numerous pre-built and pre-trained layers and models, including convolutional networks, 
+    recurrent networks, and a combination of the two. This library significantly reduces the time and effort required to develop and train new models 
+    from scratch.
+
+    \item \textbf{Support for Multiple Backends}: Originally designed to run on top of TensorFlow, Keras also supports other backends, such as Microsoft 
+    Cognitive Toolkit (CNTK) and Theano. This flexibility allows developers to choose the most suitable computational backend for their projects.
+
+    \item \textbf{Seamless Integration with TensorFlow Features}: Being fully integrated into TensorFlow (`tf.keras`), Keras provides full support for 
+    TensorFlow functionality, including TensorFlow's eager execution, `tf.data` pipelines, and `tf.distribute` for multi-GPU training. This integration ensures 
+    that Keras models can leverage the power and scalability of TensorFlow without compromise.
+
+    \item \textbf{Broad Adoption and Community Support}: Keras enjoys wide adoption in both academia and industry, making it one of the standard APIs for 
+    developing deep learning models. This popularity ensures a large community for support, sharing, and collaboration.
+
+\end{itemize}
+
+
+
+\section{Backend Technologies}
 
 \subsection{Node JS}
 NodeJS, a cross-platform, open-source JavaScript runtime, enables the execution of JavaScript code beyond the confines of a web browser. Constructed atop Chrome's V8 JavaScript engine, it facilitates the development of swift and scalable network applications. With its event-driven and non-blocking architecture, NodeJS efficiently manages multiple concurrent operations, preventing the halt of other processes. This characteristic renders it perfectly suited for real-time applications that are data-heavy and operate on a distributed network of devices.\cite{nodejs}
@@ -419,7 +396,10 @@ It was chosen as a back end web application for this project due to its simplici
 advantage.
 
 
-\section{MochaJS}
+\section{Testing Technologies}
+
+\subsection{MochaJS}
+
 Mocha is javascript testing framework that runs in the browser and on Node.js. It executes in a sequential manner, allowing for flexible and accurate testing of code. It accurately 
 associates test results with the code that was tested, making it easier to identify and resolve issues. 
 This testing framework has numerous features, offering functionalities such as asynchronous test execution, test coverage reports, and the ability to run tests in parallel.
@@ -504,5 +484,6 @@ allowing for the integration of additional features and functionalities to enhan
 \end{table}
 
 
+\section*{JWT}
 
 

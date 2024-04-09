@@ -29,48 +29,50 @@ Warning--entry type for "ejs" isn't style-file defined
 --line 370 of file references.bib
 Warning--entry type for "mocha" isn't style-file defined
 --line 378 of file references.bib
+Warning--entry type for "scikit" isn't style-file defined
+--line 386 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
 Warning--empty booktitle in tensorflow_arch
-You've used 33 entries,
+You've used 31 entries,
             1791 wiz_defined-function locations,
-            620 strings with 7801 characters,
-and the built_in function-call counts, 5737 in all, are:
-= -- 461
-> -- 229
-< -- 2
-+ -- 94
-- -- 61
-* -- 295
-:= -- 860
-add.period$ -- 84
-call.type$ -- 33
-change.case$ -- 21
+            606 strings with 7212 characters,
+and the built_in function-call counts, 5059 in all, are:
+= -- 404
+> -- 188
+< -- 1
++ -- 80
+- -- 49
+* -- 239
+:= -- 750
+add.period$ -- 77
+call.type$ -- 31
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 281
-empty$ -- 675
-format.name$ -- 61
-if$ -- 1324
+cite$ -- 33
+duplicate$ -- 251
+empty$ -- 618
+format.name$ -- 49
+if$ -- 1172
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 28
-newline$ -- 153
-num.names$ -- 26
-pop$ -- 164
+int.to.str$ -- 31
+missing$ -- 25
+newline$ -- 142
+num.names$ -- 24
+pop$ -- 163
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 141
+skip$ -- 129
 stack$ -- 0
-substring$ -- 230
-swap$ -- 51
-text.length$ -- 2
+substring$ -- 181
+swap$ -- 43
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 46
-width$ -- 35
-write$ -- 309
-(There were 7 warnings)
+while$ -- 39
+width$ -- 33
+write$ -- 284
+(There were 8 warnings)
