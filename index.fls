@@ -462,6 +462,7 @@ INPUT .\images\xp.png
 INPUT .\images\xp.png
 INPUT .\images\xp.png
 INPUT .\images\xp.png
+INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT .\review.tex
 INPUT .\review.tex
 OUTPUT review.aux
@@ -475,6 +476,13 @@ INPUT .\images\angular-arch.png
 INPUT .\images\angular-arch.png
 INPUT .\images\angular-arch.png
 INPUT .\images\angular-arch.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
+INPUT .\images\keras.png
 INPUT .\images\docker.png
 INPUT .\images\docker.png
 INPUT .\images\docker.png
@@ -508,7 +516,6 @@ OUTPUT evaluation.aux
 INPUT .\evaluation.tex
 INPUT .\evaluation.tex
 INPUT evaluation.tex
-INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT .\conclusion.tex
 INPUT .\conclusion.tex
 OUTPUT conclusion.aux

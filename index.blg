@@ -31,39 +31,40 @@ Warning--entry type for "mocha" isn't style-file defined
 --line 378 of file references.bib
 Warning--entry type for "scikit" isn't style-file defined
 --line 386 of file references.bib
+Warning--entry type for "keras" isn't style-file defined
+--line 394 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-Warning--empty booktitle in tensorflow_arch
 You've used 31 entries,
             1791 wiz_defined-function locations,
-            606 strings with 7212 characters,
-and the built_in function-call counts, 5059 in all, are:
-= -- 404
+            604 strings with 7148 characters,
+and the built_in function-call counts, 5022 in all, are:
+= -- 402
 > -- 188
 < -- 1
 + -- 80
 - -- 49
-* -- 239
-:= -- 750
-add.period$ -- 77
+* -- 235
+:= -- 744
+add.period$ -- 76
 call.type$ -- 31
 change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 251
-empty$ -- 618
+cite$ -- 32
+duplicate$ -- 245
+empty$ -- 613
 format.name$ -- 49
-if$ -- 1172
+if$ -- 1164
 int.to.chr$ -- 0
 int.to.str$ -- 31
-missing$ -- 25
-newline$ -- 142
+missing$ -- 24
+newline$ -- 141
 num.names$ -- 24
-pop$ -- 163
+pop$ -- 162
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 129
+skip$ -- 130
 stack$ -- 0
 substring$ -- 181
 swap$ -- 43
@@ -71,8 +72,8 @@ text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
+warning$ -- 1
 while$ -- 39
 width$ -- 33
-write$ -- 284
+write$ -- 283
 (There were 8 warnings)

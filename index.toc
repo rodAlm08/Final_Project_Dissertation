@@ -8,16 +8,16 @@
 \contentsline {section}{\numberline {3.1}Recruitment of Volunteers}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Data Collection}{7}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Data Collection Procedure}{10}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Prediction Models}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Software Development}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Meetings}{12}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Supervisor Meetings}{12}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Client Meetings}{13}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Development Tools}{13}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Postman}{13}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Visual Studio Code}{13}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Teams}{14}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Version Control}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.3}Software Development}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Meetings}{12}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Supervisor Meetings}{12}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Client Meetings}{13}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Development Tools}{13}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Postman}{13}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Visual Studio Code}{13}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Teams}{14}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Draw.io}{14}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Version Control}{14}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Technology Review}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Executive Dashboard}{15}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Angular}{15}{subsection.4.1.1}%
@@ -54,9 +54,11 @@
 \contentsline {subsection}{\numberline {4.5.1}MochaJS}{30}{subsection.4.5.1}%
 \contentsline {section}{\numberline {4.6}Difficulties}{32}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Embedded JavaScript (EJS)}{32}{subsection.4.6.1}%
-\contentsline {chapter}{\numberline {5}System Design}{34}{chapter.5}%
-\contentsline {chapter}{\numberline {6}System Evaluation}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Working with Tables}{38}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Conclusion}{40}{chapter.7}%
-\contentsline {chapter}{Appendix}{41}{section*.30}%
-\contentsline {chapter}{Bibliography}{63}{chapter*.32}%
+\contentsline {section}{\numberline {4.7}Security}{33}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}JSON Web Tokens - JWT}{33}{subsection.4.7.1}%
+\contentsline {chapter}{\numberline {5}System Design}{35}{chapter.5}%
+\contentsline {chapter}{\numberline {6}System Evaluation}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Working with Tables}{39}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}%
+\contentsline {chapter}{Appendix}{42}{section*.29}%
+\contentsline {chapter}{Bibliography}{64}{chapter*.31}%

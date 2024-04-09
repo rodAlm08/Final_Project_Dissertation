@@ -183,11 +183,10 @@ the creation of custom machine learning models. It is also highly scalable, allo
     \item \textbf{Large Community and Support}: Having a vast community, TensorFlow benefits from a plethora of tutorials, documentation, and active community support which aids in solving problems and improving the framework.
 \end{itemize}
 
-Figure~\ref{fig:tensorflow-architecture} \cite{tensorflow_arch} shows the TensorFlow Architecture. The architecture is designed to be flexible and scalable, allowing for computations on a variety of devices and the ability to handle large-scale machine learning projects.
-
 \subsubsection{Keras}
 
-Keras, integrated to TensorFlow, is a high-level neural networks API, written in Python, that allows for the rapid prototyping of deep learning models. 
+Keras, is a high-level neural networks API, written in Python, that runs on top of TensorFlow. It allows for the rapid prototyping of deep learning models, with a
+focus on user-friendliness, modularity, and extensibility. \cite{keras}
 
 \begin{itemize}
     \item \textbf{Modularity and Composability}: Keras models are assembled by connecting configurable building blocks together, with few restrictions. 
@@ -209,6 +208,17 @@ Keras, integrated to TensorFlow, is a high-level neural networks API, written in
 
 \end{itemize}
 
+Keras simplify the process of creating the neural network structure, as well as training and evaluating the model. 
+
+Figure \ref{fig:keras} shows the architecture of TensorFlow and Keras. TensorFlow is the core library for numerical computation, while Keras is a high-level
+API that runs on top of TensorFlow, providing a user-friendly interface for building and training deep learning models.
+
+\begin{figure*}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/keras.png}
+    \caption{TensorFlow vs Keras Architecture}
+    \label{fig:keras}    
+\end{figure*}
 
 
 \section{Backend Technologies}
@@ -483,7 +493,28 @@ allowing for the integration of additional features and functionalities to enhan
     \caption{EJS Features}
 \end{table}
 
+\section{Security}
+Security is a critical aspect of any application, especially when dealing with sensitive data. In the context of this project, security measures were implemented 
+to protect the application from potential threats and vulnerabilities. Among the various security measures available, JSON Web Tokens (JWT) was chosen for securely
+transmiting information between parties as JSON objects. 
 
-\section*{JWT}
+\subsection{JSON Web Tokens - JWT}
+JWT play an important role in authentication and authorization precesses. One of the main advantages of JWT is that it allows for the transmission of information 
+between parties as JSON objects in a secure and compact manner. 
+
+The JWT structure consists of three parts: a header, a payload, and a signature. The header contains information about the type of token and the algorithm used
+to sign it. The payload contains the claims, which are statements about an entity and additional data. The signature is used to verify that the sender of the JWT
+is who it says it is and to ensure that the message was not changed along the way.
+
+\textbf{Utilizing the Token}: Once the client possess the token, it can be included in the header of the HTTP request to the server. The server can then verify 
+the token and grant access to the requested resource if the token is valid.
+
+\textbf{Assessing Toke Validity}: Receiving a token does not guarantee its validity. The server must verify the token to ensure that it has not been tampered with
+and that it is still valid. This is done by checking the signature of the token and verifying the claims in the payload.
+
+\textbf{Decision on Access}: If the token is valid, the server can grant access to the requested resource. If the token is invalid, the server can deny access.
+
+\textbf{Token Expiration}: JWTs can have an expiration time, after which they are no longer valid. This helps to prevent the misuse of tokens and enhances security.
+
 
 
