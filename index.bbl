@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{despa2014comparative}
+Mihai~Liviu Despa.
+\newblock Comparative study on software development methodologies.
+\newblock {\em Database Systems Journal}, 5(3), 2014.
+
 \bibitem{ortega2018pre}
 Emily Ortega and CJK Wang.
 \newblock Pre-performance physiological state: Heart rate variability as a
@@ -29,11 +34,6 @@ Daniel Bonnar, Benjamin Castine, Naomi Kakoschke, and Gemma Sharp.
 Polar.
 \newblock Polar vantage v user manual, 2324.
 
-\bibitem{despa2014comparative}
-Mihai~Liviu Despa.
-\newblock Comparative study on software development methodologies.
-\newblock {\em Database Systems Journal}, 5(3), 2014.
-
 \bibitem{angular-components}
 Angular Components.
 
@@ -48,11 +48,6 @@ Helder Da~Rocha.
 \newblock {\em Learn Chart. js: Create interactive visualizations for the web
   with chart. js 2}.
 \newblock Packt Publishing Ltd, 2019.
-
-\bibitem{d3}
-Nick~Qi Zhu.
-\newblock {\em Data visualization with D3. js cookbook}.
-\newblock Packt Publishing Ltd, 2013.
 
 \bibitem{bigdata}
 {News}.
@@ -134,6 +129,10 @@ Mocha.
 \bibitem{ejs}
 EJS.
 \newblock Ejs, 2024.
+
+\bibitem{jwt}
+JWT.
+\newblock Jwt, 2024.
 
 \bibitem{apache_spark}
 \url{https://spark.apache.org/docs/latest/ml-classification-regression.html}.
