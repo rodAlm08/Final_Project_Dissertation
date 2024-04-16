@@ -1,11 +1,29 @@
 \chapter{Methodology}
 
 This research is geared towards finding a correlation between users' biometric data to their performance in a first-person shooter gaming scenario. The quality of the user data 
-collected was critical in ensuring that the research aims are achieved. For Quality Assurance purposes, a systematic step-by-step approach has been designed for the data-capturing 
+collected was critical in ensuring that the research aims were achieved. For Quality Assurance purposes, a systematic step-by-step approach has been designed for the data-capturing 
 process. An activity monitoring device was distributed to the volunteers in the form of a Polar Watch. The individuals were instructed to use these devices at pre-designated times 
 prior to undertaking a test in the form of a First-Person Shooter Game. Results from the test, was than paired with their biometric data for further analysis.
 
-\section{Recruitment of Volunteers}
+\section{Requirements Engineering}
+The requirements engineering process was carried focusing on the research objectives. The requirements engineering process was divided into the following stages:
+
+\subsection{Requirement Input}
+The research objectives were determined by the client. The research objectives were to find a correlation between users' biometric data to their performance in a
+first-person shooter gaming scenario. The research objectives were used as the input for the requirements engineering process.
+
+\subsection{Requirement Analysis}
+A feasibility study was carried out to determine the feasibility of the research objectives. The feasibility study was carried out to determine the resources 
+that would be required to implement the research objectives and to determine the time frame for the research. 
+
+\subsection{Requirement Specification}
+After analysing the requirements, the final specifications were defined for the research. The final specifications were used as the input for the design process.
+
+\section{Analysis}
+The analysis phase involved examining the collected biometric data and gaming performance results to identify patterns and correlations. The analysis was carried 
+out in the following stages:
+
+\subsection{Recruitment of Volunteers}
 The process of recruiting the volunteers was carried out in a way that ensured they satisfied the conditions of the research. The volunteers were required to be students of the Atlantic 
 Technological University (ATU) Galway campus. The volunteers were also required to be over the age of 18 and have no known medical conditions that could affect their performance in the
 test. A microsoft form was created and distributed to the students of the university to register their interest in the research. A poster \ref{fig:recruitment-poster} was created
@@ -31,7 +49,8 @@ For a volunteer to be considered, they were required to fill out the form and su
     \item Participant should also sign the form as a consent to participate in the research.
 \end{itemize}
 
-\section{Data Collection}
+
+\subsection{Data Collection}
 
 For the purpose of the research, different categories of data was collected from the volunteers through the monitoring device to help achieve the stated goals. As personal data was
 being collected, an application to the Ethics Research and Ethics Committee was made to ensure that the data collection process was in compliance with the General Data Protection.
@@ -88,7 +107,7 @@ has been reserved for the data collection effort. The following metrics for the 
     \item Accuracy: measure of the percentage of shots fired to the number of targets hit. 
 \end{itemize}
 
-\subsection{Data Collection Procedure}
+\subsubsection{Data Collection Procedure}
 
 The data collection process followed the below-listed steps to maximize throughput and minimize the average time spent processing each participant. The whole procedure can be found in the appendix \ref{appendix}.
 \par
@@ -110,7 +129,8 @@ The following weekly schedule was available for the volunteers at various times 
 
 Results of the test were then paired with their biometric data for further analysis.
 
-\section{Software Development}
+\section{Design and Development}
+
 As a software development methodology for this project, many factors were considered. Initially, a comparison of the different software development methodologies was carried out to determine
 which would be the most suitable for the project. The comparison was based on the following factors:
 
@@ -142,6 +162,26 @@ In general, Extreme Programming presents a flexible and iterative method for sof
 
 Figure \ref{fig:agile} shows the Extreme Programming methodology. The methodology is divided into four main phases: Planning, Designing, Coding, and Testing. 
 Each phase is developed iteratively, allowing for the project to be developed in a series of small, manageable steps. 
+
+\subsection{Testing}
+As part of this iterative process, testing was carried out at each stage of the development process. The testing was carried out to ensure that the project 
+was on track and that the stakeholders were satisfied with the progress. The testing was carried out in the following stages:
+
+\begin{itemize}
+    \item Mocha Testing: Testing individual functions of the system to ensure they function correctly.
+    \item Integration Testing: Testing the integration of different components to ensure they work together smoothly.
+    \item System Testing: Testing the entire system to ensure it meets the specified requirements.
+\end{itemize}
+    
+
+\subsection{Deployment}
+
+After the system was accepted by the stakeholders, it was deployed to the server where it could be accessed. 
+
+\subsection{Maintenance and Update}
+
+Following deployment, the system was maintained and updated as needed to ensure that it continued to meet the stakeholders' requirements. Regular updates
+were made to the system to ensure that it remained up-to-date and that it continued to meet the stakeholders' needs.
 
 \section{Meetings}
 In this section we will discuss the different types of meetings that were held throughout the project. The meetings were held to ensure that the project was on track
@@ -201,7 +241,6 @@ diagrams, such as flowcharts, UML diagrams, and network diagrams, accommodating 
 
 The diagrams were used to help visualize the project architecture and to communicate the design of the
 project to the stakeholders.
-
 
 \section{Version Control}
 
