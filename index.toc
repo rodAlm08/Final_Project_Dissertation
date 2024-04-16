@@ -69,12 +69,13 @@
 \contentsline {chapter}{\numberline {5}System Design}{36}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Machine Learning Models}{40}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Introduction}{40}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Data Pre-processing}{41}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Activity Steps}{41}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Heart Rate Maximum}{41}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Feature Engineering}{41}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Classical ML Regression Model}{41}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Neural Network Regression Model}{41}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}%
-\contentsline {chapter}{Appendix}{43}{section*.32}%
-\contentsline {chapter}{Bibliography}{65}{chapter*.34}%
+\contentsline {section}{\numberline {6.2}Data Exploration}{41}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Data Pre-processing}{43}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Activity Steps}{43}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Heart Rate Maximum}{43}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Model Selection and Evaluation}{43}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Classical ML Regression Model}{44}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Neural Network Regression Model}{44}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Conclusion}{45}{chapter.7}%
+\contentsline {chapter}{Appendix}{46}{section*.34}%
+\contentsline {chapter}{Bibliography}{68}{chapter*.36}%

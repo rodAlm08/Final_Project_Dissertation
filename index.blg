@@ -11,8 +11,8 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 A level-1 auxiliary file: review.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 A level-1 auxiliary file: design.aux
-Reallocating 'name_of_file' (item size: 1) to 15 items.
-A level-1 auxiliary file: evaluation.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: mlModels.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: conclusion.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
@@ -41,7 +41,7 @@ Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
 You've used 32 entries,
             1791 wiz_defined-function locations,
-            605 strings with 7107 characters,
+            605 strings with 7105 characters,
 and the built_in function-call counts, 5112 in all, are:
 = -- 406
 > -- 192
