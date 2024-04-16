@@ -1,1 +1,57 @@
-\chapter{System Evaluation}
+\chapter{Machine Learning Models}
+
+\section{Introduction}
+As explained in dept in the methodology chapter, the biometric data collected through the watches generated a total of 6 independent variables:
+
+\begin{itemize}
+    \item Heart Rate Maximum \textit{bm\_HR\_max}
+    \item Heart Rate Average \textit{bm\_HR\_avg}
+    \item Heart Rate Variability \textit{bm\_HR\_var}
+    \item Activity Steps \textit{bm\_act\_steps}
+    \item Sleep \textit{bm\_sleep}
+\end{itemize}
+
+The dependent variables that were collected through the gaming tests are:
+
+\begin{itemize}
+    \item Fine Motor Tracking Time \textit{fm\_avg\_trk\_time}
+    \item Fine Motor Accuracy \textit{fm\_accuracy}
+    \item Visual Average Response Time \textit{vx\_avg\_res\_time}
+    \item Visual Shot Accuracy \textit{vx\_shot\_accuracy}
+    \item Visual Target Accuracy \textit{vx\_trg\_accuracy}
+    \item Audio Average Response Time \textit{au\_avg\_res\_time}
+\end{itemize}
+
+The goal based on the research question was to find the correlation between the independent and dependent variables.
+
+\section{Data Pre-processing}
+To have the dataset suitable for the machine learning models, the data was pre-processed. It was found that were many null values that needed to be handled, 
+it was removed from the dataset as it was not possible to impute the values. The \section{Activity Steps} and \section{Heart Rate Maximum} were found to have
+outliers that were removed from the dataset. The data was then scaled using StandardScaler from the sklearn library. This was done to ensure that all the features
+contribute equally to the result.
+The columns \textit{\_id}, \textit{\_date} and \textit{\_user} were removed from the dataset as they were not needed for the machine learning models.
+
+
+
+
+
+
+\section{Feature Engineering}
+
+
+
+
+
+\section{Classical ML Regression Model}
+
+
+
+
+
+
+
+
+\section{Neural Network Regression Model}
+
+
+

@@ -523,6 +523,7 @@ OUTPUT evaluation.aux
 INPUT .\evaluation.tex
 INPUT .\evaluation.tex
 INPUT evaluation.tex
+INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT .\conclusion.tex
 INPUT .\conclusion.tex
 OUTPUT conclusion.aux
@@ -662,7 +663,6 @@ INPUT .\volunteer_recruitment.pdf
 INPUT .\index.bbl
 INPUT .\index.bbl
 INPUT index.bbl
-INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
