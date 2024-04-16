@@ -19,45 +19,48 @@
 \contentsline {subsection}{\numberline {3.5.4}Draw.io}{14}{subsection.3.5.4}%
 \contentsline {section}{\numberline {3.6}Version Control}{14}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Technology Review}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Executive Dashboard}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Angular}{15}{subsection.4.1.1}%
-\contentsline {subsubsection}{Main Concepts: Components, Modules and Services}{15}{section*.10}%
-\contentsline {subsubsection}{Components}{15}{section*.11}%
-\contentsline {subsubsection}{Modules}{16}{section*.12}%
-\contentsline {subsubsection}{Services}{16}{section*.13}%
-\contentsline {subsection}{\numberline {4.1.2}Angular architecture}{16}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Advantages of using Angular}{16}{subsection.4.1.3}%
-\contentsline {subsubsection}{Component-Based Architecture}{16}{section*.14}%
-\contentsline {subsubsection}{Mobile-Friendly Approach}{17}{section*.15}%
-\contentsline {subsubsection}{Two-Way Data Binding}{17}{section*.16}%
-\contentsline {subsubsection}{Asynchronous Programming}{17}{section*.17}%
-\contentsline {subsubsection}{Single-Page Applications}{17}{section*.18}%
-\contentsline {subsubsection}{Code Re-usability}{17}{section*.19}%
-\contentsline {subsubsection}{Dependency Injection}{17}{section*.20}%
-\contentsline {subsubsection}{Angular Material}{17}{section*.21}%
-\contentsline {subsubsection}{Angular CLI}{18}{section*.22}%
-\contentsline {section}{\numberline {4.2}Data Visualization}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Chart.js}{18}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}AI module - Data analysis}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Scikit-learn}{19}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}TensorFlow}{20}{subsection.4.3.2}%
-\contentsline {subsubsection}{Keras}{21}{section*.23}%
-\contentsline {section}{\numberline {4.4}Backend Technologies}{22}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Node JS}{22}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}PM2}{23}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Docker}{24}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}NGINX}{25}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}MySQL}{26}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}Express JS}{27}{subsection.4.4.6}%
-\contentsline {section}{\numberline {4.5}Testing Technologies}{28}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}MochaJS}{28}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Difficulties}{30}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Embedded JavaScript (EJS)}{30}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Security}{31}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}JSON Web Tokens - JWT}{31}{subsection.4.7.1}%
-\contentsline {chapter}{\numberline {5}System Design}{33}{chapter.5}%
-\contentsline {chapter}{\numberline {6}System Evaluation}{37}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Working with Tables}{37}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Conclusion}{39}{chapter.7}%
-\contentsline {chapter}{Appendix}{40}{section*.29}%
-\contentsline {chapter}{Bibliography}{62}{chapter*.31}%
+\contentsline {section}{\numberline {4.1}IAAS - Infrastructure as a Service}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Amazon Web Services (AWS)}{15}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Executive Dashboard}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Angular}{16}{subsection.4.2.1}%
+\contentsline {subsubsection}{Main Concepts: Components, Modules and Services}{16}{section*.10}%
+\contentsline {subsubsection}{Components}{16}{section*.11}%
+\contentsline {subsubsection}{Modules}{17}{section*.12}%
+\contentsline {subsubsection}{Services}{17}{section*.13}%
+\contentsline {subsubsection}{Angular architecture}{17}{section*.14}%
+\contentsline {subsubsection}{Advantages of using Angular}{18}{section*.15}%
+\contentsline {subsubsection}{Component-Based Architecture}{18}{section*.16}%
+\contentsline {subsubsection}{Mobile-Friendly Approach}{18}{section*.17}%
+\contentsline {subsubsection}{Two-Way Data Binding}{18}{section*.18}%
+\contentsline {subsubsection}{Asynchronous Programming}{18}{section*.19}%
+\contentsline {subsubsection}{Single-Page Applications}{18}{section*.20}%
+\contentsline {subsubsection}{Code Re-usability}{18}{section*.21}%
+\contentsline {subsubsection}{Dependency Injection}{18}{section*.22}%
+\contentsline {subsubsection}{Angular Material}{19}{section*.23}%
+\contentsline {subsubsection}{Angular CLI}{19}{section*.24}%
+\contentsline {subsection}{\numberline {4.2.2}Embedded JavaScript (EJS)}{19}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}AJAX}{20}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Data Visualization}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Chart.js}{21}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}AI module - Data analysis}{22}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Scikit-learn}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}TensorFlow}{23}{subsection.4.4.2}%
+\contentsline {subsubsection}{Keras}{24}{section*.25}%
+\contentsline {section}{\numberline {4.5}Backend Technologies}{25}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Node JS}{25}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}PM2}{26}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Docker}{27}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}NGINX}{28}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}MySQL}{29}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}Express JS}{30}{subsection.4.5.6}%
+\contentsline {section}{\numberline {4.6}Testing Technologies}{31}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}MochaJS}{31}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Security}{33}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}JSON Web Tokens - JWT}{33}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Difficulties}{34}{section.4.8}%
+\contentsline {chapter}{\numberline {5}System Design}{35}{chapter.5}%
+\contentsline {chapter}{\numberline {6}System Evaluation}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Working with Tables}{39}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}%
+\contentsline {chapter}{Appendix}{42}{section*.31}%
+\contentsline {chapter}{Bibliography}{64}{chapter*.33}%

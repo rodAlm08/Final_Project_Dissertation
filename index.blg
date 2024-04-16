@@ -35,47 +35,49 @@ Warning--entry type for "keras" isn't style-file defined
 --line 394 of file references.bib
 Warning--entry type for "jwt" isn't style-file defined
 --line 402 of file references.bib
+Warning--entry type for "aws" isn't style-file defined
+--line 410 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 31 entries,
+You've used 32 entries,
             1791 wiz_defined-function locations,
-            603 strings with 7101 characters,
-and the built_in function-call counts, 4994 in all, are:
-= -- 398
-> -- 188
+            605 strings with 7107 characters,
+and the built_in function-call counts, 5112 in all, are:
+= -- 406
+> -- 192
 < -- 1
-+ -- 80
-- -- 49
-* -- 233
-:= -- 738
-add.period$ -- 75
-call.type$ -- 31
-change.case$ -- 20
++ -- 82
+- -- 50
+* -- 234
+:= -- 755
+add.period$ -- 77
+call.type$ -- 32
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 240
-empty$ -- 612
-format.name$ -- 49
-if$ -- 1157
+cite$ -- 33
+duplicate$ -- 245
+empty$ -- 630
+format.name$ -- 50
+if$ -- 1185
 int.to.chr$ -- 0
-int.to.str$ -- 31
+int.to.str$ -- 32
 missing$ -- 22
-newline$ -- 140
-num.names$ -- 24
-pop$ -- 162
+newline$ -- 144
+num.names$ -- 25
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 132
+skip$ -- 136
 stack$ -- 0
 substring$ -- 181
-swap$ -- 43
+swap$ -- 44
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 39
-width$ -- 33
-write$ -- 281
-(There were 9 warnings)
+while$ -- 40
+width$ -- 34
+write$ -- 289
+(There were 10 warnings)

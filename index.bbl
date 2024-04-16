@@ -34,6 +34,10 @@ Daniel Bonnar, Benjamin Castine, Naomi Kakoschke, and Gemma Sharp.
 Polar.
 \newblock Polar vantage v user manual, 2324.
 
+\bibitem{aws}
+AWS.
+\newblock Aws, 2024.
+
 \bibitem{angular-components}
 Angular Components.
 
@@ -42,6 +46,10 @@ Angular Modules.
 
 \bibitem{angular-services}
 Angular Services.
+
+\bibitem{ejs}
+EJS.
+\newblock Ejs, 2024.
 
 \bibitem{da2019learn}
 Helder Da~Rocha.
@@ -125,10 +133,6 @@ Evan Hahn.
 \bibitem{mocha}
 Mocha.
 \newblock Mocha, 2024.
-
-\bibitem{ejs}
-EJS.
-\newblock Ejs, 2024.
 
 \bibitem{jwt}
 JWT.

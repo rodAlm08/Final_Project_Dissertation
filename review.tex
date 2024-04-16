@@ -2,9 +2,46 @@
 \addtolength{\topmargin}{-2.5pt}
 
 \chapter{Technology Review}
-
 This section will provide an overview of the technologies chosen for the project. It was chosen based on the project requirements. 
 The technologies used in the project are as follows:
+
+
+\section{IAAS - Infrastructure as a Service}
+IAAS is a cloud computing service that provides virtualized computing resources over the internet. It is one of the three main categories of cloud computing 
+services, alongside Platform as a Service (PAAS) and Software as a Service (SAAS). IAAS provides virtualized computing resources, such as virtual machines, 
+storage, and networking, allowing users to build and manage their own IT infrastructure in the cloud.
+
+\subsection{Amazon Web Services (AWS)}
+For this project, AWS EC2 was chosen as the IAAS provider. AWS EC2 is a web service that provides resizable compute capacity in the cloud. It allows users to
+launch virtual servers, known as instances, on the AWS cloud. EC2 instances can be configured with different types of CPU, memory, storage, and networking capacity,
+providing users with the flexibility to choose the resources that best suit their needs. /cite{aws} 
+
+The table below shows the configurations of the EC2 instances available on AWS\cite{aws}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Instance Type} & \textbf{Description}                                                                                                      \\
+        \hline
+        t2.micro              & General-purpose instance type that provides a balance of compute, memory, and network resources.                             \\
+        \hline
+        t2.medium             & Provides a higher level of compute, memory, and network resources compared to the t2.micro instance type.                   \\
+        \hline
+        t2.large              & Offers a higher level of compute, memory, and network resources compared to the t2.medium instance type.                     \\
+        \hline
+        t2.xlarge             & Provides a higher level of compute, memory, and network resources compared to the t2.large instance type.                    \\
+        \hline
+    \end{tabularx}
+    \label{tab:aws-instances}
+    \caption{AWS EC2 Instance Types}
+
+\end{table}
+
+For this project, the t2.micro instance type was chosen as it provides a balance of compute, memory, and network resources, making it suitable for the project's
+requirements. The t2.micro instance type is also cost-effective, making it an ideal choice for the project's budget constraints.
+
+The complete system architecture for this project is explained in detail in the System Architecture chapter.
 
 \section{Executive Dashboard}
 When it came to developing the Executive Dashboard for data analysis it was crucial to select the tools that could transform data into easily comprehensible information. After conducting research and exploring alternatives Angular and Chart.js were chosen for specific reasons.
@@ -22,7 +59,7 @@ Angular is composed of three foundational blocks: Components, Modules and servic
 
 \subsubsection{Services} Angular services use typescript classes with injectable decorators. The decorator informs Angular that the class function as a service
 and can be injected into other components that need that service.\cite{angular-services}
-\subsection{Angular architecture} 
+\subsubsection{Angular architecture} 
 The Model-View-Controller (MVC) has as its components the model, the view, and the controller. With controller orchestrating the communication and
 interactions between the model and the view.
 
@@ -33,7 +70,8 @@ interactions between the model and the view.
     \label{fig:angular-arch}
 \end{figure}
 
-\subsection{Advantages of using Angular}
+\subsubsection{Advantages of using Angular}
+
 \subsubsection{Component-Based Architecture}
 As mentioned earlier in discussions Angular organizes its functionalities into components. These components have the ability to communicate with each other enabling updates to sections without affecting the rest of the application.
 
@@ -63,6 +101,62 @@ Angular's documentation offers a range of built user interface components and mo
 
 which helps reduce configuration errors and gives the developer the freedom to dive into creative aspects of the project, focusing on innovation and functionality rather than getting bogged down by initial setup complexities.
 
+\subsection{Embedded JavaScript (EJS)}
+EJS is a straightforward templating language that enables the creation of HTML markup using pure JavaScript. It provides a rendering mechanism for dynamically generating HTML content.\cite{ejs}
+Its compatibility with Express.js allows for it to render data from the server-side to the client-side, making it an ideal choice for web application development. 
+EJS also allows to reuse of code snippets, increasing the efficiency of web application development. 
+It also allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions. EJS supports looping constructs, facilitating the iteration over data collections 
+and the generation of repetitive HTML elements. It provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process. EJS is highly extensible,
+allowing for the integration of additional features and functionalities to enhance the rendering process. \cite{ejs}
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Feature}     & \textbf{Description}                                                                                                                              \\
+        \hline
+        Simple Syntax       & EJS uses a simple syntax that allows for the embedding of JavaScript code within HTML markup.                                                      \\
+        \hline
+        Dynamic Content     & EJS enables the dynamic generation of HTML content.                      \\
+        \hline
+        Code Reusability    & EJS supports the reuse of code snippets, enhancing the efficiency of web application development.                                                    \\
+        \hline
+        Conditional Logic   & EJS allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions.                      \\
+        \hline
+        Looping Constructs  & EJS supports looping constructs, facilitating the iteration over data collections and the generation of repetitive HTML elements.                      \\
+        \hline
+        Error Handling      & EJS provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process.                         \\
+        \hline
+        Extensibility       & EJS is highly extensible, allowing for the integration of additional features and functionalities to enhance the rendering process.                      \\
+        \hline
+    \end{tabularx}
+    \label{tab:ejs}
+    \caption{EJS Features}
+\end{table}
+
+\subsection{AJAX}
+AJAX stands for Asynchronous JavaScript and XML. It is not a programming language, but a technique used in web development to create interactive web applications.
+It allows the page to be loaded asynchronously by exchanging data with the server behind the scenes. This means that it is possible to update parts of a web page
+without reloading the entire page. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/ajax.png}
+    \caption{AJAX}
+    \label{fig:ajax}
+\end{figure}
+
+Figure \ref{fig:ajax} shows the process of AJAX. 
+
+\begin{itemize}
+    \item 1. An event is triggered in a web page (the page is loaded, a button is clicked, etc.).
+    \item 2. An XMLHttpRequest object is created by JavaScript.
+    \item 3. The XMLHttpRequest object sends a request to a web server.
+    \item 4. The server processes the request.
+    \item 5. The server sends a response back to the web page.
+    \item 6. The response is read by JavaScript.
+    \item 7. The web page is updated.
+\end{itemize}
 
 \section{Data Visualization}
 
@@ -70,7 +164,6 @@ The visual representation of data is a important aspect of the project. It is us
 It allows to identify patterns, and find correlations that would be hard to identify in raw data, standing as an essential step in the data analysis process.
 
 \subsection{Chart.js}
-
 
 Chart.js is an efficient JavaScript library, it is not only open-source but also offers capabilities where attractive charts and graphs can be generated, and later
 embedded into web pages. Chart.js became very popular due to its simplicity and ease of use, making it an excellent choice for data visualization tasks. Utilizing HTML5 
@@ -425,45 +518,6 @@ Mocha has proven to be an invaluable asset to our project, significantly enhanci
 to a higher quality final product.
 
 
-\section{Difficulties}
-
-The project faced a few challenges during the development process. The main one that affectted mostly the front end development was the deployment constraints on the virtual machine.
-The deployment phase was challenging due to the resource intensive of our initial technology stack with Angular, Chart.js, Express JS, and Node JS. The virtual machine was not able
-to handle the load of the application, which resulted in slow performance and frequent crashes. This led to the decision to switch to a more lightweight technology stack, 
-which included EJS, Espress, CORS and AXIOS. This change improved the performance of the application and resolved the deployment issues.
-
-\subsection{Embedded JavaScript (EJS)}
-EJS is a straightforward templating language that enables the creation of HTML markup using pure JavaScript. It provides a rendering mechanism for dynamically generating HTML content.\cite{ejs}
-Its compatibility with Express.js allows for it to render data from the server-side to the client-side, making it an ideal choice for web application development. 
-EJS also allows to reuse of code snippets, increasing the efficiency of web application development. 
-It also allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions. EJS supports looping constructs, facilitating the iteration over data collections 
-and the generation of repetitive HTML elements. It provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process. EJS is highly extensible,
-allowing for the integration of additional features and functionalities to enhance the rendering process. \cite{ejs}
-
-\begin{table}[H]
-    \centering
-    \begin{tabularx}{\textwidth}{|l|X|}
-        \hline
-        \textbf{Feature}     & \textbf{Description}                                                                                                                              \\
-        \hline
-        Simple Syntax       & EJS uses a simple syntax that allows for the embedding of JavaScript code within HTML markup.                                                      \\
-        \hline
-        Dynamic Content     & EJS enables the dynamic generation of HTML content.                      \\
-        \hline
-        Code Reusability    & EJS supports the reuse of code snippets, enhancing the efficiency of web application development.                                                    \\
-        \hline
-        Conditional Logic   & EJS allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions.                      \\
-        \hline
-        Looping Constructs  & EJS supports looping constructs, facilitating the iteration over data collections and the generation of repetitive HTML elements.                      \\
-        \hline
-        Error Handling      & EJS provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process.                         \\
-        \hline
-        Extensibility       & EJS is highly extensible, allowing for the integration of additional features and functionalities to enhance the rendering process.                      \\
-        \hline
-    \end{tabularx}
-    \label{tab:ejs}
-    \caption{EJS Features}
-\end{table}
 
 \section{Security}
 Security is a critical aspect of any application, especially when dealing with sensitive data. In the context of this project, security measures were implemented 
@@ -491,4 +545,9 @@ This is done by checking the signature of the token and verifying the claims in 
 \textbf{Token Expiration}: Expiration time can be set for JWTs, after which they are no longer valid. This helps to prevent the misuse of tokens and enhances security.
 
 
+\section{Difficulties}
 
+The project faced a few challenges during the development process. The main one that affectted mostly the front end development was the deployment constraints on the virtual machine.
+The deployment phase was challenging due to the resource intensive of our initial technology stack with Angular, Chart.js, Express JS, and Node JS. The virtual machine was not able
+to handle the load of the application, which resulted in slow performance and frequent crashes. This led to the decision to switch to a more lightweight technology stack, 
+which included EJS, Espress, CORS and AXIOS. This change improved the performance of the application and resolved the deployment issues.
