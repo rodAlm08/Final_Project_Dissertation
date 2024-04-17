@@ -48,15 +48,68 @@ between the variables.
     \label{fig:correlation_heatmap}
 \end{figure}
 
-From the correlation heatmap, it can be seen that there is are some variables that are highly correlated with each other. Below are the variables that are highly correlated with each other:
+The correlation heatmap shows the correlation between the independent and dependent variables. The correlation values range from -1 to 1. A value of 1 indicates 
+a strong positive correlation, a value of -1 indicates a strong negative correlation and a value of 0 indicates no correlation. The correlation heatmap shows 
+the following correlations between the dependent and the independent variables:
+
+\subsubsection*{Heart Rate Average (\textit{bm\_HR\_avg})}
+\begin{itemize}
+    \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): A negative correlation of \\ -0.41 suggests that as the average heart rate increases, the fine motor
+    tracking time tasks decreases, indicating that individuals with faster heart rates tend to complete fine motor tasks a bit quicker.
+    \item Fine Motor Accuracy (\textit{fm\_accuracy}): A positive correlation of 0.16 indicates a weak relationship suggesting that a higher heart rate average might be very 
+    slightly associated with higher fine motor accuracy. It shows that there is a small tendency for individuals with a higher heart rate to be slightly more precise
+    in tasks that need fine motor skills.
+    \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): A negative correlation of -0.35 suggests a moderate relationship where a higher average heart rate
+    is associated with faster response times. It indicates that individuals with higher heart rates also tend to react faster to visual things.
+    \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): A positive correlation of 0.38 indicates a moderate relationship, suggesting that individuals with higher heart
+    rate might have a better accuracy in shooting tasks.
+    \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): A positive correlation of 0.22 indicates a weak relationship, suggesting that higher heart rates averages might
+    be associated with slightly better visual target accuracy.
+    \item Audio Average Response Time (\textit{au\_avg\_res\_time}): A very weak negative correlation of -0.05 suggest almost no relationship between average heart rate
+    and audio response time. It indicates there is no real connection between heart rate and how quickly the individuals responds to sounds.
+\end{itemize}
+
+\subsubsection*{Hear Rate Variability (\textit{bm\_HR\_var})}
 
 \begin{itemize}
-    \item Fine Average Tracking Time and Visual Average Response Time: Strong positive correlation (0.66), suggesting that as the Fine motor average tracking time increases, 
-    the Audio average response tends to increases.
-    \item Fine Motor Average Tracking Time and Sleep: Not a strong correlation (0.10), which could imply that higher the sleep time, the higher the fine motor average tracking time.
-    \item Visual Average Response Time and Sleep: A correlation of (0.20), indicates a slight tendency for a higher visual response time to be associated with higher sleep time.
-    \item Visual Shot Accuracy and Audio Average Response Time: A correlation of (0.29), suggests a slight tendency that higher Visual shot accuracy is associated with faster 
-    \item Heart Rate Average and Sleep
+    \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): A positive correlation of 0.20 suggests a weak association where greater heart rate variability 
+    might be associated with slightly longer fine motor tracking time tasks.
+    
+    \item Fine Motor Accuracy (\textit{fm\_accuracy}): A negative correlation of -0.14 suggest a very weak inverse relationship, where higher heart rate variability
+    could be slightly associated with a decrease in fine motor accuracy.
+    
+    \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): A positive correlation of 0.13 indicates very weak relationship, with slightly tendency for
+    higher heart rate variability to be associated with longer visual response times. 
+    
+    \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): A negative correlation of -0.27 indicates a weak to moderate inverse relationship, suggesting that
+    higher rate variability might be associated with a decrease in visual shot accuracy. It suggests that individuals with higher heart rate variability might 
+    have a lower accuracy in shooting tasks.
+    
+    \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): A negative correlation of -0.14 indicates a weak inverse relationship, suggesting that higher heart 
+    variability could slightly correlate with lower visual target accuracy. It suggests that those with more variation in their heart rate might not be quite as good 
+    at tasks that involve quickly identifying and selecting targets.
+    
+    \item Audio Average Response Time (\textit{au\_avg\_res\_time}): A positive correlation of 0.22 suggests a weak relationship, indicating that higher heart rate
+    variability might be associated with slightly longer audio response times.
+    
+\end{itemize}
+
+
+\subsubsection*{Sleep (\textit{bm\_sleep})}
+
+\begin{itemize}
+    \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): 
+    
+    \item Fine Motor Accuracy (\textit{fm\_accuracy}): 
+    
+    \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): 
+    
+    \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): 
+    
+    \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): 
+    
+    \item Audio Average Response Time (\textit{au\_avg\_res\_time}):
+    
 \end{itemize}
 
 
