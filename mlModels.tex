@@ -120,8 +120,9 @@ the following correlations between the dependent and the independent variables:
 To have the dataset suitable for the machine learning models, the data was pre-processed. It was found that were many null values that needed to be handled, 
 it was removed from the dataset as it was not possible to impute the values. The \textit{Activity Steps} and \textit{Heart Rate Maximum} were found to have
 outliers that were removed from the dataset. The data was then scaled using StandardScaler from the sklearn library. This was done to ensure that all the features
-contribute equally to the result.
-The columns \textit{\_id}, \textit{\_date} and \textit{\_user} were removed from the dataset as they were not needed for the machine learning models.
+contribute equally to the result. The columns \textit{\_id}, \textit{\_date} and \textit{\_user} were removed from the dataset as they were not needed for the machine learning models.
+The next step was to split the dataset into training and testing datasets. The training dataset was used to train the machine learning models and the testing dataset was used to evaluate
+the model. The dataset was split into 80\% training and 20\% testing. The dependent and independent variables were then separated into X and y. The data was then ready to be used for the machine learning models.
 
 
 \section{Model Selection and Evaluation}
@@ -149,17 +150,57 @@ dependent variables. The plot was used to see if the model was underfitting or o
 If the points were scattered, it indicated that the model was not performing well. The plot was used to see if the model was capturing the underlying patterns in the data. Below are the 
 actual versus predicted plots for the best performing model for each dependent variable.
 
-\subsubsection*{Fine Motor Tracking Time}
+\subsection*{Fine Motor Tracking Time}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\textwidth]{images/output_y_fm_time_rf.png}
-    \caption{Actual vs Predicted Fine Motor Tracking Time}
-    \label{fig:actual_vs_predicted_fm_avg_trk_time}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/test_data_fine_motor_tracking_time.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_fm_avg_trk_time_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/all_data_fine_motor_tracking_time.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_fm_avg_trk_time_all_data}
+    \end{subfigure}
+    \caption{Fine Motor Tracking Time Actual vs Predicted}
+    \label{fig:fine_motor_tracking_time_comparison}
 \end{figure}
 
-Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time} shows the actual versus predicted values for the Fine Motor Average Tracking Time. The model that performed the best for this dependent
-variable was the Random Forest Regressor. 
+\subsubsection*{Test Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_test} shows the actual versus predicted values for the Fine Motor Average Tracking Time using the test data. The model that performed 
+    the best for this dependent variable was the Random Forest Regressor. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
+    actual data were also found in the predicted data, with some deviations. 
+    \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, specially at the extremes. For instance, the model appears to underestimate the highest values
+    and overestimate the lowest values.
+    \item \textbf{Consistency}: The model shows decent consistency when the actual values are around the mean but is less consistent at capturing sudden changes in the actual data, such as sharp spikes ot dips.
+\end{itemize}
+
+\subsubsection*{All Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_all_data} shows the actual versus predicted values for the Fine Motor Average Tracking Time using all the data
+    available. When evaluating all the data, the model predictions closely follow the actual data's trend. This indicates that the model has learned the overall behavior of the dataset quite well.
+    Similar to the test data, the model captures the general pattern of movement in the actual values, but might not always match the amplitude of changes.
+    \item \textbf{Variance}: The variance between the actual and predicted values over all the data seems to be lower compared to the test data. This suggests that the model has been 
+    effectively trained to understand the data as a whole. Some exceptions occur where the actual values show significant deviation from the mean. In these areas, the predictions do not fully 
+    capture the extent of the actual values and show some deviation.
+    \item \textbf{Consistency}: The model shows good consistency in predicting the values when the actual values are around the mean. The predictions often match the actual values quite closely.
+\end{itemize}
+
+Overall the Random Forest Regressor model performed well in both scenarios, capturing the general trends of the Fine Motor Tracking Time and showing good consistency in prediction.
+The model, however, seems to struggle with accurately predicting the more extreme values in the dataset. It highlights the need for improving the model's performance on the more complex
+or extreme segments of the data.
+
+
+
+% Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time} shows the actual versus predicted values for the Fine Motor Average Tracking Time. The model that performed the best for this dependent
+% variable was the Random Forest Regressor. 
 
 \subsubsection*{Results and Analysis}
 The comparison between the actual and predicted values for Fine Motor Tracking Time shows the following characteristics:
@@ -175,21 +216,18 @@ In conclusion, the Random Forest Regressor model serves as a solid baseline for 
 \subsubsection*{Fine Motor Accuracy}
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/output_fm_accuracy_rf.png}
-    \caption{Actual vs Predicted Fine Motor Accuracy}
-    \label{fig:actual_vs_predicted_fm_accuracy}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=1\textwidth]{images/output_fm_accuracy_rf.png}
+%     \caption{Actual vs Predicted Fine Motor Accuracy}
+%     \label{fig:actual_vs_predicted_fm_accuracy}
+% \end{figure}
 
-Figure \ref{fig:actual_vs_predicted_fm_accuracy} shows the actual versus predicted values for the Fine Motor Accuracy. The model that performed the best for this dependent variable was
-the Random Forest Regressor. 
+% Figure \ref{fig:actual_vs_predicted_fm_accuracy} shows the actual versus predicted values for the Fine Motor Accuracy. The model that performed the best for this dependent variable was
+% the Random Forest Regressor. 
 
 \subsubsection*{Results and Analysis}
 The comparison between the actual and predicted values for Fine Motor Accuracy shows the following characteristics:
-
-\begin{itemize}
-    \item General Trend: The predictions generally track the trend of the actual Fine Motor Accuracy values; however, there are some deviations in the model's ability 
 
 
 

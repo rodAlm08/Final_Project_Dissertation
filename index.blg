@@ -1,48 +1,83 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: index.aux
-I found no \citation commands---while reading file index.aux
-I found no \bibdata command---while reading file index.aux
-I found no \bibstyle command---while reading file index.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 484 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: methodology.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+A level-1 auxiliary file: review.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+A level-1 auxiliary file: design.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: mlModels.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: appendix.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Database file #1: references.bib
+Warning--entry type for "dockerhub" isn't style-file defined
+--line 439 of file references.bib
+Warning--entry type for "polarManual" isn't style-file defined
+--line 703 of file references.bib
+Warning--entry type for "ejs" isn't style-file defined
+--line 739 of file references.bib
+Warning--entry type for "mocha" isn't style-file defined
+--line 755 of file references.bib
+Warning--entry type for "scikit" isn't style-file defined
+--line 771 of file references.bib
+Warning--entry type for "keras" isn't style-file defined
+--line 787 of file references.bib
+Warning--entry type for "jwt" isn't style-file defined
+--line 803 of file references.bib
+Warning--entry type for "aws" isn't style-file defined
+--line 819 of file references.bib
+Warning--I didn't find a database entry for "lin1991divergence"
+Warning--empty author in bigdata
+You've used 32 entries,
+            1791 wiz_defined-function locations,
+            605 strings with 7105 characters,
+and the built_in function-call counts, 5112 in all, are:
+= -- 406
+> -- 192
+< -- 1
++ -- 82
+- -- 50
+* -- 234
+:= -- 755
+add.period$ -- 77
+call.type$ -- 32
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 33
+duplicate$ -- 245
+empty$ -- 630
+format.name$ -- 50
+if$ -- 1185
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
+int.to.str$ -- 32
+missing$ -- 22
+newline$ -- 144
+num.names$ -- 25
+pop$ -- 169
+preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 0
+skip$ -- 136
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 181
+swap$ -- 44
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+warning$ -- 1
+while$ -- 40
+width$ -- 34
+write$ -- 289
+(There were 10 warnings)
