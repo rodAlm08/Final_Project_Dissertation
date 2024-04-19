@@ -35,9 +35,8 @@ was to predict the dependent variables based on the biometric data collected fro
 \section{Data Exploration}
 The first step in the machine learning process was to explore the dataset. The dataset was loaded into a pandas dataframe and the first 5 rows were displayed to get an overview of the
 data. The shape of the dataset was checked to see the number of rows and columns. The data types of the columns were checked to ensure that the data types were correct. The summary
-statistics of the dataset were checked to see the mean, median, standard deviation, minimum and maximum values of the dataset. The correlation between the independent and dependent
-variables were checked to see if there was any correlation between the variables. The correlation was visualized using a heatmap \ref{fig:correlation_heatmap} to see the correlation 
-between the variables.
+statistics of the dataset were checked to analyze the min and max, mean, standard deviation, and median values of the dataset. The correlation between the independent and dependent
+variables were checked to see if there was any correlation between the variables. the heatmap \ref{fig:correlation_heatmap} was then used to visualize the correlation between the variables. 
 
 \begin{figure}[H]
     \centering
@@ -46,9 +45,10 @@ between the variables.
     \label{fig:correlation_heatmap}
 \end{figure}
 
-The correlation heatmap shows the correlation between the independent and dependent variables. The correlation values range from -1 to 1. A value of 1 indicates 
-a strong positive correlation, a value of -1 indicates a strong negative correlation and a value of 0 indicates no correlation. The correlation heatmap shows 
-the following correlations between the dependent and the independent variables:
+The analysis generated a correlation heatmap to explore the relationships between the features (independent variables) and the target variables (dependent variables).
+It is a color-coded map, where the intensity of the color represents the strength of the correlation. With values that range from -1 to 1, where the negative values indicates a negative
+correlation, positive values indicates a positive correlation and 0 indicates no correlation. The correlation heatmap provides a valuable insight into which features have the most 
+significant influence on the target variables, helping understand the relationships within the data.
 
 \subsubsection*{Heart Rate Average (\textit{bm\_HR\_avg})}
 \begin{itemize}
@@ -117,12 +117,11 @@ the following correlations between the dependent and the independent variables:
 
 
 \section{Data Pre-processing}
-To have the dataset suitable for the machine learning models, the data was pre-processed. It was found that were many null values that needed to be handled, 
-it was removed from the dataset as it was not possible to impute the values. The \textit{Activity Steps} and \textit{Heart Rate Maximum} were found to have
-outliers that were removed from the dataset. The data was then scaled using StandardScaler from the sklearn library. This was done to ensure that all the features
-contribute equally to the result. The columns \textit{\_id}, \textit{\_date} and \textit{\_user} were removed from the dataset as they were not needed for the machine learning models.
-The next step was to split the dataset into training and testing datasets. The training dataset was used to train the machine learning models and the testing dataset was used to evaluate
-the model. The dataset was split into 80\% training and 20\% testing. The dependent and independent variables were then separated into X and y. The data was then ready to be used for the machine learning models.
+The data underwent pre-processing to prepare it for machine learning models. This involved handling missing values by removing rows with missing entries as imputation wasn't possible.
+Features like \textit{Activity Steps} and \textit{Heart Rate Maximum} were found to have outliers that were excluded from the data. 
+To ensure all features contributed equally, the data was scaled using StandardScaler from the scikit-learn library. Irrelevant columns like \textit{\_id}, \textit{\_date} and 
+\textit{\_user} were removed. Finally, the preprocessed data was split into training (80\%) and testing (20\%) sets. The independent variables (features) were separated into
+X (independent), and the dependent variable (target) into a y. This prepared the data for use in machine learning models.
 
 
 \section{Model Selection and Evaluation}
@@ -130,21 +129,22 @@ Various machine learning models were explored to address the research question a
 focused on developing and evaluating a model to achieve the best predictive performance. 
 
 \subsection{Classical ML Regression Models}
-The classical machine learning regression models were explored to predict the dependent variables based on the independent variables. The model were trained using the training dataset 
-and evaluated using the testing dataset. The mean squared error was used to evaluate the model. The model with the lowest mean squared error was selected as the best performing model and 
-used for further analysis. The following algorithm were explored:
+The classical machine learning regression models were explored to predict the dependent variables based on the independent variables. 
+The training process involved fitting the models on the training dataset and then assessing their performance on the unseen testing dataset. Mean squared error (MSE) served as the evaluation metric,
+with the model achieving the lowest MSE being chosen as the best performing model for further analysis. This approach ensures the chosen model generalizes well to unseen data, avoiding
+overfitting to the training set. The following algorithm were explored:
 
 \begin{itemize}
     \item Linear Regression: Chose as a baseline for its simplicity and Interpretability, assuming a linear relationship between the dependent and independent variables.
-    \item Random Forest Regressor: Chose for its ability to handle non-linear relationships and its robustness to overfitting. 
-    \item Support Vector Regressor: Selected for its ability to handle high-dimensional data and capability to find complex patterns by mapping input data into a higher-dimensional feature space.
+    \item Random Forest Regressor: Chose for its ability to capture complex non-linear relationships in the data and its robustness to overfitting.
+    \item Support Vector Regressor: It was chosen for its ability to capture complex relationships in the data and its robustness to outliers.
     \item K-Nearest Neighbours Regressor: Chose for its simplicity and effectiveness in regression tasks, making predictions based on the average of the k-nearest neighbours in the feature space.
 \end{itemize}
 
 Once the best performing model for each dependent variable was selected, the model was then evaluated using the testing dataset and actual versus predicted values were plotted to see
 how well the model performed. 
 
-\subsection{Actual vs Predicted Plot}
+\subsection{Actual vs Predicted Analysis}
 The actual versus predicted plot was used to visualize how well the model performed. The actual values were plotted against the predicted values to see how well the model predicted the
 dependent variables. The plot was used to see if the model was underfitting or overfitting the data. If the points were close to the line, it indicated that the model was performing well.
 If the points were scattered, it indicated that the model was not performing well. The plot was used to see if the model was capturing the underlying patterns in the data. Below are the 
@@ -174,7 +174,7 @@ actual versus predicted plots for the best performing model for each dependent v
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_test} shows the actual versus predicted values for the Fine Motor Average Tracking Time using the test data. The model that performed 
-    the best for this dependent variable was the Random Forest Regressor. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
+    the best for this dependent variable was the Linear Regression Model. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
     actual data were also found in the predicted data, with some deviations. 
     \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, specially at the extremes. For instance, the model appears to underestimate the highest values
     and overestimate the lowest values.
@@ -193,41 +193,110 @@ actual versus predicted plots for the best performing model for each dependent v
     \item \textbf{Consistency}: The model shows good consistency in predicting the values when the actual values are around the mean. The predictions often match the actual values quite closely.
 \end{itemize}
 
-Overall the Random Forest Regressor model performed well in both scenarios, capturing the general trends of the Fine Motor Tracking Time and showing good consistency in prediction.
+Overall the Linear Regression Model performed well in both scenarios, capturing the general trends of the Fine Motor Tracking Time and showing good consistency in prediction.
 The model, however, seems to struggle with accurately predicting the more extreme values in the dataset. It highlights the need for improving the model's performance on the more complex
 or extreme segments of the data.
 
+\subsection*{Fine Motor Accuracy}
 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/test_data_fine_motor_accuracy.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_fm_accuracy_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/all_data_fine_motor_accuracy.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_fm_accuracy_all_data}
+    \end{subfigure}
+    \caption{Fine Motor Accuracy Actual vs Predicted}
+    \label{fig:fine_motor_accuracy_comparison}
+\end{figure}
 
-% Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time} shows the actual versus predicted values for the Fine Motor Average Tracking Time. The model that performed the best for this dependent
-% variable was the Random Forest Regressor. 
-
-\subsubsection*{Results and Analysis}
-The comparison between the actual and predicted values for Fine Motor Tracking Time shows the following characteristics:
+\subsubsection*{Test Data Evaluation}
 
 \begin{itemize}
-    \item Trend Follow-Up: The model demonstrated a strong ability to follow the overall trend of the actual Fine Motor Tracking Time across the different values. 
-    \item Consistency: In many segments, particularly where the data points did not reach extreme highs or lows, the model's predictions closely matched the actual values, indicating good consistency. 
-    \item Variance: There is variability in the model's predictions, with some points showing a strong match to the actual data, and others showing a larger deviation.
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_test} shows the actual versus predicted values for the Fine Motor Accuracy using the test data. The model 
+    that performed the best for this dependent variable was the k-Nearest Neighbors Regressor. The model appears to capture the general trend of the actual data. It follows the directional
+    changes, going up and down as the actual values do, but not with perfect alignment.
+    \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, especially at the extremes. While the model tends to underpredict some of the sharper
+    declines in actual values, it still remains relatively closely to the true data points.
+    \item \textbf{Consistency}: There is a moderate level of consistency in the predictions. The model seems to perform well when the actual values are not showing extreme behavior. However,
+    in instances where the actual values show sharp changes, the model's consistency is reduced.
 \end{itemize}
 
-In conclusion, the Random Forest Regressor model serves as a solid baseline for predicting Fine Motor Tracking Time.
+\subsubsection*{All Data Evaluation}
 
-\subsubsection*{Fine Motor Accuracy}
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_all_data} shows the actual versus predicted values for the Fine Motor Accuracy using all the data available. 
+    Across the full dataset, the k-Nearest Neighbors Regressor model generally traces the movements of the actual values well. This suggests a solid understanding of the underlying patterns
+    in the full range of data. Despite some misalignment, the predicted values consistently mirror the ups and downs in the actual data, indicating the model's capability to track the 
+    overall trend.
+    \item \textbf{Variance}: Compared to the test data, the variance in the full data set appears to slightly more visible. The predictions occasionally deviate significantly from the
+    actual values, particularly where there are sharp changes in the actual data or outliers in the actual data.
+    \item \textbf{Consistency}: The model shows good consistency in predicting the values when the actual values are around the mean. It does, however, display some inconsistencies, again
+    mainly where there are larger deviations in the actual data.    
+\end{itemize}
+
+Overall, the k-Nearest Neighbors Regressor model demonstrated an ability to capture the general trends in the Fine Motor Accuracy both in the test set and the full dataset. While the model tends
+to stay close to the actual values, it does show some variance and inconsistency, particularly in areas where the actual data shows sharp changes or outliers. This suggests that the
+model may need further refinement to improve its performance in these more complex or extreme segments of the data. Also, the model may benefit from more data to help it better understand
+the full range of patterns in the dataset.
+
+\subsection*{Visual Average Response Time}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/test_data_visual_average_response_time.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_vx_avg_res_time_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/charts/all_data_visual_average_response_time.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_vx_avg_res_time_all_data}
+    \end{subfigure}
+    \caption{Visual Average Response Time Actual vs Predicted}
+    \label{fig:visual_avg_response_time_comparison}
+\end{figure}
+
+\subsubsection*{Test Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_test} shows the actual versus predicted values for the Visual Average Response Time using the test data. 
+    The model that performed the best for this dependent variable was the k-Nearest Neighbors Regressor. The model successfully captured the underlying trend of the actual data. The predicted line reflects the high and low points of the actual data, demonstrating the model's ability 
+    to learn the fundamental patterns in the data.
+    \item \textbf{Variance}: While the model generally aligns with the actual values, there are instances where the predicted values deviate from the actual data. Specifically, the model doesn't
+    always capture the sharpness and valleys which can be seen in several areas of the actual data.
+    \item \textbf{Consistency}: In sections where the data does not fluctuate significantly, the model's predictions are quite stable and track the actual data closely. This suggests a level
+    of reliability in the model's predictions under more controlled variations in the response time.
+\end{itemize}
+
+\subsubsection*{All Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_all_data} shows the actual versus predicted values for the Visual Average Response Time using all the data available
+    When applied to the entire dataset, the model displays an ability to mimic the overall trend line of the actual data. The predictions fluctuate in line with the actual values, 
+    showing an understanding of the larger patterns in the data.    
+    \item \textbf{Variance}: As with the test data, there are discrepancies between the actual and predicted values; these are most apparent where is a sharp change in the actual data.
+    The model sometimes smooths out these abrupt changes, leading to a slight deviation from the actual values.    
+    \item \textbf{Consistency}: The model shows a decent level of consistency throughout the entire data range. While there are mismatches, particularly in areas of high variability,
+    the model maintains a close following with the actual values for the most part.
+\end{itemize}
+
+In both the test data and the full dataset, the k-Nearest Neighbors Regressor model for the Visual Average Response Time demonstrates effectiveness in capturing the main trends and movements.
+It shows a good degree of consistency, with understandable variance in places where the data is more complex or extreme. The model appears to perform better when dealing with average levels of 
+fluctuation but might require further tuning to more accurately predict the more extreme variations observed in the actual data.
 
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=1\textwidth]{images/output_fm_accuracy_rf.png}
-%     \caption{Actual vs Predicted Fine Motor Accuracy}
-%     \label{fig:actual_vs_predicted_fm_accuracy}
-% \end{figure}
-
-% Figure \ref{fig:actual_vs_predicted_fm_accuracy} shows the actual versus predicted values for the Fine Motor Accuracy. The model that performed the best for this dependent variable was
-% the Random Forest Regressor. 
-
-\subsubsection*{Results and Analysis}
-The comparison between the actual and predicted values for Fine Motor Accuracy shows the following characteristics:
+\subsection*{Visual Shot Accuracy}
 
 
 
