@@ -156,13 +156,13 @@ actual versus predicted plots for the best performing model for each dependent v
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/test_data_fine_motor_tracking_time.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_fine_motor_tracking_time.png}
         \caption{Actual vs Predicted (Test Data)}
         \label{fig:actual_vs_predicted_fm_avg_trk_time_test}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/all_data_fine_motor_tracking_time.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_tracking_time.png}
         \caption{Actual vs Predicted (All Data)}
         \label{fig:actual_vs_predicted_fm_avg_trk_time_all_data}
     \end{subfigure}
@@ -203,13 +203,13 @@ or extreme segments of the data.
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/test_data_fine_motor_accuracy.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_fine_motor_accuracy.png}
         \caption{Actual vs Predicted (Test Data)}
         \label{fig:actual_vs_predicted_fm_accuracy_test}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/all_data_fine_motor_accuracy.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_accuracy.png}
         \caption{Actual vs Predicted (All Data)}
         \label{fig:actual_vs_predicted_fm_accuracy_all_data}
     \end{subfigure}
@@ -253,13 +253,13 @@ the full range of patterns in the dataset.
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/test_data_visual_average_response_time.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_visual_average_response_time.png}
         \caption{Actual vs Predicted (Test Data)}
         \label{fig:actual_vs_predicted_vx_avg_res_time_test}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/charts/all_data_visual_average_response_time.png}
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_average_response_time.png}
         \caption{Actual vs Predicted (All Data)}
         \label{fig:actual_vs_predicted_vx_avg_res_time_all_data}
     \end{subfigure}
@@ -298,10 +298,167 @@ fluctuation but might require further tuning to more accurately predict the more
 
 \subsection*{Visual Shot Accuracy}
 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_visual_shot_accuracy.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_vx_shot_accuracy_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_shot_accuracy.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_vx_shot_accuracy_all_data}
+    \end{subfigure}
+    \caption{Visual Shot Accuracy Actual vs Predicted}
+    \label{fig:visual_shot_accuracy_comparison}
+\end{figure}
 
+\subsubsection*{Test Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_test} shows the actual versus predicted values for the Visual Shot Accuracy using the test data. The model that performed 
+    the best for this dependent variable was the k-Nearest Neighbors Regressor. The KNN model seems to reasonably follow the general of the actual values. It responds to the directional shifts in the data,
+    rising and falling in correlation with the actual data. However, there are noticeable disparities at certain points, indicating that while the model detects the overall pattern, it does not always align
+    perfectly with the actual data's trajectory.       
+    \item \textbf{Variance}: The variance between the predicted and actual values is visible. Particularly at peaks the model's predicted values appear to underestimate the actual values. The model performs 
+    more reliably at data points that are closer to the central trend and shows more deviation at the extremes.    
+    \item \textbf{Consistency}: The KNN models demonstrates moderate consistency throughout the test dataset, capturing the general trend of the actual data with some fidelity. However, its ability to 
+    mirror the actual data precisely at every point is limited, especially where there is significant fluctuation in the actual data.
+    
+\end{itemize}
+
+\subsubsection*{All Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_all_data} shows the actual versus predicted values for the Visual Shot Accuracy using all the data available.  
+    With the entire dataset, the KNN model's prediction still follow the actual values' general trend, suggesting an understanding of the global behavior of the data. The model struggles
+    with sharp spikes and drops, smoothing over some of the more extreme changes in the actual data. 
+    
+    \item \textbf{Variance}: The variance across the full dataset seems to be slightly more controlled than in the test data, although discrepancies remain. The model does not perfectly capture
+    the amplitude of changes, particularly the higher peaks and lower troughs in the actual data.
+    
+    \item \textbf{Consistency}: Across the full scope of data, the KNN model's predictions display an adequate level of consistency, reflecting a steady predictive performance that often aligns well with the real values.
+    However, the model's prediction can diverge from the actual data at points, indicating room for improvement in model accuracy.
+    
+\end{itemize}
+
+The k-Nearest Neighbors Regressor model shows that it captured the central tendencies and fluctuations in Visual Shot Accuracy both in the testing phase and across the complete dataset. The model's capability of 
+following the trends is a strong point, but its prediction variance and the consistency of its performance present areas for improvement. 
+
+
+\subsection*{Visual Target Accuracy}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_visual_target_accuracy.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_vx_trg_accuracy_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_target_accuracy.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_vx_trg_accuracy_all_data}
+    \end{subfigure}
+    \caption{Visual Target Accuracy Actual vs Predicted}
+    \label{fig:visual_target_accuracy_comparison}
+\end{figure}
+
+\subsubsection*{Test Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_trg_accuracy_test} shows the actual versus predicted values for the Visual Target Accuracy using the test data. The model that performed
+    best for this dependent variable was the Linear Regression Model. The model's predicted outcomes show a basic alignment with the actual data's trend. The general ups and downs in the actual data are
+    mirrored in the model's predictions, indicating a broad understanding of the data's patterns. However, there are instances where the model does not perfectly trace the actual data's peaks and troughs, 
+    suggesting that while the trend is recognized, the precision of the model could be improved.
+
+    \item \textbf{Variance}: The variance between the actual and predicted values seems moderate. The model seems to smooth out some of the actual data fluctuations, not capturing the extremes as it should.
+        
+    \item \textbf{Consistency}: The model maintains a fair level of consistency across the test dataset. The predicted values are regularly close to the actual data, although they do not consistently match the
+    actual values with high fidelity. 
+    
+\end{itemize}
+
+\subsubsection*{All Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_trg_accuracy_all_data} shows the actual versus predicted values for the Visual Target Accuracy using all the data available. Over the entire dataset,
+    the Linear Regression Model's predictions generally follow the trend of the actual values, indicating a stable understanding of the data's patterns. Similar to the test data, the predictions are in line with the
+    overall movements but occasionally miss the mark in capturing the specific oscillations in the actual data.
+    
+    \item \textbf{Variance}: The prediction variance across the full dataset appears somewhat greater compared to the test data. This could be due to the inclusion of more diverse data points, revealing the model's 
+    limitations in adapting to broader patterns. The model especially tends to underpredict some of the lower values, leading to a noticeable deviation in the more extreme data points.
+    
+    \item \textbf{Consistency}: Throughout the full dataset, the consistency of the model's predictions is apparent but not without error. The model seems to stay true to the mean trajectory but lacks in tracking the 
+    finer details of the actual data. 
+        
+\end{itemize}
+
+The Linear Regression Model for the Visual Target Accuracy demonstrates a basic understanding of the data's patterns, capturing the general trends in the test data and the full dataset. However, the model exhibits
+a level of variance that indicates room for improvement in its predictive accuracy. Specifically, the model could benefit from refinement to better capture the more extreme values in the actual data.
+
+\subsection*{Audio Average Response Time}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/test_data_audio_average_response_time.png}
+        \caption{Actual vs Predicted (Test Data)}
+        \label{fig:actual_vs_predicted_au_avg_res_time_test}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_audio_average_response_time.png}
+        \caption{Actual vs Predicted (All Data)}
+        \label{fig:actual_vs_predicted_au_avg_res_time_all_data}
+    \end{subfigure}
+    \caption{Audio Average Response Time Actual vs Predicted}
+    \label{fig:audio_avg_response_time_comparison}
+\end{figure}
+
+\subsubsection*{Test Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_au_avg_res_time_test} shows the actual versus predicted values for the Audio Average Response Time using the test data. The model that performed
+    best for this dependent variable was the k-Nearest Neighbors Regressor. The model's predictions tends to reflect the actual data's trend, indicating a general grasp of the data's patterns. The prediction line shows 
+    a consistent rise and fall pattern that corresponds with the actual data line, illustrating the model's ability to track changes in response time.    
+    
+    \item \textbf{Variance}: There is a noticeable divergence between the predicted and actual values at several points across the dataset. This variance highlights areas where the model's predictions are not 
+    as close to the actual values, especially at sharp downward and upward turns in the actual data.    
+    
+    \item \textbf{Consistency}: Despite some variances, the KNN model remains fairly consistent in its predictions across throughout the test dataset. While it does not precisely match the actual values, it provides 
+    a reasonably consistent estimation, particularly in the middle range of the response time values.
+
+\end{itemize}
+
+
+\subsubsection*{All Data Evaluation}
+
+\begin{itemize}
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_au_avg_res_time_all_data} shows the actual versus predicted values for the Audio Average Response Time using all the data available. Looking
+    at the entire dataset, the KNN model again mirrors the general trend of the actual data, showing an ability to comprehend the ups and downs in the response time. It captures the global trend across a 
+    broader range of data points.    
+    
+    \item \textbf{Variance}: The overall variance in predictions across the entire dataset appears to be somewhat controlled, but deviations are still present. The model occasionally smoothens the extremities 
+    in the actual data, leading under or overestimation in some segments.
+    
+    \item \textbf{Consistency}: In terms of consistency, the model show a reasonable degree of reliability across the entire dataset. Its predictions are in alignment with the direction of the actual data,
+    even though it does not match every peak and valley with precision.
+    
+\end{itemize}
+
+
+The k-Nearest Neighbors Regressor model for the Audio Average Response Time demonstrates a competent understanding of the Audio Average Response Time patterns, both in the test and the full dataset. It demonstrates 
+a level of consistency that suggests it captures the variable's fundamental characteristics. However, the model's prediction exhibit some variance, indicating room for improvement in its ability to capture more
+subtle fluctuations in the data.
 
 
 \section{Neural Network Regression Model}
-
 
 
