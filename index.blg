@@ -22,62 +22,62 @@ The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Database file #1: references.bib
 Warning--entry type for "dockerhub" isn't style-file defined
---line 439 of file references.bib
+--line 433 of file references.bib
 Warning--entry type for "polarManual" isn't style-file defined
---line 703 of file references.bib
+--line 697 of file references.bib
 Warning--entry type for "ejs" isn't style-file defined
---line 739 of file references.bib
+--line 733 of file references.bib
 Warning--entry type for "mocha" isn't style-file defined
---line 755 of file references.bib
+--line 749 of file references.bib
 Warning--entry type for "scikit" isn't style-file defined
---line 771 of file references.bib
+--line 765 of file references.bib
 Warning--entry type for "keras" isn't style-file defined
---line 787 of file references.bib
+--line 781 of file references.bib
 Warning--entry type for "jwt" isn't style-file defined
---line 803 of file references.bib
+--line 797 of file references.bib
 Warning--entry type for "aws" isn't style-file defined
---line 819 of file references.bib
+--line 813 of file references.bib
 Warning--I didn't find a database entry for "lin1991divergence"
 Warning--empty author in bigdata
-You've used 32 entries,
+You've used 36 entries,
             1791 wiz_defined-function locations,
-            605 strings with 7105 characters,
-and the built_in function-call counts, 5112 in all, are:
-= -- 406
-> -- 192
-< -- 1
-+ -- 82
-- -- 50
-* -- 234
-:= -- 755
-add.period$ -- 77
-call.type$ -- 32
-change.case$ -- 21
+            632 strings with 7895 characters,
+and the built_in function-call counts, 6311 in all, are:
+= -- 529
+> -- 233
+< -- 3
++ -- 97
+- -- 61
+* -- 309
+:= -- 925
+add.period$ -- 90
+call.type$ -- 36
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 245
-empty$ -- 630
-format.name$ -- 50
-if$ -- 1185
+cite$ -- 37
+duplicate$ -- 302
+empty$ -- 742
+format.name$ -- 61
+if$ -- 1466
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 22
-newline$ -- 144
-num.names$ -- 25
-pop$ -- 169
+int.to.str$ -- 36
+missing$ -- 26
+newline$ -- 164
+num.names$ -- 29
+pop$ -- 180
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 136
+skip$ -- 173
 stack$ -- 0
-substring$ -- 181
-swap$ -- 44
-text.length$ -- 1
+substring$ -- 289
+swap$ -- 67
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 40
-width$ -- 34
-write$ -- 289
+while$ -- 54
+width$ -- 38
+write$ -- 334
 (There were 10 warnings)
