@@ -23,20 +23,20 @@ The dependent variables that were collected through the gaming tests are:
 \end{itemize}
 
 The goal based on the research question was to find the correlation between the independent and dependent variables. When approaching a machine learning problem, one of the fundamental
-considerations is whether the problem is a regression or classification problem. 
+considerations is whether the problem is a regression or classification problem.
 
 \subsection*{Classification vs Regression Problem}
-The main difference between a classification and regression problem is the type of dependent variable. The dependent variable is the variable that are being predicted. In 
+The main difference between a classification and regression problem is the type of dependent variable. The dependent variable is the variable that are being predicted. In
 classification, the dependent variable is categorical, meaning it can take one of a limited number of values. Examples includes predicting whether an email is spam or not,
-predicting whether a patient has a disease or not. In regression, the dependent variable is continuous and numerical, meaning it can take any value within a range. Examples 
-includes predicting house prices, stock prices, temperature. In this project, the dependent variables are continuous and numerical, making it a regression problem. The goal 
-was to predict the dependent variables based on the biometric data collected from the watches. 
+predicting whether a patient has a disease or not. In regression, the dependent variable is continuous and numerical, meaning it can take any value within a range. Examples
+includes predicting house prices, stock prices, temperature. In this project, the dependent variables are continuous and numerical, making it a regression problem. The goal
+was to predict the dependent variables based on the biometric data collected from the watches.
 
 \section{Data Exploration}
 The first step in the machine learning process was to explore the dataset. The dataset was loaded into a \textit{pandas} dataframe and the first 5 rows were displayed to get an overview of the
 data. The shape of the dataset was checked to see the number of rows and columns. The data types of the columns were checked to ensure that the data types were correct. The summary
-statistics of the dataset were checked to analyze the min and max, mean, standard deviation, and median values of the dataset. The heatmap \ref{fig:correlation_heatmap} was then used to visualize 
-the correlation between the variables.
+statistics of the dataset were checked to analyze the min and max, mean, standard deviation, and median values of the dataset. The heatmap \ref{fig:correlation_heatmap} was then used to
+visualize the correlation between the variables.
 
 \begin{figure}[H]
     \centering
@@ -45,51 +45,53 @@ the correlation between the variables.
     \label{fig:correlation_heatmap}
 \end{figure}
 
-The analysis generated a correlation heatmap to explore the relationships between the features (independent variables) and the target variables (dependent variables).
-It is a color-coded map, where the intensity of the color represents the strength of the correlation. With values that range from -1 to 1, where the negative values indicates a negative
-correlation, positive values indicates a positive correlation and 0 indicates no correlation. The correlation heatmap provides a valuable insight into which features have the most 
+The heatmap uses the Pearson correlation coefficient to measure the strength and direction of the linear relationship between two variables, in this case between the features
+(independent variables) and the target variables (dependent variables). It is a color-coded map, where the intensity of the color represents the strength of the correlation.
+With values that range from -1 to 1, where the negative values indicates a negative correlation, positive values indicates a positive correlation and 0 indicates no correlation.
+A value closer to 1 implies a strong correlation positive correlation, meaning as one variable increases, so does the other. A value closer to -1 implies a strong negative correlation,
+where one variable increases as the other decreases. The correlation heatmap provides a valuable insight into which features have the most
 significant influence on the target variables, helping understand the relationships within the data.
 
 \subsubsection*{Heart Rate Average (\textit{bm\_HR\_avg})}
 \begin{itemize}
     \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): A negative correlation of \\ -0.43 suggests that as the average heart rate increases, the fine motor
-    tracking time tasks decreases, indicating that individuals with faster heart rates tend to complete fine motor tasks a bit quicker.
-    \item Fine Motor Accuracy (\textit{fm\_accuracy}): A positive correlation of 0.20 indicates a weak relationship suggesting that a higher heart rate average might be very 
-    slightly associated with higher fine motor accuracy. It shows that there is a small tendency for individuals with a higher heart rate to be slightly more precise
-    in tasks that need fine motor skills.
+          tracking time tasks decreases, indicating that individuals with faster heart rates tend to complete fine motor tasks a bit quicker.
+    \item Fine Motor Accuracy (\textit{fm\_accuracy}): A positive correlation of 0.20 indicates a weak relationship suggesting that a higher heart rate average might be very
+          slightly associated with higher fine motor accuracy. It shows that there is a small tendency for individuals with a higher heart rate to be slightly more precise
+          in tasks that need fine motor skills.
     \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): A negative correlation of -0.35 suggests a moderate relationship where a higher average heart rate
-    is associated with faster response times. It indicates that individuals with higher heart rates also tend to react faster to visual things.
+          is associated with faster response times. It indicates that individuals with higher heart rates also tend to react faster to visual things.
     \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): A positive correlation of 0.34 indicates a moderate relationship, suggesting that individuals with higher heart
-    rate might have a better accuracy in shooting tasks.
+          rate might have a better accuracy in shooting tasks.
     \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): A positive correlation of 0.24 indicates a weak relationship, suggesting that higher heart rates averages might
-    be associated with slightly better visual target accuracy.
+          be associated with slightly better visual target accuracy.
     \item Audio Average Response Time (\textit{au\_avg\_res\_time}): A very weak negative correlation of -0.04 suggest almost no relationship between average heart rate
-    and audio response time. It indicates there is no real connection between heart rate and how quickly the individuals responds to sounds.
+          and audio response time. It indicates there is no real connection between heart rate and how quickly the individuals responds to sounds.
 \end{itemize}
 
 \subsubsection*{Hear Rate Variability (\textit{bm\_HR\_var})}
 
 \begin{itemize}
-    \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): A positive correlation of 0.11 suggests a weak association where greater heart rate variability 
-    might be associated with slightly longer fine motor tracking time tasks.
-    
+    \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): A positive correlation of 0.11 suggests a weak association where greater heart rate variability
+          might be associated with slightly longer fine motor tracking time tasks.
+
     \item Fine Motor Accuracy (\textit{fm\_accuracy}): A negative correlation of -0.03 suggest a very weak inverse relationship, where higher heart rate variability
-    could be slightly associated with a decrease in fine motor accuracy.
-    
+          could be slightly associated with a decrease in fine motor accuracy.
+
     \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): A positive correlation of 0.09 indicates very weak relationship, with slightly tendency for
-    higher heart rate variability to be associated with longer visual response times. 
-    
+          higher heart rate variability to be associated with longer visual response times.
+
     \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): A negative correlation of -0.24 indicates a weak to moderate inverse relationship, suggesting that
-    higher rate variability might be associated with a decrease in visual shot accuracy. It suggests that individuals with higher heart rate variability might 
-    have a lower accuracy in shooting tasks.
-    
-    \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): A negative correlation of -0.10 indicates a weak inverse relationship, suggesting that higher heart 
-    variability could slightly correlate with lower visual target accuracy. It suggests that those with more variation in their heart rate might not be quite as good 
-    at tasks that involve quickly identifying and selecting targets.
-    
+          higher rate variability might be associated with a decrease in visual shot accuracy. It suggests that individuals with higher heart rate variability might
+          have a lower accuracy in shooting tasks.
+
+    \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): A negative correlation of -0.10 indicates a weak inverse relationship, suggesting that higher heart
+          variability could slightly correlate with lower visual target accuracy. It suggests that those with more variation in their heart rate might not be quite as good
+          at tasks that involve quickly identifying and selecting targets.
+
     \item Audio Average Response Time (\textit{au\_avg\_res\_time}): A positive correlation of 0.25 suggests a weak relationship, indicating that higher heart rate
-    variability might be associated with slightly longer audio response times.
-    
+          variability might be associated with slightly longer audio response times.
+
 \end{itemize}
 
 
@@ -97,39 +99,39 @@ significant influence on the target variables, helping understand the relationsh
 
 \begin{itemize}
     \item Fine Motor Tracking Time (\textit{fm\_avg\_trk\_time}): With a value of -0.03, this negative correlation is very weak, indicating minimal inverse relationship between sleep
-    and fine motor tracking time.    
-        
+          and fine motor tracking time.
+
     \item Fine Motor Accuracy (\textit{fm\_accuracy}): A positive correlation of 0.01 suggests a very weak relationship, indicating that longer sleep duration
-    may be very slightly correlated with longer fine motor accuracy.
-    
+          may be very slightly correlated with longer fine motor accuracy.
+
     \item Visual Average Response Time (\textit{vx\_avg\_res\_time}): The value of -0.02 indicates a weak negative correlation, suggesting that increased sleep could be potentially be
-    associated with a slight improvements in visual average response. 
-    
+          associated with a slight improvements in visual average response.
+
     \item Visual Shot Accuracy (\textit{vx\_shot\_accuracy}): At -0.09, the correlation is weak, indicating there is almost no relationship between sleep and visual shot accuracy.
 
     \item Visual Target Accuracy (\textit{vx\_trg\_accuracy}): At 0.08, the correlation is weak, suggesting a minimal tendency for more sleep to be associated with slightly
-    better visual target accuracy.
-    
+          better visual target accuracy.
+
     \item Audio Average Response Time (\textit{au\_avg\_res\_time}): The correlation value of 0.07, which is very weak and suggests there is little to no meaningful correlation between
-    sleep and response time to audio stimulus.
-    
+          sleep and response time to audio stimulus.
+
 \end{itemize}
 
 
 \section{Data Pre-processing}
 The data underwent pre-processing to prepare it for machine learning models. This involved handling missing values by removing rows with missing entries as imputation wasn't possible.
-Features like \textit{Activity Steps} and \textit{Heart Rate Maximum} were found to have outliers that were excluded from the data. 
-To ensure all features contributed equally, the data was scaled using \textit{StandardScaler} from the \textit{scikit-learn} library. Irrelevant columns like \textit{\_id}, \textit{\_date} and 
+Features like \textit{Activity Steps} and \textit{Heart Rate Maximum} were found to have outliers that were excluded from the data.
+To ensure all features contributed equally, the data was scaled using \textit{StandardScaler} from the \textit{scikit-learn} library. Irrelevant columns like \textit{\_id}, \textit{\_date} and
 \textit{\_user} were removed. Finally, the preprocessed data was split into training (80\%) and testing (20\%) sets. The independent variables (features) were separated into
 \textit{X} (independent), and the dependent variable (target) into a \textit{y}. After pre-processing, the data was ready for model selection and evaluation.
 
 
 \section{Model Selection and Evaluation}
 Various machine learning models were explored to address the research question and predict the dependent variables based on the collected biometric and gaming test. Each team member
-focused on developing and evaluating a model to achieve the best predictive performance. 
+focused on developing and evaluating a model to achieve the best predictive performance.
 
 \subsection{Classical ML Regression Models}
-The classical machine learning regression models were explored to predict the dependent variables based on the independent variables. 
+The classical machine learning regression models were explored to predict the dependent variables based on the independent variables.
 The training process involved fitting the models on the training dataset and then assessing their performance on the unseen testing dataset and later on the full dataset.
 Mean squared error (MSE) served as the evaluation metric,
 with the model achieving the lowest MSE being chosen as the best performing model for further analysis. This approach ensures the chosen model generalizes well to unseen data, avoiding
@@ -143,12 +145,12 @@ overfitting to the training set. The following algorithm were explored:
 \end{itemize}
 
 Using cross validation, the models were trained on the training dataset and evaluated using the testing dataset. The model with the lowest mean squared error was selected as the best performing
-model for each dependent variable. The actual versus predicted values were plotted to visualize how well the model performed. 
+model for each dependent variable. The actual versus predicted values were plotted to visualize how well the model performed.
 
 \subsection{Actual vs Predicted Analysis}
 The actual values were plotted against the predicted values to see how well the model predicted the
 dependent variables. The plot was used to see if the model was underfitting or overfitting the data. If the points were close to the line, it indicated that the model was performing well.
-If the points were scattered, it indicated that the model was not performing well. It was also used to see if the model was capturing the underlying patterns in the data. Below are the 
+If the points were scattered, it indicated that the model was not performing well. It was also used to see if the model was capturing the underlying patterns in the data. Below are the
 actual versus predicted plots for the best performing model for each dependent variable.
 
 \subsection*{Fine Motor Tracking Time}
@@ -174,11 +176,11 @@ actual versus predicted plots for the best performing model for each dependent v
 \subsubsection*{Test Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_test} shows the actual versus predicted values for the Fine Motor Average Tracking Time using the test data. The model that performed 
-    the best for this dependent variable was the Support Vector Regressor. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
-    actual data were also found in the predicted data, with some deviations. 
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_test} shows the actual versus predicted values for the Fine Motor Average Tracking Time using the test data. The model that performed
+          the best for this dependent variable was the Support Vector Regressor. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
+          actual data were also found in the predicted data, with some deviations.
     \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, specially at the extremes. For instance, the model appears to underestimate the highest values
-    and overestimate the lowest values.
+          and overestimate the lowest values.
     \item \textbf{Consistency}: The model shows decent consistency when the actual values are around the mean but is less consistent at capturing sudden changes in the actual data, such as sharp spikes ot dips.
 \end{itemize}
 
@@ -186,11 +188,11 @@ actual versus predicted plots for the best performing model for each dependent v
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_all_data} shows the actual versus predicted values for the Fine Motor Average Tracking Time using all the data
-    available. When evaluating all the data, the model predictions closely follow the actual data's trend. This indicates that the model has learned the overall behavior of the dataset quite well.
-    Similar to the test data, the model captures the general pattern of movement in the actual values, but might not always match the amplitude of changes.
-    \item \textbf{Variance}: The variance between the actual and predicted values over all the data seems to be lower compared to the test data. This suggests that the model has been 
-    effectively trained to understand the data as a whole. Some exceptions occur where the actual values show significant deviation from the mean. In these areas, the predictions do not fully 
-    capture the extent of the actual values and show some deviation.
+          available. When evaluating all the data, the model predictions closely follow the actual data's trend. This indicates that the model has learned the overall behavior of the dataset quite well.
+          Similar to the test data, the model captures the general pattern of movement in the actual values, but might not always match the amplitude of changes.
+    \item \textbf{Variance}: The variance between the actual and predicted values over all the data seems to be lower compared to the test data. This suggests that the model has been
+          effectively trained to understand the data as a whole. Some exceptions occur where the actual values show significant deviation from the mean. In these areas, the predictions do not fully
+          capture the extent of the actual values and show some deviation.
     \item \textbf{Consistency}: The model shows good consistency in predicting the values when the actual values are around the mean. The predictions often match the actual values quite closely.
 \end{itemize}
 
@@ -221,26 +223,26 @@ or extreme segments of the data.
 \subsubsection*{Test Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_test} shows the actual versus predicted values for the Fine Motor Accuracy using the test data. The model 
-    that performed the best for this dependent variable was the Support Vector Regressor. The model appears to capture the general trend of the actual data. It follows the directional
-    changes, going up and down as the actual values do, but not with perfect alignment.
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_test} shows the actual versus predicted values for the Fine Motor Accuracy using the test data. The model
+          that performed the best for this dependent variable was the Support Vector Regressor. The model appears to capture the general trend of the actual data. It follows the directional
+          changes, going up and down as the actual values do, but not with perfect alignment.
     \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, especially at the extremes. While the model tends to underpredict some of the sharper
-    declines in actual values, it still remains relatively closely to the true data points.
+          declines in actual values, it still remains relatively closely to the true data points.
     \item \textbf{Consistency}: There is a moderate level of consistency in the predictions. The model seems to perform well when the actual values are not showing extreme behavior. However,
-    in instances where the actual values show sharp changes, the model's consistency is reduced.
+          in instances where the actual values show sharp changes, the model's consistency is reduced.
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_all_data} shows the actual versus predicted values for the Fine Motor Accuracy using all the data available. 
-    Across the full dataset, the Support Vector Regressor model generally traces the movements of the actual values well. This suggests a solid understanding of the underlying patterns
-    in the full range of data. Despite some misalignment, the predicted values consistently mirror the ups and downs in the actual data, indicating the model's capability to track the 
-    overall trend.
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_all_data} shows the actual versus predicted values for the Fine Motor Accuracy using all the data available.
+          Across the full dataset, the Support Vector Regressor model generally traces the movements of the actual values well. This suggests a solid understanding of the underlying patterns
+          in the full range of data. Despite some misalignment, the predicted values consistently mirror the ups and downs in the actual data, indicating the model's capability to track the
+          overall trend.
     \item \textbf{Variance}: Compared to the test data, the variance in the full data set appears to be slightly more visible. The predictions occasionally deviate significantly from the
-    actual values, particularly where there are sharp changes in the actual data or outliers in the actual data.
+          actual values, particularly where there are sharp changes in the actual data or outliers in the actual data.
     \item \textbf{Consistency}: The model shows good consistency in predicting the values when the actual values are around the mean. It does, however, display some inconsistencies, again
-    mainly where there are larger deviations in the actual data.    
+          mainly where there are larger deviations in the actual data.
 \end{itemize}
 
 Overall, the Support Vector Regressor model demonstrated an ability to capture the general trends in the Fine Motor Accuracy both in the test set and the full dataset. While the model tends
@@ -271,29 +273,29 @@ the full range of patterns in the dataset.
 \subsubsection*{Test Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_test} shows the actual versus predicted values for the Visual Average Response Time using the test data. 
-    The model that performed the best for this dependent variable was the Random Forest Regressor. The model successfully captured the underlying trend of the actual data. The predicted line 
-    reflects the high and low points of the actual data, demonstrating the model's ability to learn the fundamental patterns in the data.
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_test} shows the actual versus predicted values for the Visual Average Response Time using the test data.
+          The model that performed the best for this dependent variable was the Random Forest Regressor. The model successfully captured the underlying trend of the actual data. The predicted line
+          reflects the high and low points of the actual data, demonstrating the model's ability to learn the fundamental patterns in the data.
     \item \textbf{Variance}: While the model generally aligns with the actual values, there are instances where the predicted values deviate from the actual data. Specifically, the model doesn't
-    always capture the sharpness and valleys which can be seen in several areas of the actual data.
+          always capture the sharpness and valleys which can be seen in several areas of the actual data.
     \item \textbf{Consistency}: In sections where the data does not fluctuate significantly, the model's predictions are quite stable and track the actual data closely. This suggests a level
-    of reliability in the model's predictions under more controlled variations in the response time.
+          of reliability in the model's predictions under more controlled variations in the response time.
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_all_data} shows the actual versus predicted values for the Visual Average Response Time using all the data available.
-    When applied to the entire dataset, the model displays an ability to mimic the overall trend line of the actual data. The predictions fluctuate in line with the actual values, 
-    showing an understanding of the larger patterns in the data.    
+          When applied to the entire dataset, the model displays an ability to mimic the overall trend line of the actual data. The predictions fluctuate in line with the actual values,
+          showing an understanding of the larger patterns in the data.
     \item \textbf{Variance}: As with the test data, there are discrepancies between the actual and predicted values; these are most apparent where is a sharp change in the actual data.
-    The model sometimes smooths out these abrupt changes, leading to a slight deviation from the actual values.    
+          The model sometimes smooths out these abrupt changes, leading to a slight deviation from the actual values.
     \item \textbf{Consistency}: The model shows a decent level of consistency throughout the entire data range. While there are mismatches, particularly in areas of high variability,
-    the model maintains a close following with the actual values for the most part.
+          the model maintains a close following with the actual values for the most part.
 \end{itemize}
 
 In both the test data and the full dataset, the Random Forest Regressor model for the Visual Average Response Time demonstrates effectiveness in capturing the main trends and movements.
-It shows a good degree of consistency, with understandable variance in places where the data is more complex or extreme. The model appears to perform better when dealing with average levels of 
+It shows a good degree of consistency, with understandable variance in places where the data is more complex or extreme. The model appears to perform better when dealing with average levels of
 fluctuation but might require further tuning to more accurately predict the more extreme variations observed in the actual data.
 
 
@@ -320,34 +322,34 @@ fluctuation but might require further tuning to more accurately predict the more
 \subsubsection*{Test Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_test} shows the actual versus predicted values for the Visual Shot Accuracy using the test data. The model that performed 
-    the best for this dependent variable was the Random Forest Regressor. The model seems to reasonably follow the general of the actual values. It responds to the directional shifts in the data,
-    rising and falling in correlation with the actual data. However, there are noticeable disparities at certain points, indicating that while the model detects the overall pattern, it does not always align
-    perfectly with the actual data's trajectory.       
-    \item \textbf{Variance}: The variance between the predicted and actual values is visible. Particularly at peaks the model's predicted values appear to underestimate the actual values. The model performs 
-    more reliably at data points that are closer to the central trend and shows more deviation at the extremes.    
-    \item \textbf{Consistency}: The model demonstrates moderate consistency throughout the test dataset, capturing the general trend of the actual data with some fidelity. However, \\ 
-    its ability to mirror the actual data precisely at every point is limited, especially where there is significant fluctuation in the actual data.
-    
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_test} shows the actual versus predicted values for the Visual Shot Accuracy using the test data. The model that performed
+          the best for this dependent variable was the Random Forest Regressor. The model seems to reasonably follow the general of the actual values. It responds to the directional shifts in the data,
+          rising and falling in correlation with the actual data. However, there are noticeable disparities at certain points, indicating that while the model detects the overall pattern, it does not always align
+          perfectly with the actual data's trajectory.
+    \item \textbf{Variance}: The variance between the predicted and actual values is visible. Particularly at peaks the model's predicted values appear to underestimate the actual values. The model performs
+          more reliably at data points that are closer to the central trend and shows more deviation at the extremes.
+    \item \textbf{Consistency}: The model demonstrates moderate consistency throughout the test dataset, capturing the general trend of the actual data with some fidelity. However, \\
+          its ability to mirror the actual data precisely at every point is limited, especially where there is significant fluctuation in the actual data.
+
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
 
 \begin{itemize}
-    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_all_data} shows the actual versus predicted values for the Visual Shot Accuracy using all the data available.  
-    With the entire dataset, the model's prediction still follow the actual values' general trend, suggesting an understanding of the global behavior of the data. The model struggles
-    with sharp spikes and drops, smoothing over some of the more extreme changes in the actual data. 
-    
+    \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_shot_accuracy_all_data} shows the actual versus predicted values for the Visual Shot Accuracy using all the data available.
+          With the entire dataset, the model's prediction still follow the actual values' general trend, suggesting an understanding of the global behavior of the data. The model struggles
+          with sharp spikes and drops, smoothing over some of the more extreme changes in the actual data.
+
     \item \textbf{Variance}: The variance across the full dataset seems to be slightly more controlled than in the test data, although discrepancies remain. The model does not perfectly capture
-    the amplitude of changes, particularly the higher peaks and lower troughs in the actual data.
-    
+          the amplitude of changes, particularly the higher peaks and lower troughs in the actual data.
+
     \item \textbf{Consistency}: Across the full scope of data, the model's predictions display an adequate level of consistency, reflecting a steady predictive performance that often aligns well with the real values.
-    However, the model's prediction can diverge from the actual data at points, indicating room for improvement in model accuracy.
-    
+          However, the model's prediction can diverge from the actual data at points, indicating room for improvement in model accuracy.
+
 \end{itemize}
 
-The Random Forest Regressor model shows that it captured the central tendencies and fluctuations in Visual Shot Accuracy both in the testing phase and across the complete dataset. The model's capability of 
-following the trends is a strong point, but its prediction variance and the consistency of its performance present areas for improvement. 
+The Random Forest Regressor model shows that it captured the central tendencies and fluctuations in Visual Shot Accuracy both in the testing phase and across the complete dataset. The model's capability of
+following the trends is a strong point, but its prediction variance and the consistency of its performance present areas for improvement.
 
 
 \subsection*{Visual Target Accuracy}
@@ -374,30 +376,30 @@ following the trends is a strong point, but its prediction variance and the cons
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_trg_accuracy_test} shows the actual versus predicted values for the Visual Target Accuracy using the test data. The model that performed
-    best for this dependent variable was the Support Vector Regressor Model. The model's predicted outcomes show a basic alignment with the actual data's trend. The general ups and downs in the actual data are
-    mirrored in the model's predictions, indicating a broad understanding of the data's patterns. However, there are instances where the model does not perfectly trace the actual data's peaks and troughs, 
-    suggesting that while the trend is recognized, the precision of the model could be improved.
+          best for this dependent variable was the Support Vector Regressor Model. The model's predicted outcomes show a basic alignment with the actual data's trend. The general ups and downs in the actual data are
+          mirrored in the model's predictions, indicating a broad understanding of the data's patterns. However, there are instances where the model does not perfectly trace the actual data's peaks and troughs,
+          suggesting that while the trend is recognized, the precision of the model could be improved.
 
     \item \textbf{Variance}: The variance between the actual and predicted values seems moderate. The model seems to smooth out some of the actual data fluctuations, not capturing the extremes as it should.
-        
+
     \item \textbf{Consistency}: The model maintains a fair level of consistency across the test dataset. The predicted values are regularly close to the actual data, although they do not consistently match the
-    actual values with high fidelity. 
-    
+          actual values with high fidelity.
+
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_trg_accuracy_all_data} shows the actual versus predicted values for the Visual Target Accuracy using all the data available. Over the entire dataset,
-    the Support Vector Regressor model's predictions generally follow the trend of the actual values, indicating a stable understanding of the data's patterns. Similar to the test data, the predictions are in line with the
-    overall movements but occasionally miss the mark in capturing the specific oscillations in the actual data.
-    
-    \item \textbf{Variance}: The prediction variance across the full dataset appears somewhat greater compared to the test data. This could be due to the inclusion of more diverse data points, revealing the model's 
-    limitations in adapting to broader patterns. The model especially tends to underpredict some of the lower values, leading to a noticeable deviation in the more extreme data points.
-    
-    \item \textbf{Consistency}: Throughout the full dataset, the consistency of the model's predictions is apparent but not without error. The model seems to stay true to the mean trajectory but lacks in tracking the 
-    finer details of the actual data. 
-        
+          the Support Vector Regressor model's predictions generally follow the trend of the actual values, indicating a stable understanding of the data's patterns. Similar to the test data, the predictions are in line with the
+          overall movements but occasionally miss the mark in capturing the specific oscillations in the actual data.
+
+    \item \textbf{Variance}: The prediction variance across the full dataset appears somewhat greater compared to the test data. This could be due to the inclusion of more diverse data points, revealing the model's
+          limitations in adapting to broader patterns. The model especially tends to underpredict some of the lower values, leading to a noticeable deviation in the more extreme data points.
+
+    \item \textbf{Consistency}: Throughout the full dataset, the consistency of the model's predictions is apparent but not without error. The model seems to stay true to the mean trajectory but lacks in tracking the
+          finer details of the actual data.
+
 \end{itemize}
 
 The Support Vector Regressor Model for the Visual Target Accuracy demonstrates a basic understanding of the data's patterns, capturing the general trends in the test data and the full dataset. However, the model exhibits
@@ -427,14 +429,14 @@ a level of variance that indicates room for improvement in its predictive accura
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_au_avg_res_time_test} shows the actual versus predicted values for the Audio Average Response Time using the test data. The model that performed
-    best for this dependent variable was the Linear Regression. The model's predictions tends to reflect the actual data's trend, indicating a general grasp of the data's patterns. The prediction line shows 
-    a consistent rise and fall pattern that corresponds with the actual data line, illustrating the model's ability to track changes in response time.    
-    
-    \item \textbf{Variance}: There is a noticeable divergence between the predicted and actual values at several points across the dataset. This variance highlights areas where the model's predictions are not 
-    as close to the actual values, especially at sharp downward and upward turns in the actual data.    
-    
-    \item \textbf{Consistency}: Despite some variances, the Linear Regression model remains fairly consistent in its predictions across throughout the test dataset. While it does not precisely match the actual values, it provides 
-    a reasonably consistent estimation, particularly in the middle range of the response time values.
+          best for this dependent variable was the Linear Regression. The model's predictions tends to reflect the actual data's trend, indicating a general grasp of the data's patterns. The prediction line shows
+          a consistent rise and fall pattern that corresponds with the actual data line, illustrating the model's ability to track changes in response time.
+
+    \item \textbf{Variance}: There is a noticeable divergence between the predicted and actual values at several points across the dataset. This variance highlights areas where the model's predictions are not
+          as close to the actual values, especially at sharp downward and upward turns in the actual data.
+
+    \item \textbf{Consistency}: Despite some variances, the Linear Regression model remains fairly consistent in its predictions across throughout the test dataset. While it does not precisely match the actual values, it provides
+          a reasonably consistent estimation, particularly in the middle range of the response time values.
 
 \end{itemize}
 
@@ -443,19 +445,19 @@ a level of variance that indicates room for improvement in its predictive accura
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_au_avg_res_time_all_data} shows the actual versus predicted values for the Audio Average Response Time using all the data available. Looking
-    at the entire dataset, the Linear Regression model again mirrors the general trend of the actual data, showing an ability to comprehend the ups and downs in the response time. It captures the global trend across a 
-    broader range of data points.    
-    
-    \item \textbf{Variance}: The overall variance in predictions across the entire dataset appears to be somewhat controlled, but deviations are still present. The model occasionally smoothens the extremities 
-    in the actual data, leading under or overestimation in some segments.
-    
+          at the entire dataset, the Linear Regression model again mirrors the general trend of the actual data, showing an ability to comprehend the ups and downs in the response time. It captures the global trend across a
+          broader range of data points.
+
+    \item \textbf{Variance}: The overall variance in predictions across the entire dataset appears to be somewhat controlled, but deviations are still present. The model occasionally smoothens the extremities
+          in the actual data, leading under or overestimation in some segments.
+
     \item \textbf{Consistency}: In terms of consistency, the model show a reasonable degree of reliability across the entire dataset. Its predictions are in alignment with the direction of the actual data,
-    even though it does not match every peak and valley with precision.
-    
+          even though it does not match every peak and valley with precision.
+
 \end{itemize}
 
 
-The Linear Regression model for the Audio Average Response Time demonstrates a competent understanding of the Audio Average Response Time patterns, both in the test and the full dataset. It demonstrates 
+The Linear Regression model for the Audio Average Response Time demonstrates a competent understanding of the Audio Average Response Time patterns, both in the test and the full dataset. It demonstrates
 a level of consistency that suggests it captures the variable's fundamental characteristics. However, the model's prediction exhibit some variance, indicating room for improvement in its ability to capture more
 subtle fluctuations in the data.
 
@@ -463,20 +465,21 @@ subtle fluctuations in the data.
 \subsection{Neural Network Regression Model}
 
 In addition to the classical machine learning models, a neural network regression model was explored to predict the dependent variables based on the independent variables. The neural network model was
-constructed using the \textit{MPLRegressor} from the \textit{scikit-learn} library. 
+constructed using the \textit{MPLRegressor} from the \textit{scikit-learn} library.
 
-\subsubsection*{Model Configuration} The neural network was initialized as an \textit{MLPRegressor} with the following configurations:
+\subsubsection*{Hyperparameters} The neural network was initialized as an \textit{MLPRegressor} with the following configurations:
 
 \begin{itemize}
     \item \textbf{Hidden Layers}: Two hidden layers were used with the first containing 15 neurons and second 10 neurons. This configuration is complex enough to capture the non-linear patterns in the data but
-    not too complex to overfit the data. 
+          not too complex to overfit the data.
     \item \textbf{Activation Function}: The activation function used was the \textit{tanh} function, allowing the model to account for non-linear relationships between the features and the target variables.
     \item \textbf{Solver}: The \textit{adam} solver was chosen due to its effective performance in deep learning applications, particularly in handling noisy data and large datasets.
+    \item \textbf{Max Iterations}: The training process was set to a maximum of 1000 iterations to ensure sufficient learning without overfitting.
 \end{itemize}
 
 \subsubsection*{Training Process} The training process was defined to run for a maximum of 1000 iterations (`epochs`). Each epoch represents a complete pass through the entire training dataset.
 
-\subsubsection*{Loss Curve Analysis} The \textit{loss curve} attribute of the model was plotted against the number of epochs to visualize the model's training progress as shown in Figure 
+\subsubsection*{Loss Curve Analysis} The \textit{loss curve} attribute of the model was plotted against the number of epochs to visualize the model's training progress as shown in Figure
 \ref{fig:neural_network_loss_curve}. This curve represents the model's performance improvement over time as it learns from the training data. The plotted loss curve shows a typical pattern
 of sharp decline followed by a gradual leveling off, indicating initial rapid learning followed by a slower convergence towards the optimal set of weights.
 
@@ -487,6 +490,84 @@ of sharp decline followed by a gradual leveling off, indicating initial rapid le
     \label{fig:neural_network_loss_curve}
 \end{figure}
 
-The plotted training loss curve confirms the effective learning capability of the neural network model with given configurations, The smooth decrease in loss over the epochs indicates 
+The plotted training loss curve confirms the effective learning capability of the neural network model with given configurations, The smooth decrease in loss over the epochs indicates
 the optimization of weights and biases to minimize the error between the predicted and actual values.
+
+
+\subsection*{Model Evaluation}
+
+The neural network model was evaluated using the test dataset and all the data available. The model's predictions were compared to the actual values to assess its performance.
+Below are the actual versus predicted plots for the neural network model for each dependent variable and a comparison of the model's performance with the classical machine learning models.
+
+
+\begin{figure}\hfill
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_fine_motor_avg_tracking_time.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_tracking_time.png}
+       
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_fine_motor_accuracy.png}
+        
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_accuracy.png}
+        
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_avg_response_time.png}
+        
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_average_response_time.png}
+        
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_shot_accuracy.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_shot_accuracy.png}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_target_accuracy.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_target_accuracy.png}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/nnCharts/all_data_audio_avg_response_time.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_audio_average_response_time.png}
+    \end{subfigure}
+
+    \caption{Neural Network Model vs Classical ML Models}
+    \label{fig:nn_comparison}
+
+
+\end{figure}
+
+
+
+
 
