@@ -147,7 +147,7 @@ overfitting to the training set. The following algorithm were explored:
 Using cross validation, the models were trained on the training dataset and evaluated using the testing dataset. The model with the lowest mean squared error was selected as the best performing
 model for each dependent variable. The actual versus predicted values were plotted to visualize how well the model performed.
 
-\subsection{Actual vs Predicted Analysis}
+\subsubsection{Actual vs Predicted Analysis}
 The actual values were plotted against the predicted values to see how well the model predicted the
 dependent variables. The plot was used to see if the model was underfitting or overfitting the data. If the points were close to the line, it indicated that the model was performing well.
 If the points were scattered, it indicated that the model was not performing well. It was also used to see if the model was capturing the underlying patterns in the data. Below are the
@@ -490,84 +490,109 @@ of sharp decline followed by a gradual leveling off, indicating initial rapid le
     \label{fig:neural_network_loss_curve}
 \end{figure}
 
-The plotted training loss curve confirms the effective learning capability of the neural network model with given configurations, The smooth decrease in loss over the epochs indicates
-the optimization of weights and biases to minimize the error between the predicted and actual values.
+The plotted training loss curve confirms the effective learning capability of the neural network model with given configurations, the smooth decrease in loss over the epochs indicates
+the optimization of weights and biases to minimize the error between the predicted and values.
 
 
 \subsection*{Model Evaluation}
 
 The neural network model was evaluated using the test dataset and all the data available. The model's predictions were compared to the actual values to assess its performance.
-Below are the actual versus predicted plots for the neural network model for each dependent variable and a comparison of the model's performance with the classical machine learning models.
+The actual versus predicted values were plotted to visualize how well the model predicted the dependent variables. The plots were used to compare the model's performance with the
+classical machine learning models.
 
-
-\begin{figure}\hfill
+\begin{figure}
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_fine_motor_avg_tracking_time.png}
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_fine_motor_avg_tracking_time.png}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_tracking_time.png}
-       
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_fine_motor_tracking_time.png}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_fine_motor_accuracy.png}
-        
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_fine_motor_accuracy.png}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_fine_motor_accuracy.png}
-        
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_fine_motor_accuracy.png}
     \end{subfigure}
     
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_avg_response_time.png}
-        
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_visual_avg_response_time.png}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_average_response_time.png}
-        
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_visual_average_response_time.png}
     \end{subfigure}
     
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_shot_accuracy.png}
-    \end{subfigure}\hfill
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_shot_accuracy.png}
-    \end{subfigure}
-
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_visual_target_accuracy.png}
-    \end{subfigure}\hfill
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_visual_target_accuracy.png}
-    \end{subfigure}
-
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/nnCharts/all_data_audio_avg_response_time.png}
-    \end{subfigure}\hfill
-    \begin{subfigure}[b]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/regressionCharts/all_data_audio_average_response_time.png}
-    \end{subfigure}
-
+    
     \caption{Neural Network Model vs Classical ML Models}
     \label{fig:nn_comparison}
-
-
 \end{figure}
 
 
 
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_visual_shot_accuracy.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_visual_shot_accuracy.png}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_visual_target_accuracy.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_visual_target_accuracy.png}
+    \end{subfigure}
+    
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/nnCharts/all_data_audio_avg_response_time.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/regressionCharts/all_data_audio_average_response_time.png}
+    \end{subfigure}
+    
+    \caption{Neural Network Model vs Classical ML Models}
+    \label{fig:nn_comparison}
+\end{figure}
 
+
+When contrasted with the classical machine learning models, the neural network model demonstrated a ability to capture complex, nonlinear interactions within the data, fitting closely to the 
+variances and trends in the actual data. This characteristic can lead to highly accurate predictions on the training dataset but may also cause the model to overfit, as evidenced by prediction 
+lines that follow the actual data with high fidelity, including noise and outliers.
+
+\begin{itemize}
+    \item \textbf{Trend}: The neural network model are dynamic, capable of adapting to data fluctuations, which can be both an asset and a liability. They may reflect underlying patterns with precision but also amplify 
+    anomalies. In contrast, classical models such as Support Vector Regressors and Random Forest Regressors favor a moderate approach, often smoothing over data to project a more stable and generalized trend line.
+    
+    \item \textbf{Variance}: The neural network model exhibit a higher variance in predictions compared to classical models. This can be beneficial in capturing the full range of data patterns but 
+    also poses the risk of overfitting to noise and outliers. On the other hand, classical models typically show less variance, indicating a tempered response to data variability, which might overlook 
+    complex patterns but also ensures robustness against noise.
+
+    \item \textbf{Consistency}: The adaptability of neural networks, which enables them to capture a wide range of data behaviors, may also affect their consistency across different conditions.
+    In contrast, the classical models can be specially valuable when the objective emphasizes stability over detailed accuracy.
+    
+
+\end{itemize}
+
+
+Overall the NN model outperforms the classical models in terms of trend following, variance capturing and overall consistency, particularly when evaluating the full dataset. This suggests that 
+the neural network model is well-suited for capturing the complex relationships between the independent and dependent variables in the dataset, while classical models provide a more generalized
+approach that may be more suitable for stable, less complex datasets.
+For this project, due to a very close performance between the neural network and classical models, we conclude that as the dataset grows, the neural network model may be more suitable for capturing
+the complex relationships between the independent and dependent variables in the dataset, but the classical models should not be overlooked as they provide a more generalized approach that may
+be more suitable for stable, less complex datasets.
 
