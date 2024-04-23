@@ -11,6 +11,8 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 A level-1 auxiliary file: review.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 A level-1 auxiliary file: design.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: evaluation.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: mlModels.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
@@ -37,47 +39,48 @@ Warning--entry type for "jwt" isn't style-file defined
 --line 797 of file references.bib
 Warning--entry type for "aws" isn't style-file defined
 --line 813 of file references.bib
-Warning--I didn't find a database entry for "lin1991divergence"
+Warning--I didn't find a database entry for "statista"
+Warning--I didn't find a database entry for "aws_acm"
 Warning--empty author in bigdata
-You've used 36 entries,
+You've used 33 entries,
             1791 wiz_defined-function locations,
-            632 strings with 7895 characters,
-and the built_in function-call counts, 6311 in all, are:
-= -- 529
-> -- 233
-< -- 3
-+ -- 97
-- -- 61
-* -- 309
-:= -- 925
-add.period$ -- 90
-call.type$ -- 36
-change.case$ -- 25
+            621 strings with 7243 characters,
+and the built_in function-call counts, 5701 in all, are:
+= -- 475
+> -- 217
+< -- 2
++ -- 90
+- -- 57
+* -- 286
+:= -- 858
+add.period$ -- 83
+call.type$ -- 33
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 302
-empty$ -- 742
-format.name$ -- 61
-if$ -- 1466
+cite$ -- 34
+duplicate$ -- 269
+empty$ -- 665
+format.name$ -- 57
+if$ -- 1308
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 26
-newline$ -- 164
-num.names$ -- 29
-pop$ -- 180
+int.to.str$ -- 33
+missing$ -- 25
+newline$ -- 151
+num.names$ -- 28
+pop$ -- 158
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 173
+skip$ -- 144
 stack$ -- 0
-substring$ -- 289
-swap$ -- 67
-text.length$ -- 3
+substring$ -- 253
+swap$ -- 52
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 54
-width$ -- 38
-write$ -- 334
-(There were 10 warnings)
+while$ -- 51
+width$ -- 35
+write$ -- 309
+(There were 11 warnings)
