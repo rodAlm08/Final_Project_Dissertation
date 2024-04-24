@@ -22,7 +22,7 @@ Database was provided as a microservice using the Amazon Relational Database Ser
 
 \section{System Architecture}
 
-The Overall system was designed for a public cloud deployment while the core functionalities of the system was modeled using the
+The Overall system was designed for a public cloud deployment while the core functionalities of the system was modelled using the
 Model-View-Controller (MVC) Software Architectural Pattern. Thus, the system was divided into three major components: the Model, comprising 
 of the databases and the machine learning models; the View, implemented with Dashboard web application; and the Controller, implemented with 
 the Controller web application. Each of these components were developed and deployed as separate services. 
@@ -34,7 +34,7 @@ the Controller web application. Each of these components were developed and depl
 \end{figure}
 
 \section{Routing \& Security}
-Communication between various components was modeled with the client-server paradigm utilizing REST API over HTTP. Communication may be initiated
+Communication between various components was modelled with the client-server paradigm utilizing REST API over HTTP. Communication may be initiated
 by a client and information exchanged with a server using a request-response messaging pattern.  
 Security was provided to secure access to the system and data. At the network level, the TSL/SSL security layer was added to the domain name to 
 provide end-to-end encryption between the user and the web application. At the application api level, the Bearer Authentication Token was used to 
@@ -138,7 +138,7 @@ Controller implementation.
 The View component of the system otherwise known as the Dashboard was implemented as a standalone web application running on port 4200. The 
 Dashboard provides an interface for users to interact with the system and consume the functionalities and data provided by the Controller
 Models respectively. The Dashboard provides both administrative and data analysis functionalities. The administrative functionalities include
-pulling user data from the firestore database, synchronizing the relational database with the firestore database, resetting the relational 
+pulling user data from the Firestore database, synchronizing the relational database with the Firestore database, resetting the relational 
 database, setting up user authentication. The data analysis functionalities include filtering data for analysis and running machine learning
 algorithms for performance prediction. The Dashboard also allow users to visualize the results from the machine learning algorithms. 
 
@@ -174,13 +174,13 @@ K-Nearest Neighbors.
 
 \subsubsection{Automatic Neural Network}
 
-A fully-connected Automatic Neural Network was was developed to solve the same problem and provide a different perspective to the problem. The
+A fully-connected Automatic Neural Network was developed to solve the same problem and provide a different perspective to the problem. The
 rationale for developing the Automatic Neural Network was to provide a more complex model capable of learning more complex pattern in the data.
 
 
 \subsection{Databases}
 The database stores user's information and provide a convenient and efficient way of accessing user's data. The relational database provides all
-data required to run the application and the firebase database provides an unstructured data bank for users information from where data is sourced
+data required to run the application and the firebase database provides an unstructured data bank for user's information from where data is sourced
 for further regularization. 
 \subsubsection{Relational Database}
 The relational database was designed to store user's information and other information required to effectively manipulate, update, store and view 

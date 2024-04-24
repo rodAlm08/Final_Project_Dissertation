@@ -42,45 +42,45 @@ Warning--entry type for "aws" isn't style-file defined
 Warning--I didn't find a database entry for "statista"
 Warning--I didn't find a database entry for "aws_acm"
 Warning--empty author in bigdata
-You've used 33 entries,
+You've used 34 entries,
             1791 wiz_defined-function locations,
-            621 strings with 7243 characters,
-and the built_in function-call counts, 5701 in all, are:
-= -- 475
-> -- 217
+            629 strings with 7491 characters,
+and the built_in function-call counts, 5954 in all, are:
+= -- 499
+> -- 228
 < -- 2
-+ -- 90
-- -- 57
-* -- 286
-:= -- 858
-add.period$ -- 83
-call.type$ -- 33
-change.case$ -- 24
++ -- 94
+- -- 60
+* -- 308
+:= -- 898
+add.period$ -- 86
+call.type$ -- 34
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 269
-empty$ -- 665
-format.name$ -- 57
-if$ -- 1308
+cite$ -- 35
+duplicate$ -- 278
+empty$ -- 689
+format.name$ -- 60
+if$ -- 1362
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 25
-newline$ -- 151
-num.names$ -- 28
-pop$ -- 158
+int.to.str$ -- 34
+missing$ -- 26
+newline$ -- 156
+num.names$ -- 29
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 144
+skip$ -- 147
 stack$ -- 0
-substring$ -- 253
-swap$ -- 52
+substring$ -- 278
+swap$ -- 53
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 51
-width$ -- 35
-write$ -- 309
+while$ -- 54
+width$ -- 36
+write$ -- 320
 (There were 11 warnings)

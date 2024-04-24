@@ -26,7 +26,7 @@ The goal based on the research question was to find the correlation between the 
 considerations is whether the problem is a regression or classification problem.
 
 \subsection*{Classification vs Regression Problem}
-The main difference between a classification and regression problem is the type of dependent variable. The dependent variable is the variable that are being predicted. In
+The main difference between a classification and regression problem is the type of dependent variable. The dependent variable, can be one or more, and they are the variables that are being predicted. In
 classification, the dependent variable is categorical, meaning it can take one of a limited number of values. Examples includes predicting whether an email is spam or not,
 predicting whether a patient has a disease or not. In regression, the dependent variable is continuous and numerical, meaning it can take any value within a range. Examples
 includes predicting house prices, stock prices, temperature. In this project, the dependent variables are continuous and numerical, making it a regression problem. The goal
@@ -45,12 +45,13 @@ visualize the correlation between the variables.
     \label{fig:correlation_heatmap}
 \end{figure}
 
-The heatmap uses the Pearson correlation coefficient to measure the strength and direction of the linear relationship between two variables, in this case between the features
+The heatmap employs the Pearson correlation coefficient to measure both the strength and direction of the linear relationship between two variables, in this case between the features
 (independent variables) and the target variables (dependent variables). It is a color-coded map, where the intensity of the color represents the strength of the correlation.
 With values that range from -1 to 1, where the negative values indicates a negative correlation, positive values indicates a positive correlation and 0 indicates no correlation.
-A value closer to 1 implies a strong correlation positive correlation, meaning as one variable increases, so does the other. A value closer to -1 implies a strong negative correlation,
+A value closer to 1 implies a strong correlation positive correlation, meaning as one variable increases, so does the other. 
+A value closer to -1 implies a strong negative correlation,
 where one variable increases as the other decreases. The correlation heatmap provides a valuable insight into which features have the most
-significant influence on the target variables, helping understand the relationships within the data.
+significant influence on the target variables, helping understand the relationships within the data. \cite{inglis2022visualizing}
 
 \subsubsection*{Heart Rate Average (\textit{bm\_HR\_avg})}
 \begin{itemize}
@@ -139,8 +140,8 @@ overfitting to the training set. The following algorithm were explored:
 
 \begin{itemize}
     \item Linear Regression: Chose as a baseline for its simplicity and interpretability, assuming a linear relationship between the dependent and independent variables. \cite{poole1971assumptions}
-    \item Random Forest Regression: Chose for its ability to capture complex non-linear relationships in the data and its robustness to overfitting. \cite{liu2012new}
-    \item Support Vector Regression: It was chosen for its ability to capture complex relationships in the data and its robustness to outliers. \cite{mangasarian2000robust}
+    \item Random Forest Regression: This algorithm is capable to capture complex non-linear relationships in the data and its robustness to overfitting. \cite{liu2012new}
+    \item Support Vector Regression: The capabilities of this algorithm goes beyond linear regression, capturing more complex relationships in the data and its robustness to outliers. \cite{mangasarian2000robust}
     \item K-Nearest Neighbors Regression: Chose for its simplicity and effectiveness in regression tasks, making predictions based on the average of the k-nearest neighbors in the feature space. \cite{song2017efficient}
 \end{itemize}
 
@@ -177,7 +178,7 @@ actual versus predicted plots for the best performing model for each dependent v
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_avg_trk_time_test} shows the actual versus predicted values for the Fine Motor Average Tracking Time using the test data. The model that performed
-          the best for this dependent variable was the Support Vector Regressor. The model's predictions generally matched the direction of the actual test data's trend. The peaks and troughs of the
+          the best for this dependent variable was the Support Vector Regressor. The predictions generally matched the trajectory of the actual test data. The peaks and troughs of the
           actual data were also found in the predicted data, with some deviations.
     \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, specially at the extremes. For instance, the model appears to underestimate the highest values
           and overestimate the lowest values.
@@ -226,7 +227,7 @@ or extreme segments of the data.
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_fm_accuracy_test} shows the actual versus predicted values for the Fine Motor Accuracy using the test data. The model
           that performed the best for this dependent variable was the Support Vector Regressor. The model appears to capture the general trend of the actual data. It follows the directional
           changes, going up and down as the actual values do, but not with perfect alignment.
-    \item \textbf{Variance}: There is a noticeable variance between the actual and predicted values, especially at the extremes. While the model tends to underpredict some of the sharper
+    \item \textbf{Variance}: A noticeable discrepancy between the actual and predicted values is noted, particularly evident at the extremes. While the model tends to underpredict some of the sharper
           declines in actual values, it still remains relatively closely to the true data points.
     \item \textbf{Consistency}: There is a moderate level of consistency in the predictions. The model seems to perform well when the actual values are not showing extreme behavior. However,
           in instances where the actual values show sharp changes, the model's consistency is reduced.
@@ -245,7 +246,7 @@ or extreme segments of the data.
           mainly where there are larger deviations in the actual data.
 \end{itemize}
 
-Overall, the Support Vector Regressor model demonstrated an ability to capture the general trends in the Fine Motor Accuracy both in the test set and the full dataset. While the model tends
+Overall, the Support Vector Regressor model demonstrated an ability to find the overall patterns in the Fine Motor Accuracy, both in the test set and the full dataset. While the model tends
 to stay close to the actual values, it does show some variance and inconsistency, particularly in areas where the actual data shows sharp changes or outliers. This suggests that the
 model may need further refinement to improve its performance in these more complex or extreme segments of the data. Also, the model may benefit from more data to help it better understand
 the full range of patterns in the dataset.
@@ -274,12 +275,12 @@ the full range of patterns in the dataset.
 
 \begin{itemize}
     \item \textbf{Trend}: Figure \ref{fig:actual_vs_predicted_vx_avg_res_time_test} shows the actual versus predicted values for the Visual Average Response Time using the test data.
-          The model that performed the best for this dependent variable was the Random Forest Regressor. The model successfully captured the underlying trend of the actual data. The predicted line
-          reflects the high and low points of the actual data, demonstrating the model's ability to learn the fundamental patterns in the data.
-    \item \textbf{Variance}: While the model generally aligns with the actual values, there are instances where the predicted values deviate from the actual data. Specifically, the model doesn't
+        The model that performed the best for this dependent variable was the Random Forest Regressor. The model successfully captured the underlying trend of the actual data. 
+        It demonstrates an ability to learn the fundamental patterns in the data, following the general trajectory of the actual values.
+    \item \textbf{Variance}: While the model generally aligns with the actual values, there are areas where the deviation from the actual data is noticeable. The model doesn't
           always capture the sharpness and valleys which can be seen in several areas of the actual data.
-    \item \textbf{Consistency}: In sections where the data does not fluctuate significantly, the model's predictions are quite stable and track the actual data closely. This suggests a level
-          of reliability in the model's predictions under more controlled variations in the response time.
+    \item \textbf{Consistency}: In sections where the data does not fluctuate significantly, the predictions are consistent with the actual values. This suggests a level
+          of reliability of the model, under the condition that the actual data does not show extreme behavior. 
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
@@ -326,7 +327,7 @@ fluctuation but might require further tuning to more accurately predict the more
           the best for this dependent variable was the Random Forest Regressor. The model seems to reasonably follow the general of the actual values. It responds to the directional shifts in the data,
           rising and falling in correlation with the actual data. However, there are noticeable disparities at certain points, indicating that while the model detects the overall pattern, it does not always align
           perfectly with the actual data's trajectory.
-    \item \textbf{Variance}: The variance between the predicted and actual values is visible. Particularly at peaks the model's predicted values appear to underestimate the actual values. The model performs
+    \item \textbf{Variance}: It is clear that the model's predictions do not perfectly match the actual values, especially at the peaks. The model performs
           more reliably at data points that are closer to the central trend and shows more deviation at the extremes.
     \item \textbf{Consistency}: The model demonstrates moderate consistency throughout the test dataset, capturing the general trend of the actual data with some fidelity. However, \\
           its ability to mirror the actual data precisely at every point is limited, especially where there is significant fluctuation in the actual data.
@@ -382,9 +383,8 @@ following the trends is a strong point, but its prediction variance and the cons
 
     \item \textbf{Variance}: The variance between the actual and predicted values seems moderate. The model seems to smooth out some of the actual data fluctuations, not capturing the extremes as it should.
 
-    \item \textbf{Consistency}: The model maintains a fair level of consistency across the test dataset. The predicted values are regularly close to the actual data, although they do not consistently match the
-          actual values with high fidelity.
-
+    \item \textbf{Consistency}: There is a moderate level of consistency in the model's predictions across the test dataset. The predicted values are regularly close to the actual data, but 
+            there are instances where the model's predictions deviate from the actual data. 
 \end{itemize}
 
 \subsubsection*{All Data Evaluation}
@@ -397,7 +397,7 @@ following the trends is a strong point, but its prediction variance and the cons
     \item \textbf{Variance}: The prediction variance across the full dataset appears somewhat greater compared to the test data. This could be due to the inclusion of more diverse data points, revealing the model's
           limitations in adapting to broader patterns. The model especially tends to underpredict some of the lower values, leading to a noticeable deviation in the more extreme data points.
 
-    \item \textbf{Consistency}: Throughout the full dataset, the consistency of the model's predictions is apparent but not without error. The model seems to stay true to the mean trajectory but lacks in tracking the
+    \item \textbf{Consistency}: Throughout the full dataset, the consistency of the predictions are apparent but not without error. It seems to stay true to the mean trajectory but lacks in tracking the
           finer details of the actual data.
 
 \end{itemize}
@@ -432,8 +432,8 @@ a level of variance that indicates room for improvement in its predictive accura
           best for this dependent variable was the Linear Regression. The model's predictions tends to reflect the actual data's trend, indicating a general grasp of the data's patterns. The prediction line shows
           a consistent rise and fall pattern that corresponds with the actual data line, illustrating the model's ability to track changes in response time.
 
-    \item \textbf{Variance}: There is a noticeable divergence between the predicted and actual values at several points across the dataset. This variance highlights areas where the model's predictions are not
-          as close to the actual values, especially at sharp downward and upward turns in the actual data.
+    \item \textbf{Variance}: There is a significant difference between the predicted and actual values at multiple points. This difference highlights areas where the model's predictions 
+            are not as close to the actual values, especially at sharp downward and upward turns in the actual data.
 
     \item \textbf{Consistency}: Despite some variances, the Linear Regression model remains fairly consistent in its predictions across throughout the test dataset. While it does not precisely match the actual values, it provides
           a reasonably consistent estimation, particularly in the middle range of the response time values.
@@ -490,13 +490,13 @@ of sharp decline followed by a gradual leveling off, indicating initial rapid le
     \label{fig:neural_network_loss_curve}
 \end{figure}
 
-The plotted training loss curve confirms the effective learning capability of the neural network model with given configurations, the smooth decrease in loss over the epochs indicates
-the optimization of weights and biases to minimize the error between the predicted and values.
 
+The plotted training loss curve confirms the effective learning capability of the model with given configurations. The gradual decrease in loss over the epochs indicates the optimization 
+of weights and biases to minimize the error between the predicted and actual values.
 
 \subsection*{Model Evaluation}
 
-The neural network model was evaluated using the test dataset and all the data available. The model's predictions were compared to the actual values to assess its performance.
+The model was evaluated using the test dataset and all the data available. The predictions were compared to the actual values to assess its performance.
 The actual versus predicted values were plotted to visualize how well the model predicted the dependent variables. The plots were used to compare the model's performance with the
 classical machine learning models.
 
