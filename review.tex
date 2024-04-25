@@ -12,7 +12,7 @@ services, alongside Platform as a Service (PAAS) and Software as a Service (SAAS
 storage, and networking, allowing users to build and manage their own IT infrastructure in the cloud.
 
 \subsection{Amazon Web Services (AWS)}
-For this project, AWS EC2 was chosen as the IAAS provider. AWS EC2 is a web service that provides resizable compute capacity in the cloud. It allows users to
+For this project, AWS EC2 was chosen as the IAAS provider. AWS EC2 is a web service that provides resizable computing capacity in the cloud. It allows users to
 launch virtual servers, known as instances, on the AWS cloud. EC2 instances can be configured with different types of CPU, memory, storage, and networking capacity,
 providing users with the flexibility to choose the resources that best suit their needs. /cite{aws} 
 
@@ -47,7 +47,7 @@ The complete system architecture for this project is explained in detail in the 
 When it came to developing the Executive Dashboard for data analysis it was crucial to select the tools that could transform data into easily comprehensible information. After conducting research and exploring alternatives Angular and Chart.js were chosen for specific reasons.
 
 \subsection{Angular}
-Angular is based on TypeScript and often used for building single-page applications (SPAs) or enterprise-level solutions. It is a powerful tool for building
+Angular is based on TypeScript and is often used for building single-page applications (SPAs) or enterprise-level solutions. It is a powerful tool for building
 client-side web applications.
 
 \subsubsection{Main Concepts: Components, Modules and Services}
@@ -57,7 +57,7 @@ Angular is composed of three foundational blocks: Components, Modules and servic
 
 \subsubsection{Modules} In Angular modules serve as containers that group related components, directives, and services together that can be combined with other modules. It plays an important role in improving maintainability and re-usability, key concepts of Angular development.\cite{angular-modules}
 
-\subsubsection{Services} Angular services use typescript classes with injectable decorators. The decorator informs Angular that the class function as a service
+\subsubsection{Services} Angular services use typescript classes with injectable decorators. The decorator informs Angular that the class functions as a service
 and can be injected into other components that need that service.\cite{angular-services}
 \subsubsection{Angular architecture} 
 The Model-View-Controller (MVC) has as its components the model, the view, and the controller. With controller orchestrating the communication and
@@ -106,7 +106,7 @@ EJS is a straightforward templating language that enables the creation of HTML m
 Its compatibility with Express.js allows for it to render data from the server-side to the client-side, making it an ideal choice for web application development. 
 EJS also allows to reuse of code snippets, increasing the efficiency of web application development. 
 It also allows for the implementation of conditional logic, enabling the rendering of different content based on specific conditions. EJS supports looping constructs, facilitating the iteration over data collections 
-and the generation of repetitive HTML elements. It provides error handling capabilities, ensuring that errors are caught and managed effectively during the rendering process. EJS is highly extensible,
+and the generation of repetitive HTML elements. It provides error-handling capabilities, ensuring that errors are caught and managed effectively during the rendering process. EJS is highly extensible,
 allowing for the integration of additional features and functionalities to enhance the rendering process. \cite{ejs}
 
 \begin{table}[H]
@@ -160,8 +160,8 @@ Figure \ref{fig:ajax} shows the process of AJAX.
 
 \section{Data Visualization}
 
-The visual representation of data is a important aspect of the project. It is used to communicate information clearly and efficiently. 
-It allows to identify patterns, and find correlations that would be hard to identify in raw data, standing as an essential step in the data analysis process.
+The visual representation of data is an important aspect of the project. It is used to communicate information clearly and efficiently. 
+It is a great tool to help identifying patterns, and find correlations that would be hard to identify in raw data, standing as an essential step in the data analysis process.
 
 \subsection{Chart.js}
 
@@ -172,7 +172,7 @@ all contemporary web browsers and enjoys support from an extensive developer com
 a versatile API that supports an array of chart types, including line, radar, and pie charts, among others. Moreover, it provides extensive customization 
 possibilities, enabling the creation of distinct and eye-catching charts.\cite{da2019learn}
 
-Table \ref{tab:chart-js-features} is showing some of the features of Chart.js\cite{da2019learn}:
+Table \ref*{tab:chart-js-features} is showing some of the features of Chart.js\cite{da2019learn}:
 
 \begin{table}[H]
     \centering
@@ -192,8 +192,8 @@ Table \ref{tab:chart-js-features} is showing some of the features of Chart.js\ci
         Cross-browser compatibility & Chart.js is compatible with all most of the browsers.                                                                                                 \\
         \hline
     \end{tabularx}
-    \label{tab:chart-js-features}
     \caption{Chart.js Features}
+    \label{tab:chart-js-features}
 \end{table}
 
 Chart.js stands as a dependable and powerful solution for visualizing data, with simple and intuitive APIs that facilitate the creation of attractive and
@@ -204,7 +204,7 @@ informative charts. Tt also benefits from the strong support of an extensive dev
 
 An amazing fact is that ninety percent of the data generated in the world was generated in the last two years. In the early 2000s, the amount of data being
 generated exploded exponentially on the same rates as the internet and social media usage. Organizations found themselves facing a massive volume of data 
-that was very hard to process. Then the concept of Big data was created to describe this large volume of data. It refers to data that is so large and complex
+that was very hard to process. Then the concept of Big Data was created to describe this large volume of data. It refers to data that is so large and complex
 that traditional methods of data processing are not sufficient to process it. \cite{bigdata}
 
 
@@ -223,12 +223,12 @@ comprehensive toolkit for machine learning. \cite{scikit}
 
 Scikit-learn was used on the AI model to train and evaluate machine learning models. As our dataset was in a structured format, Scikit-learn was the ideal choice for the project, 
 providing algorithms that can be used to work with structured data. It was a regression problem, and for that, Linear Regression, Support Vector Machine,
-Random Forest, and K-Nearest Neighbors algorithm from this library were used to evaluate the best model for the dataset.
+Random Forest, and K-Nearest Neighbors algorithms from this library were used to evaluate the best model for the dataset.
 
 \subsection{TensorFlow}
 
-TensorFlow was developed by the Google Brain team and has been widely adopted in the machine learning community. It mainly used for deep learning tasks, such as neural networks, and machine
-learning that requires a large amount of data. It is not only powerful but also flexible, allowing for the creation of custom machine learning models. It is also highly scalable, allowing for 
+TensorFlow was developed by the Google Brain team and has been widely adopted in the machine learning community. It is mainly used for deep learning tasks, such as neural networks, and machine
+learning that require a large amount of data. It is not only powerful but also flexible, allowing for the creation of custom machine learning models. It is also highly scalable, allowing for 
 the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units).\cite{tensorflow}
 
 \begin{itemize}
@@ -237,7 +237,7 @@ the training of models on multiple CPUs, GPUs, and TPUs (Tensor Processing Units
     \item \textbf{Comprehensive Library}: 
     \item This platform offers libraries and community support, that enables the developer to create and implement applications powered by ML.
     \item \textbf{High-Level APIs}: With high-level APIs like Keras, TensorFlow is very accessible to any developer, simplifying the build of the models. It also provides a low-level API for more advanced users, allowing for greater flexibility and customization.
-    \item \textbf{Visualization with TensorBoard}: As part of TensorFlow, there is a tool called TensorBoard, which provides many visualization tools that are great to aid the understanding
+    \item \textbf{Visualization with TensorBoard}: As part of TensorFlow, there is a tool called TensorBoard, which provides many visualization tools that are great for aiding the understanding
     of the model, debugging, and optimization of complex neural networks.
     \item \textbf{Scalability}: It has the capability of running computation on multiple CPUs or GPUs, which makes it perfect for big machine learning tasks.
     \item \textbf{Large Community and Support}: Having a vast community, TensorFlow benefits from a plethora of tutorials, documentation, and active community support which aids in solving problems and improving the framework.
@@ -268,23 +268,23 @@ for rapid prototyping of deep learning models.\cite{keras}
 
 Keras simplify the process of creating the neural network structure, as well as training and evaluating the model. 
 
-Figure \ref{fig:keras} shows the architecture of TensorFlow and Keras. TensorFlow is the core library for numerical computation, while Keras serves as a high-level API
+Figure \ref{fig:Keras} shows the architecture of TensorFlow and Keras. TensorFlow is the core library for numerical computation, while Keras serves as a high-level API
 that runs on top of TensorFlow. 
 
-\begin{figure*}[H]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{images/keras.png}
     \caption{TensorFlow vs Keras Architecture}
-    \label{fig:keras}    
-\end{figure*}
+    \label{fig:Keras}        
+\end{figure}
 
 
 \section{Backend Technologies}
 
 \subsection{Node JS}
 
-NodeJS enables the execution of JavaScript code outside the limitations of a web browser. It is cross-platform JavaScript runtime that allows for the creation of
-fast and scalable network applications. Because of its architecture, that is asynchronous and event-driven, it handles concurrent operations efficiently, preventing the halt of
+NodeJS enables the execution of JavaScript code outside the limitations of a web browser. It is a cross-platform JavaScript runtime that allows for the creation of
+fast and scalable network applications. Because of its architecture, which is asynchronous and event-driven, it handles concurrent operations efficiently, preventing the halt of
 other processes. It suits real-time applications that are data-heavy and operate on a distributed network of devices. \cite{nodejs}
 
 \subsubsection*{Advantages of Node.js}
@@ -295,7 +295,7 @@ A key feature of NodeJS is its extensive library ecosystem. The Node Package Man
 This abundance of resources significantly streamlines the development process, allowing developers to leverage existing modules and focus on innovation.
 
 NodeJS also benefits from its single programming language across both the server and client sides. This allows for the sharing of code and data between the server and the client, which is a great advantage, reducing the learning curve associated with NodeJS development. \cite{tilkov}
-Furthermore, NodeJS's uniform programming language for both server and client sides simplifies code and data sharing across them, offering a streamlined learning process for development. In terms of performance, NodeJS excels due to its foundation on Chrome's V8 JavaScript engine, a high-performance engine that ensures speed and efficiency, especially in scenarios requiring real-time data processing. \cite{tilkov}
+Furthermore, NodeJS's uniform programming language for both the server and client sides simplify the code and data sharing across them, offering a streamlined learning process for development. In terms of performance, NodeJS excels due to its foundation on Chrome's V8 JavaScript engine, a high-performance engine that ensures speed and efficiency, especially in scenarios requiring real-time data processing. \cite{tilkov}
 
 \subsubsection*{Disadvantages of Node.js}
 NodeJS is not without its criticisms. Critics often point out the callback hell, a situation where the code becomes unreadable due to the excessive use of callbacks. Although it has been largely mitigated by the introduction of Promises and async/await syntax, it remains a valid criticism. \cite{cantelon2014node}
@@ -308,7 +308,7 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
         \hline
         \textbf{Advantages of Node.js}                                                                                                               & \textbf{Disadvantages of Node.js}                                                                                                                              \\
         \hline
-        Non-blocking and event-driven: Allows for scalabilityand concurrency, making it ideal for real-time applications.                    & Single-threaded: it is single-threaded, and can lead to blocking if not handled correctly, impacting CPU-bound tasks.                                   \\
+        Non-blocking and event-driven: Allows for scalability and concurrency, making it ideal for real-time applications.                    & Single-threaded: it is single-threaded and can lead to blocking if not handled correctly, impacting CPU-bound tasks.                                   \\
         \hline
         JavaScript as a single language: It can be used for the server-side and client-side development, reducing context switching. & Callback hell: the code could be hard to read and maintain as there are nested callbacks (Promises and async/await can minimize this problem).                      \\
         \hline
@@ -319,8 +319,9 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
         Lightweight and fast startup: Node.js applications typically have lower memory consumption and quicker startup times.                        & Maturity and stability: Some developers argue that Node.js, compared to more established platforms, may have less maturity and stability in certain use cases. \\
         \hline
     \end{tabularx}
-    \label{tab:node-js-advantages-disadvantages}
+    
     \caption{Advantages and Disadvantages of Node.js}
+    \label{tab:node-js-advantages-disadvantages}
 \end{table}
 
 
@@ -328,18 +329,18 @@ Table \ref{tab:node-js-advantages-disadvantages} is summarizing the advantages a
 \subsection{PM2}
 PM2, or Process Manager 2, is a process manager for Node.js applications.
 With a rich feature set, including monitoring, load balancing, and error handling, its primary function is to keep applications alive forever, restart them without downtime, and simplify common system administration tasks.
-The standout feature of PM2 is its ability to keep processes running in the background indefinitely. This is particular important for web applications that requires constant availability. PM2 automatically resurrects crashed applications, ensuring that system glitches do not result in prolonged downtime.\cite{pm2}
+The standout feature of PM2 is its ability to keep processes running in the background indefinitely. This is particularly important for web applications that require constant availability. PM2 automatically resurrects crashed applications, ensuring that system glitches do not result in prolonged downtime.\cite{pm2}
 This automatic restart capability is a safeguard against potentially costly application crashes that could otherwise lead to a poor user experience or even lost revenue. \cite{pm2}
-PM2 also provides a built-in load balancer that can distribute incoming requests across multiple instances of the application. This improves performance and scalability, allowing the application to handle more requests, evenly distributing traffic across the instances, which can be particularly beneficial when running on multi-core systems. \cite{pm2LoadBalancing}
-However, PM2 is not one-size-fits-all solution. It is designed for NodeJS applications, and is not suitable for applications written in other languages. It is also not suitable for applications that require a high degree of customization. \cite{pm2}
-Despite the considerations, PM2's benefits have outweighed its limitations, and it was chosen as the technology for the project. It provides many features, including monitoring, load balancing, and error handling.
+PM2 also provides a built-in load balancer that can distribute incoming requests across multiple instances of the application. This improves performance and scalability, allowing the application to handle more requests, and evenly distribute traffic across the instances, which can be particularly beneficial when running on multi-core systems. \cite{pm2LoadBalancing}
+However, PM2 is not a one-size-fits-all solution. It is designed for NodeJS applications, and is not suitable for applications written in other languages. It is also not suitable for applications that require a high degree of customization. \cite{pm2}
+Despite the considerations, PM2's benefits outweighed its limitations, and it was chosen as the technology for the project. It provides many features, including monitoring, load balancing, and error handling.
 Its installation and setup process is straightforward, requiring minimal configuration. 
 All these features make PM2 an ideal choice for the project, as it provides the necessary tools to manage and monitor the NodeJS application in a production environment.\cite{tilkov}
 
 \subsection{Docker}
 
 Docker is a tool that enables the creation, deployment, and running of applications in containers. 
-Comparing with virtual machines (VMs), containers are lightweight, portable, and efficient, making them an ideal solution for deploying applications across different environments, 
+Compared with virtual machines (VMs), containers are lightweight, portable, and efficient, making them an ideal solution for deploying applications across different environments, 
 having the application and its dependencies packaged into a single container. The containerization process encapsulates the application's code, the libraries, and the dependencies 
 into a single object, ensuring that the application runs reliably and consistently across different environments. \cite{merkel2014docker}
 Due to its simplicity and portability, Docker has become the de facto standard for containerization. Its lightweight nature compared to traditional virtual machines makes it ideal for cloud computing. 
@@ -363,7 +364,7 @@ NGINX works as a reverse proxy server, load balancer, and HTTP cache. It is a we
 which makes it an ideal solution for applications that require high availability and scalability. It is also lightweight and efficient
 and highly configurable, allowing for the customization of its behaviour to suit the needs of the application.
 
-It was created in 2004, with the goal of solving the C10K problem, refering to the challenge of handling 10,000 concurrent connections. \cite{nginx}
+It was created in 2004, with the goal of solving the C10K problem, referring to the challenge of handling 10,000 concurrent connections. \cite{nginx}
 Due to its vast capabilities, and the ability to handle high volumes of concurrent connections, NGINX has become one of the most widely used web servers in the world,
 often used as a load balancer and as a reverse proxy in addition to its role as a web server.
 
@@ -392,8 +393,9 @@ Table \ref{tab:ngnix} is showing some of the features of NGINX\cite{nginx}:
         Open Source/Commercial & Available in both open-source and commercial versions (NGINX Plus)                                                                        \\
         \hline
     \end{tabularx}
-    \label{tab:ngnix}
     \caption{NGINX Features}
+    \label{tab:ngnix}
+    
 \end{table}
 
 Due to its vast capabilities NGNIX was chosen for our project as reverse proxy and load balancer. It is an ideal solution for applications that require high availability and scalability with a 
@@ -427,8 +429,9 @@ Table \ref{tab:mysql} is showing some of the features of MySQL\cite{mysql}:
         Integration Capabilities & Easily integrates with popular machine learning frameworks and languages, streamlining the development process         \\
         \hline
     \end{tabularx}
-    \label{tab:mysql}
     \caption{MySQL}
+    \label{tab:mysql}
+    
 \end{table}
 
 In the context of this project, the dataset was originally in a JSON format in FireStore which were found to be of a high complexity while performing compound querying. To facilitate querying and the 
@@ -439,8 +442,8 @@ By regularizing the data in MySQL, a more standardized and organized dataset was
 
 \subsection{Express JS}
 Express.js, often simply called Express, is a streamlined and adaptable framework for Node.js designed to enhance web and mobile application development. It comes equipped 
-with tools and features to suit every developers needs, while creating sophisticated applications.
-It is often used to build server-side applications and APIs, due to its simplicity, performance, and scalability.In this project, Express.js was chosen for several strategic reasons, which are outlined below.\cite{express}
+with tools and features to suit every developer's needs, while creating sophisticated applications.
+It is often used to build server-side applications and APIs, due to its simplicity, performance, and scalability. In this project, Express.js was chosen for several strategic reasons, which are outlined below.\cite{express}
 
 \begin{table}[H]
     \centering
@@ -463,11 +466,12 @@ It is often used to build server-side applications and APIs, due to its simplici
         Simplicity           & Its simplicity and ease of use accelerate development and reduce the learning curve for new team members.                                                       \\
         \hline
     \end{tabularx}
-    \label{tab:expressJS}
     \caption{Express.js Features}
+    \label{tab:expressJS}
+    
 \end{table}
 
-It was chosen as a back end web application for this project due to its simplicity, performance, and scalability. Being widely used for building APIs and server-side applications, it offers a great
+It was chosen as a back-end web application for this project due to its simplicity, performance, and scalability. Being widely used for building APIs and server-side applications, it offers a great
 advantage.
 
 
@@ -504,8 +508,9 @@ Mocha is widely used in the industry and is widely supported by the developer co
         Customizable and Extensible & Mocha's customizable and extensible nature enabled us to adapt the testing to meet our project's specific requirements, enhancing test efficiency and effectiveness. \\
         \hline
     \end{tabularx}
-    \label{tab:mochaTesting}
     \caption{Mocha Features and Advantages}
+    \label{tab:mochaTesting}
+    
 \end{table}
 
 Mocha was selected for the testing of our project due to its flexibility, ease of use, and vast number of features suited for both synchronous and asynchronous tests. 
@@ -526,7 +531,7 @@ transmitting information between parties as JSON objects.
 
 \subsection{JSON Web Tokens - JWT}
 
-JWTs play a crucial role in authentication and authorization processes. A key advantage of JWTs lies in their capability to securely and efficiently transmit information
+JWTs play a crucial role in the authentication and authorization processes. A key advantage of JWTs lies in their capability to securely and efficiently transmit information
 between parties as JSON objects. 
 The structure of a JWT comprises three fundamental components: a header, a payload, and a signature. The header provides details about the token type and the algorithm used to sign it.
 The payload contains claims, which are statements about an entity along with additional data. Lastly, the signature is utilized for verifying the authencity of the JWT sender
@@ -547,7 +552,7 @@ This is done by checking the signature of the token and verifying the claims in 
 
 \section{Difficulties}
 
-The project faced a few challenges during the development process. The main one that affectted mostly the front end development was the deployment constraints 
+The project faced a few challenges during the development process. The main one that affected mostly the front-end development was the deployment constraints 
 on the Amazon virtual machine. As discussed earlier in this section, the instance configurations used for this project, the t2.micro, was not able to handle the
 load of the application, which resulted in slow performance and frequent crashes. This led to the decision to switch to a more lightweight technology stack,
 which included EJS, Express, CORS, and AXIOS. This change improved the performance of the application and resolved the deployment issues.
