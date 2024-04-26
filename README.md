@@ -6,6 +6,11 @@
 
 This repository contains the codebase and accompanying documentation for the "Biometric Data Analysis in Digital Game Scenario" project. It maintains a record of all commits from the project's inception, encompassing the initial project proposal and the ethics application form for volunteer recruitment.
 
+## Screencast
+`video/Final_Year_recording.mp4`
+
+<video controls src="videos/Final_Year_recording.mp4" title="Screencast"></video>
+
 ## Table of Contents
 
 1. [Abstract](#abstract)
@@ -23,12 +28,12 @@ The aim of this project is to develop a robust and enduring system using live da
 
 ## Introduction
 
-First-person shooter games represent the class of games where the player views the environment through a viewport and can perform such actions as looking around, moving around, aiming, and firing of weapons. these actions are accomplished using various buttons or combinations of buttons. During a typical gameplay, players are confronted with other opposing players and are required to eliminate their opponents using various weapons available while evading enemy fire. To successfully compete in such a scenario, players are expected to react fast, effectively track targets, accurately hit targets, perceive sound, and accurately map them to a location within their environ. The goal of this research work is to collect biometric data from users using a Wearable Smart Watch (Polar Vantage V2) and performance data using a Test Game designed in a first-person-shooter scenario for this purpose. This involved building the required infrastructure to reliably collect and store users' data from the various sources. Finally, the data collected will be analyzed using classical machine learning algorithms and automatic neural network to ascertain if a correlation exists between users' performance in a digital game scenario and their biometric data.
+First-person shooter games represent the class of games where the player views the environment through a viewport and can perform such actions as looking around, moving around, aiming, and firing of weapons. these actions are accomplished using various buttons or combinations of buttons. During a typical gameplay, players are confronted with other opposing players and are required to eliminate their opponents using various weapons available while evading enemy fire. To successfully compete in such a scenario, players are expected to react fast, effectively track targets, accurately hit targets, perceive sound, and accurately map them to a location within their environ. The goal of this research work is to collect biometric data from users using a Wearable Smart Watch (Polar Vantage V2) and performance data using a Test Game designed in a first-person-shooter scenario for this purpose. This involved building the required infrastructure to reliably collect and store users' data from various sources. Finally, the data collected will be analyzed using classical machine learning algorithms and automatic neural network to ascertain if a correlation exists between users' performance in a digital game scenario and their biometric data.
 
 ## Methodology
 
 This research is geared towards finding a correlation between users' biometric data to their performance in a first-person shooter gaming scenario. The quality of the user data collected was critical in ensuring that the research aims were achieved. For Quality Assurance purposes, a systematic step-by-step approach has been designed for the data-capturing process. An activity monitoring device was distributed to the volunteers in the form of a Polar Watch. The individuals
-were instructed to use these devices at pre-designated times prior to undertaking a test in the form of a First-Person Shooter Game. Results from the tests, were then paired with their biometric data for further analysis.
+were instructed to use these devices at pre-designated times prior to undertaking a test in the form of a First-Person Shooter Game. Results from the test, were then paired with their biometric data for further analysis.
 
 ## Technology Review
 
@@ -56,6 +61,10 @@ real-time data and on the y was deployed to run a machine learning algorithm to 
 - **Documentation Repository:** https://github.com/rodAlm08/Final_Project_Dissertation.git
 
 - **Abandoned Frontend Repository:** https://github.com/rodAlm08/Executive_Dashboard.git
+
+- **Screencast Demonstration:**  [Final Year Project Demonstration](videos/Final_Year_recording.mp4)
+
+[![Screencast Demonstration](./images/dashboard.png)](./videos/Final_Year_recording.mp4)
 
 ---
 
