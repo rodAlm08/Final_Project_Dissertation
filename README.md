@@ -6,10 +6,11 @@
 
 This repository contains the codebase and accompanying documentation for the "Biometric Data Analysis in Digital Game Scenario" project. It maintains a record of all commits from the project's inception, encompassing the initial project proposal and the ethics application form for volunteer recruitment.
 
-## Screencast
-`video/Final_Year_recording.mp4`
+## Screencast Demonstration
+`videos/Final_Year_recording.mp4`
 
-<video controls src="videos/Final_Year_recording.mp4" title="Screencast"></video>
+[Final Year Project Screencast Demonstration](videos/Final_Year_recording.mp4)
+
 
 ## Table of Contents
 
@@ -52,7 +53,7 @@ This chapter presents the evaluation of the system infrastructure, architecture 
 The project was concluded successfully, and the team was able to deliver a working solution to the client's requirements. An enduring solution capable of processing
 real-time data and on the y was deployed to run a machine learning algorithm to predict user performance based on their biometric data.
 
-## Appendices
+## Appendices:
 
 - **Frontend Repository:** https://github.com/rodAlm08/exec_dash.git
 
@@ -64,7 +65,7 @@ real-time data and on the y was deployed to run a machine learning algorithm to 
 
 - **Screencast Demonstration:**  [Final Year Project Demonstration](videos/Final_Year_recording.mp4)
 
-[![Screencast Demonstration](./images/dashboard.png)](./videos/Final_Year_recording.mp4)
+[![Screencast Demonstration](./images/thumbnail.png)](https://atlantictu.sharepoint.com/:v:/s/Student-Year3Project/Ec00e-vwu2BPn4_7Q2HVynYBERmvVTrXGPsoNKjCePZF5w?e=hLNgXZ)
 
 ---
 
