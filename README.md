@@ -11,8 +11,8 @@ This repository contains the codebase and accompanying documentation for the "Bi
 
 [Final Year Project Screencast Demonstration - Download](./videos/Final_Year_recording.mp4)
 
-[Final Year Project Screencast Demonstration - Stream](https://atlantictu.sharepoint.com/:v:/s/Student-Year3Project/Ec00e-vwu2BPn4_7Q2HVynYBERmvVTrXGPsoNKjCePZF5w?e=hLNgXZ)
 
+[![Screencast Demonstration - Stream](./images/thumbnail.png)](https://atlantictu.sharepoint.com/:v:/s/Student-Year3Project/Ec00e-vwu2BPn4_7Q2HVynYBERmvVTrXGPsoNKjCePZF5w?e=hLNgXZ)
 
 
 ## Table of Contents
@@ -68,7 +68,6 @@ real-time data and on the y was deployed to run a machine learning algorithm to 
 
 - **Screencast Demonstration:**  [Final Year Project Demonstration](videos/Final_Year_recording.mp4)
 
-[![Screencast Demonstration](./images/thumbnail.png)](https://atlantictu.sharepoint.com/:v:/s/Student-Year3Project/Ec00e-vwu2BPn4_7Q2HVynYBERmvVTrXGPsoNKjCePZF5w?e=hLNgXZ)
 
 ---
 
